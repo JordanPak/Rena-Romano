@@ -1331,4 +1331,10 @@ li.comment {
 a {
   color: #00577d; }
 
+.genesis-nav-menu a {
+  color: #333;
+  display: block;
+  padding: 30px 24px;
+  font-weight: 700; }
+
 /*# sourceMappingURL=style.css.map */
