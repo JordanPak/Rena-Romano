@@ -7,9 +7,21 @@ include_once( get_template_directory() . '/lib/init.php' );
 
 
 
-//-------------===--------//
+//-----------------------//
+//  EXTRA GENESIS STUFF  //
+//-----------------------//
+
+// HTML5 Markup Structure
+add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
+
+// Viewport Meta Tag
+add_theme_support( 'genesis-responsive-viewport' );
+
+
+
+//------------------------//
 //  RENA ROMANO INCLUDES  //
-//---------------===------//
+//------------------------//
 
 
 // SHORTCODES
