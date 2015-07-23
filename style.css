@@ -287,7 +287,7 @@ textarea:focus,
   color: #fff; }
 
 a {
-  color: #e5554e;
+  color: #00577d;
   text-decoration: none; }
 
 a:hover {
@@ -470,7 +470,7 @@ input[type="submit"],
 .footer-widgets input[type="reset"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button {
-  background-color: #e5554e;
+  background-color: #00577d;
   color: #fff; }
 
 button:hover,
@@ -478,7 +478,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-  background-color: #e5554e;
+  background-color: #00577d;
   color: #fff; }
 
 .entry-content .button:hover {
@@ -708,7 +708,7 @@ th {
   color: #333; }
 
 .entry-title a:hover {
-  color: #e5554e; }
+  color: #00577d; }
 
 .widget-title {
   font-size: 18px;
@@ -822,7 +822,7 @@ img.alignright,
   margin-bottom: 16px; }
 
 .enews-widget input[type="submit"] {
-  background-color: #e5554e;
+  background-color: #00577d;
   color: #fff;
   margin: 0;
   width: 100%; }
@@ -914,7 +914,7 @@ img.alignright,
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e; }
+  color: #00577d; }
 
 .genesis-nav-menu .sub-menu {
   left: -9999px;
@@ -994,7 +994,7 @@ img.alignright,
 .nav-primary .genesis-nav-menu a:hover,
 .nav-primary .genesis-nav-menu .current-menu-item > a,
 .nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #e5554e; }
+  color: #00577d; }
 
 /* ## Secondary Navigation
 --------------------------------------------- */
@@ -1074,7 +1074,7 @@ p.entry-meta {
 
 .archive-pagination li a:hover,
 .archive-pagination .active a {
-  background-color: #e5554e; }
+  background-color: #00577d; }
 
 /* ## Comments
 --------------------------------------------- */
