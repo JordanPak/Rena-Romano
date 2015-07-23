@@ -1325,16 +1325,21 @@ li.comment {
 
   .sidebar .widget.enews-widget {
     padding: 40px; } }
+body {
+  font-size: 18px; }
+
 .entry-title a:hover {
   color: #00577d; }
 
 a {
   color: #00577d; }
 
-.genesis-nav-menu a {
-  color: #333;
-  display: block;
-  padding: 30px 24px;
-  font-weight: 700; }
+.genesis-nav-menu {
+  font-size: 1em; }
+  .genesis-nav-menu a {
+    color: #333;
+    display: block;
+    padding: 30px 24px;
+    font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
