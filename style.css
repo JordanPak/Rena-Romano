@@ -1326,7 +1326,8 @@ li.comment {
   .sidebar .widget.enews-widget {
     padding: 40px; } }
 body {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 400; }
 
 .entry-title a:hover {
   color: #00577d; }
