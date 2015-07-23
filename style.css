@@ -1334,6 +1334,13 @@ body {
 a {
   color: #00577d; }
 
+.title-area {
+  width: 380px; }
+
+.header-image .site-title > a {
+  min-height: 80px;
+  width: 100%; }
+
 .genesis-nav-menu {
   font-size: 1em; }
   .genesis-nav-menu a {
