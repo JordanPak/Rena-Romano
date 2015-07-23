@@ -1325,5 +1325,10 @@ li.comment {
 
   .sidebar .widget.enews-widget {
     padding: 40px; } }
+.entry-title a:hover {
+  color: #00577d; }
+
+a {
+  color: #00577d; }
 
 /*# sourceMappingURL=style.css.map */
