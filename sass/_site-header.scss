@@ -2,15 +2,22 @@
 //  Rena Romano | Site Header  //
 //=============================//
 
-.site-header {
+#header-bg {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: $header-bg-lg;
     background: $primary url( 'images/header-bg.jpg' );
     background-position: center;
+}
+
+.site-header {
     min-height: 0;
-    border-bottom: 5px solid $gray-light;
+    background: none;
     
     .wrap {
         padding: $space-default 0;
-        height: 320px;
     }
     
 } // .site-header

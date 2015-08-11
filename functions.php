@@ -55,3 +55,19 @@ function renaromano_global_scripts() {
 //    wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
     
 } // renaromano_global_scripts()
+
+
+
+//-- HEADER BG --//
+
+add_action( 'genesis_before_header', 'rena_header_bg' );
+/**
+ * Header Background
+ *
+ * @author Jordan Pakrosnis
+ */
+function rena_header_bg() {
+    
+    echo '<div id="header-bg"></div>';
+    
+} // rena_header_background()
