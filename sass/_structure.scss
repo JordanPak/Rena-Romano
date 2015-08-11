@@ -60,7 +60,6 @@ body {
         color: $white;
         font-size: 18px;
         text-shadow: 1px 1px rgba(0,0,0,0.15);
-        border-width: 4px;
     }
     
     .widget-title {
@@ -70,3 +69,25 @@ body {
     }
     
 } // .widget
+
+
+.enews-widget {
+    text-align: center;
+    
+    .widget-title {
+        font-size: 2.2em;
+    }
+    
+    p {
+        font-size: 18px;
+        color: $primary;
+        font-style: italic;
+        text-shadow: 1px 1px $black;
+    }
+    
+    input[type="submit"] {
+        background: $primary;
+        font-weight: 700;
+    }
+    
+} // .enews-widget

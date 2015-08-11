@@ -10,7 +10,6 @@
 body {
     font-size: 18px;
     font-weight: 400;
-    background: $white;
 } // body
 
 
@@ -20,14 +19,28 @@ body {
 //----------------------//
 
 .entry-title {
-    font-weight: 700;
-    font-size: 1.66em;
+    font-weight: 300;
+    font-size: 2.333333333em;
 
     a:hover {
         color: $primary;   
     }
     
 } // .entry-title
+
+
+ .page-template-default {
+     
+     .entry-title {
+         margin-bottom: $space-default-half;
+         padding-bottom: 10px;
+         border-bottom: 1px solid $gray-light;
+         font-size: 2.5em;
+         font-weight: 300;
+         text-transform: uppercase;
+     }
+     
+ } // .page-template-default
 
 
 
