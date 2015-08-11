@@ -2,46 +2,9 @@
 //  Rena Romano | Structure  //
 //===========================//
 
-
-//--------//
-//  BODY  //
-//--------//
-
 body {
     background: $gray-light;
 }
-
-
-
-//---------------//
-//  SITE HEADER  //
-//---------------//
-
-.site-header {
-    background: $primary url( 'images/header-bg.jpg' );
-    background-position: center;
-    min-height: 0;
-    border-bottom: 5px solid $gray-light;
-    
-    .wrap {
-        padding: $space-default 0;
-        height: 320px;
-    }
-    
-} // .site-header
-
-.title-area {
-    width: 380px;
-} // .title-area
-
-.header-image {
-
-    .site-title > a {
-        min-height: 80px;
-        width: 100%;
-    }
-
-} // .header-image
 
 
 .site-inner {
@@ -52,42 +15,3 @@ body {
 .content .entry, .sidebar .widget {
     border: 8px solid $gray-light;
 }
-
-.widget {
-    
-    &.user-profile {
-        background: $secondary;
-        color: $white;
-        font-size: 18px;
-        text-shadow: 1px 1px rgba(0,0,0,0.15);
-    }
-    
-    .widget-title {
-        font-weight: 700;
-        font-size: 1.5em;
-        color: $white;
-    }
-    
-} // .widget
-
-
-.enews-widget {
-    text-align: center;
-    
-    .widget-title {
-        font-size: 2.2em;
-    }
-    
-    p {
-        font-size: 18px;
-        color: $primary;
-        font-style: italic;
-        text-shadow: 1px 1px $black;
-    }
-    
-    input[type="submit"] {
-        background: $primary;
-        font-weight: 700;
-    }
-    
-} // .enews-widget
