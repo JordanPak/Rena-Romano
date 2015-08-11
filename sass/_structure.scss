@@ -3,18 +3,29 @@
 //===========================//
 
 
+//--------//
+//  BODY  //
+//--------//
+
+body {
+    background: $gray-light;
+}
+
+
+
 //---------------//
 //  SITE HEADER  //
 //---------------//
 
 .site-header {
-    background: $primary;
+    background: $primary url( 'images/header-bg.jpg' );
+    background-position: center;
     min-height: 0;
     border-bottom: 5px solid $gray-light;
     
     .wrap {
-        padding: $space-default-half 0;
-        height: 180px;
+        padding: $space-default 0;
+        height: 320px;
     }
     
 } // .site-header
@@ -34,7 +45,7 @@
 
 
 .site-inner {
-    margin-top: -50px;
+    margin-top: -140px;
     padding-top: 0;
 }
 
