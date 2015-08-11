@@ -10,6 +10,7 @@
 body {
     font-size: 18px;
     font-weight: 400;
+    background: $white;
 } // body
 
 
@@ -19,9 +20,11 @@ body {
 //----------------------//
 
 .entry-title {
+    font-weight: 700;
+    font-size: 1.66em;
 
     a:hover {
-        color: $blue;   
+        color: $primary;   
     }
     
 } // .entry-title
@@ -33,5 +36,5 @@ body {
 //-----------//
 
 a {
-    color: $blue;
+    color: $primary;
 } // a

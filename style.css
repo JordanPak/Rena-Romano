@@ -1327,20 +1327,25 @@ li.comment {
     padding: 40px; } }
 body {
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  background: #FFFFFF; }
 
-.entry-title a:hover {
-  color: #00577d; }
+.entry-title {
+  font-weight: 700;
+  font-size: 1.66em; }
+  .entry-title a:hover {
+    color: #F2488A; }
 
 a {
-  color: #00577d; }
+  color: #F2488A; }
 
 .site-header {
-  background: #36B1BF;
+  background: #F2488A;
   min-height: 0;
-  border-bottom: 5px solid #4AD9D9; }
+  border-bottom: 5px solid #f5f5f5; }
   .site-header .wrap {
-    padding: 20px 0; }
+    padding: 20px 0;
+    height: 180px; }
 
 .title-area {
   width: 380px; }
@@ -1349,16 +1354,48 @@ a {
   min-height: 80px;
   width: 100%; }
 
+.site-inner {
+  margin-top: -50px;
+  padding-top: 0; }
+
+.content .entry, .sidebar .widget {
+  border: 8px solid #f5f5f5; }
+
+.widget.user-profile {
+  background: #F5C320;
+  color: #FFFFFF;
+  font-size: 18px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.15);
+  border-width: 4px; }
+.widget .widget-title {
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #FFFFFF; }
+
 .genesis-nav-menu {
-  padding: 12px 0;
+  padding: 20px 0;
   font-size: 1em; }
+  .genesis-nav-menu > li:hover > a {
+    color: #F2488A;
+    background: #FFFFFF; }
   .genesis-nav-menu a {
-    color: #E9F1DF;
+    color: #FFFFFF;
     display: block;
-    padding: 30px 24px;
+    padding: 20px 24px;
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: 0.05em;
     text-transform: uppercase; }
+    .genesis-nav-menu a:hover {
+      color: #F2488A;
+      background: #FFFFFF; }
+  .genesis-nav-menu .current-menu-item > a {
+    color: #F2488A;
+    background: #FFFFFF; }
+  .genesis-nav-menu .sub-menu a {
+    text-transform: capitalize;
+    font-weight: 400;
+    color: #333333;
+    letter-spacing: normal; }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,12 +8,13 @@
 //---------------//
 
 .site-header {
-    background: #36B1BF; //#F2385A;
+    background: $primary;
     min-height: 0;
-    border-bottom: 5px solid #4AD9D9;
+    border-bottom: 5px solid $gray-light;
     
     .wrap {
         padding: $space-default-half 0;
+        height: 180px;
     }
     
 } // .site-header
@@ -30,3 +31,31 @@
     }
 
 } // .header-image
+
+
+.site-inner {
+    margin-top: -50px;
+    padding-top: 0;
+}
+
+.content .entry, .sidebar .widget {
+    border: 8px solid $gray-light;
+}
+
+.widget {
+    
+    &.user-profile {
+        background: $secondary;
+        color: $white;
+        font-size: 18px;
+        text-shadow: 1px 1px rgba(0,0,0,0.15);
+        border-width: 4px;
+    }
+    
+    .widget-title {
+        font-weight: 700;
+        font-size: 1.5em;
+        color: $white;
+    }
+    
+} // .widget
