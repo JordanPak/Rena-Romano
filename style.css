@@ -1402,6 +1402,7 @@ body {
     color: #F2488A;
     background: #FFFFFF; }
   .genesis-nav-menu a {
+    transition: all .4s ease-in-out;
     color: #FFFFFF;
     display: block;
     padding: 20px 24px;

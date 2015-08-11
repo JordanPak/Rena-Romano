@@ -10,6 +10,9 @@
     
     > li {
         
+        a {
+        }
+        
         &:hover {
         
             > a {
@@ -22,6 +25,7 @@
     } // > li
     
     a {
+        transition: all .4s ease-in-out;
         color: $white; //$gray;
         display: block;
         padding: 20px 24px;
