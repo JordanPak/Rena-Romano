@@ -1335,6 +1335,13 @@ body {
 a {
   color: #00577d; }
 
+.site-header {
+  background: #36B1BF;
+  min-height: 0;
+  border-bottom: 5px solid #4AD9D9; }
+  .site-header .wrap {
+    padding: 20px 0; }
+
 .title-area {
   width: 380px; }
 
@@ -1343,11 +1350,15 @@ a {
   width: 100%; }
 
 .genesis-nav-menu {
+  padding: 12px 0;
   font-size: 1em; }
   .genesis-nav-menu a {
-    color: #333;
+    color: #E9F1DF;
     display: block;
     padding: 30px 24px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */

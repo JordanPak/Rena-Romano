@@ -5,14 +5,17 @@
 
 // Global Genesis Nav
 .genesis-nav-menu {
-
+    padding: 12px 0;
     font-size: 1em;
     
     a {
-        color: #333;
+        color: #E9F1DF;
         display: block;
         padding: 30px 24px;
         font-weight: 700;
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
     }
 
 } // .genesis-nav-menu

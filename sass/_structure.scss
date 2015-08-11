@@ -7,6 +7,17 @@
 //  SITE HEADER  //
 //---------------//
 
+.site-header {
+    background: #36B1BF; //#F2385A;
+    min-height: 0;
+    border-bottom: 5px solid #4AD9D9;
+    
+    .wrap {
+        padding: $space-default-half 0;
+    }
+    
+} // .site-header
+
 .title-area {
     width: 380px;
 } // .title-area
