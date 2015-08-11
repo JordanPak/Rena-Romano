@@ -42,3 +42,13 @@ $trans-shadow:      rgba(0,0,0,0.175);
 
 //-- DEFAULTS --//
 $body-text:         #333333;
+
+
+
+//===========//
+//  SPACING  //
+//===========//
+
+$space-default:         40px;
+$space-default-half:    $space-default / 2;
+$space-default-middle:  $space-default-half + ($space-default-half / 2);
