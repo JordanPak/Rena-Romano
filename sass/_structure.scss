@@ -2,20 +2,14 @@
 //  Rena Romano | Structure  //
 //===========================//
 
+body {
+    background: $gray-light;
+}
 
-//---------------//
-//  SITE HEADER  //
-//---------------//
+.site-inner {
+    padding-top: 0;
+}
 
-.title-area {
-    width: 380px;
-} // .title-area
-
-.header-image {
-
-    .site-title > a {
-        min-height: 80px;
-        width: 100%;
-    }
-
-} // .header-image
+.content .entry, .sidebar .widget {
+    border: 8px solid $gray-light;
+}

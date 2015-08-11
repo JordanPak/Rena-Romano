@@ -39,7 +39,7 @@ add_action( 'wp_enqueue_scripts', 'renaromano_global_styles' );
 function renaromano_global_styles() {
     
     // Google Fonts
-    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', array(), CHILD_THEME_VERSION );
+    wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900italic,900', array(), CHILD_THEME_VERSION );
     
     // Font Awesome
     wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), CHILD_THEME_VERSION );
@@ -55,3 +55,19 @@ function renaromano_global_scripts() {
 //    wp_enqueue_script( 'pushy', get_stylesheet_directory_uri() . '/inc/js/pushy.min.js', array( 'jquery' ), CHILD_THEME_VERSION );
     
 } // renaromano_global_scripts()
+
+
+
+//-- HEADER BG --//
+
+add_action( 'genesis_before_header', 'rena_header_bg' );
+/**
+ * Header Background
+ *
+ * @author Jordan Pakrosnis
+ */
+function rena_header_bg() {
+    
+    echo '<div id="header-bg"></div>';
+    
+} // rena_header_background()

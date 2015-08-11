@@ -1,0 +1,36 @@
+//=============================//
+//  Rena Romano | Site Header  //
+//=============================//
+
+#header-bg {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: $header-bg-lg;
+    background: $primary url( 'images/header-bg.jpg' );
+    background-position: center;
+}
+
+.site-header {
+    min-height: 0;
+    background: none;
+    
+    .wrap {
+        padding: $space-default 0;
+    }
+    
+} // .site-header
+
+.title-area {
+    width: 380px;
+} // .title-area
+
+.header-image {
+
+    .site-title > a {
+        min-height: 80px;
+        width: 100%;
+    }
+
+} // .header-image
