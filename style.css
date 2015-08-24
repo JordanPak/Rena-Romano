@@ -1406,15 +1406,9 @@ body {
   .genesis-nav-menu > .last > a {
     padding-right: 24px; }
 
-.widget.user-profile {
-  background: #F5C320;
-  color: #FFFFFF;
-  font-size: 18px;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.15); }
 .widget .widget-title {
   font-weight: 700;
-  font-size: 1.5em;
-  color: #FFFFFF; }
+  font-size: 1.5em; }
 
 .enews-widget {
   text-align: center; }
