@@ -1368,6 +1368,7 @@ body {
   min-height: 0;
   background: none; }
   .site-header .wrap {
+    position: relative;
     padding: 40px 0; }
 
 .title-area {
@@ -1376,6 +1377,11 @@ body {
 .header-image .site-title > a {
   min-height: 80px;
   width: 100%; }
+
+.header-contact {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 .genesis-nav-menu {
   padding: 20px 0;

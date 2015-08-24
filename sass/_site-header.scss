@@ -17,6 +17,7 @@
     background: none;
     
     .wrap {
+        position: relative;
         padding: $space-default 0;
     }
     
@@ -34,3 +35,9 @@
     }
 
 } // .header-image
+
+.header-contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+} // .header-contact
