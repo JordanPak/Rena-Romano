@@ -1382,6 +1382,16 @@ body {
   position: absolute;
   top: 0;
   right: 0; }
+  .header-contact .header-contact-phone {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 10px;
+    border: 2px solid #FFFFFF;
+    border-top: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: default; }
 
 .genesis-nav-menu {
   padding: 20px 0;
