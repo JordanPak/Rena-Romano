@@ -1391,7 +1391,13 @@ body {
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 700;
-    cursor: default; }
+    cursor: default;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
+    .header-contact .header-contact-phone:hover {
+      background: #FFFFFF;
+      color: #F2488A;
+      font-size: 18px; }
 
 .genesis-nav-menu {
   padding: 20px 0;

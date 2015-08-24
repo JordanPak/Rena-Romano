@@ -51,6 +51,15 @@
         font-size: 14px;
         font-weight: 700;
         cursor: default;
-    }
+        
+        @include transition-ease-in-out;
+        
+        &:hover {
+            background: $white;
+            color: $primary;
+            font-size: 18px;   
+        }
+            
+    } // .header-contact-phone
     
 } // .header-contact
