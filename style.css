@@ -1395,6 +1395,7 @@ body {
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .header-contact .header-contact-phone:hover {
+      padding: 8px 15px;
       background: #FFFFFF;
       color: #F2488A;
       font-size: 18px; }
