@@ -71,3 +71,25 @@ function rena_header_bg() {
     echo '<div id="header-bg"></div>';
     
 } // rena_header_background()
+
+
+
+//-- HEADER CONTACT --//
+
+add_action( 'genesis_header', 'rena_header_contact', 9 );
+/**
+ * Header Contact Info
+ *
+ * @author Jordan Pakrosnis
+ */
+function rena_header_contact() {
+    
+    echo '<div class="header-contact">';
+    
+        // Phone
+        echo '<i class="fa fa-phone"></i>&nbsp;&nbsp;(239) 896-2504';
+    
+    // Close Wrap
+    echo '</div>';
+    
+} // rena_header_contact()
