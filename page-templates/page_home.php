@@ -10,5 +10,9 @@
 //remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
+// Intro Widget
+genesis_widget_area( 'home-intro' );
+
+
 //-- LOAD FRAMEWORK --//
 genesis();
