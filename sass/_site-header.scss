@@ -17,6 +17,7 @@
     background: none;
     
     .wrap {
+        position: relative;
         padding: $space-default 0;
     }
     
@@ -34,3 +35,32 @@
     }
 
 } // .header-image
+
+.header-contact {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    .header-contact-phone {
+        display: inline-block;
+        margin: 0;
+        padding: 5px 10px;
+        border: 2px solid $white;
+        border-top: none;
+        color: $white; //$primary;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: default;
+        
+        @include transition-ease-in-out;
+        
+        &:hover {
+            padding: 8px 15px;
+            background: $white;
+            color: $primary;
+            font-size: 18px;   
+        }
+            
+    } // .header-contact-phone
+    
+} // .header-contact
