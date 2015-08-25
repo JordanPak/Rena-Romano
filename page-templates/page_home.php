@@ -10,8 +10,15 @@
 //remove_action( 'genesis_loop', 'genesis_do_loop' );
 
 
-// Intro Widget
-genesis_widget_area( 'home-intro' );
+
+// HOME INTRO WIDGET AREA //
+add_action( 'genesis_before_content', 'rena_home_intro' );
+function rena_home_intro() {
+
+    genesis_widget_area( 'home-intro' );
+    
+} // rena_home_intro()
+
 
 
 //-- LOAD FRAMEWORK --//
