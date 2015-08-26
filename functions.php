@@ -93,3 +93,15 @@ function rena_header_contact() {
     echo '</div>';
     
 } // rena_header_contact()
+
+
+
+//-- HEADER INTRO WIDGET --//
+
+genesis_register_sidebar( array(
+	'id'            => 'home-intro',
+	'name'          => __( 'Home Intro', 'renaromano' ),
+	'description'   => __( '"Featured Section" at the top of the home page.', 'renaromano' ),
+    'before_widget' => '<div class="widget-area home-intro">',
+    'after_widget' => '</div>'
+) );
