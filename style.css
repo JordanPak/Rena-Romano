@@ -1447,4 +1447,13 @@ body {
     background: #F2488A;
     font-weight: 700; }
 
+.gcta-wrap {
+  border: 8px solid #f5f5f5;
+  border-bottom: 8px solid #FFFFFF; }
+  .gcta-wrap .widget-title strong {
+    border-color: #F2488A !important; }
+  .gcta-wrap .gcta-button:hover {
+    background: #F2488A !important;
+    border-color: #F2488A !important; }
+
 /*# sourceMappingURL=style.css.map */
