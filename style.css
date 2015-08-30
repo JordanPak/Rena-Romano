@@ -1399,6 +1399,14 @@ body {
       background: #FFFFFF;
       color: #F2488A;
       font-size: 18px; }
+  .header-contact .header-social-icons {
+    display: inline-block;
+    color: #FFFFFF;
+    margin-right: 4px; }
+    .header-contact .header-social-icons .fa {
+      margin-right: 14px;
+      position: relative;
+      top: 3px; }
 
 .genesis-nav-menu {
   padding: 20px 0;

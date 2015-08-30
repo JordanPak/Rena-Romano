@@ -63,4 +63,17 @@
             
     } // .header-contact-phone
     
+    .header-social-icons {
+        display: inline-block;
+        color: $white;
+        margin-right: 4px;
+        
+        .fa {
+            margin-right: 14px;
+            position: relative;
+            top: 3px;
+        }
+    
+    } // .header-social-icons
+    
 } // .header-contact

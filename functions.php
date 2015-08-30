@@ -87,7 +87,7 @@ function rena_header_contact() {
     echo '<div class="header-contact">';
     
         // Phone
-        echo '<i class="fa fa-facebook-square"></i> &nbsp; <i class="fa fa-twitter"></i> &nbsp; <i class="fa fa-linkedin"></i> &nbsp; <i class="fa fa-youtube-play"></i> &nbsp;&nbsp; <span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
+        echo '<div class="header-social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-youtube-play"></i></div><span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
     
     // Close Wrap
     echo '</div>';
