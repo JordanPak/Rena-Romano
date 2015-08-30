@@ -3,7 +3,20 @@
 //========================//
 
 .site-footer {
+    background: $gray-dark;
+    color: $white;
     
+    a:hover {
+        color: $primary;
+    }
     
+    span {
+        color: $gray;
+        
+        a {
+            color: $white;
+        }
+        
+    } // span
     
 } // .site-footer

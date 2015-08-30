@@ -1429,6 +1429,16 @@ body {
   .genesis-nav-menu > .last > a {
     padding-right: 24px; }
 
+.site-footer {
+  background: #292929;
+  color: #FFFFFF; }
+  .site-footer a:hover {
+    color: #F2488A; }
+  .site-footer span {
+    color: #a7a9ae; }
+    .site-footer span a {
+      color: #FFFFFF; }
+
 .widget .widget-title {
   font-weight: 700;
   font-size: 1.5em; }
