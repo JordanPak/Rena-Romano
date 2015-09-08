@@ -1468,7 +1468,7 @@ body {
 .home-intro .enews {
   position: relative;
   background: #292929;
-  margin: 20px 0 40px 0;
+  margin: 30px 0 20px 0;
   padding: 25px;
   border: 8px solid #f5f5f5;
   border-top: none; }
@@ -1546,5 +1546,56 @@ body {
   .gcta-wrap .gcta-button:hover {
     background: #F2488A !important;
     border-color: #F2488A !important; }
+
+#home-services {
+  margin-bottom: 40px;
+  border: 8px solid #f5f5f5; }
+  #home-services:before {
+    content: " ";
+    display: table; }
+  #home-services:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  #home-services .textwidget {
+    display: block;
+    float: left;
+    padding: 60px 40px;
+    width: 33.333333333%;
+    text-align: center;
+    border: 1px solid #292929;
+    border-right: none;
+    background: #292929;
+    color: #FFFFFF;
+    box-shadow: 0 -8px #F2488A, 0 8px #F2488A; }
+    #home-services .textwidget p {
+      font-style: italic; }
+    #home-services .textwidget .button {
+      display: inline-block;
+      padding: 7px 18px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 40px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      background: none;
+      border: 2px solid #F2488A;
+      color: #F2488A;
+      -webkit-transition: all ease-in-out 200ms;
+      transition: all ease-in-out 200ms; }
+      #home-services .textwidget .button:hover {
+        background: #F2488A;
+        color: #FFFFFF; }
+  #home-services .widget:last-child .textwidget {
+    border-right: 1px solid #292929; }
+  #home-services .fa {
+    font-size: 3em;
+    margin-bottom: 40px; }
+  #home-services h2 {
+    display: block;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

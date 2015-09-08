@@ -111,7 +111,7 @@ genesis_register_sidebar( array(
 	'id'            => 'home-services',
 	'name'          => __( 'Home Services', 'renaromano' ),
 	'description'   => __( 'Three "Service" features on the home page.', 'renaromano' ),
-    'before_widget' => '<div class="widget-area home-services">',
+    'before_widget' => '<div class="widget">',
     'after_widget' => '</div>'
 ) );
 
@@ -120,7 +120,7 @@ genesis_register_sidebar( array(
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
 
-	$creds = '[footer_copyright] Rena Romano. <span>Designed &amp; Developed By <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">JpakMedia</a></span>';
+	$creds = '[footer_copyright] Rena Romano. <span>Designed &amp; Developed By <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">Jordan Pakrosnis</a></span>';
 
 	return $creds;
 } // sp_footer_creds_filter

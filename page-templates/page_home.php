@@ -17,7 +17,9 @@ function rena_home_intro() {
 
     genesis_widget_area( 'home-intro' );
 
-    genesis_widget_area( 'home-services' );
+    echo '<div id="home-services"';
+        genesis_widget_area( 'home-services' );
+    echo '</div>';
 
 } // rena_home_intro()
 
