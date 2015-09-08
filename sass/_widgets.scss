@@ -42,7 +42,7 @@
 .home-intro .enews {
     position: relative;
     background: $gray-dark;
-    margin: ($space-default-half + 10px) 0 $space-default-half 0;
+    margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
     padding: $space-default-half + 5px;
 
     @include post-border();
@@ -136,7 +136,7 @@
     margin-bottom: 0 !important;
     border: 8px solid $gray-light;
     border-bottom: 0;
-    box-shadow: inset 0 -8px $white;
+    box-shadow: inset 0 -4px $white;
 
     .widget-title strong {
         border-color: $primary !important;
