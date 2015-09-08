@@ -1468,7 +1468,7 @@ body {
 .home-intro .enews {
   position: relative;
   background: #292929;
-  margin-bottom: 40px;
+  margin: 20px 0 40px 0;
   padding: 25px;
   border: 8px solid #f5f5f5;
   border-top: none; }
