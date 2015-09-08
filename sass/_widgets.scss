@@ -43,7 +43,7 @@
     position: relative;
     background: $gray-dark;
     margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
-    padding: $space-default-half + 5px;
+    padding: $space-default-half + 10px;
 
     @include post-border();
     border-top: none;
@@ -71,9 +71,9 @@
     form {
         display: block;
         float: right;
-        margin-top: 22px;
+        margin-top: 25px;
         position: absolute;
-        right: $space-default-half;
+        right: $space-default-half + 5px;
         top: 10px;
         text-align: right;
         width: 50%;
