@@ -1483,8 +1483,9 @@ body {
     display: block;
     margin: 0;
     color: #FFFFFF;
-    font-size: 1.66em;
-    font-weight: 400; }
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase; }
   .home-intro .enews p {
     display: block;
     margin: 0;
@@ -1567,7 +1568,12 @@ body {
     border-right: none;
     background: #292929;
     color: #FFFFFF;
-    box-shadow: 0 -8px #F2488A, 0 8px #F2488A; }
+    box-shadow: 0 -8px #F2488A, 0 8px #F2488A;
+    cursor: default;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
+    #home-services .textwidget:hover {
+      background: rgba(0, 0, 0, 0.87); }
     #home-services .textwidget p {
       font-style: italic; }
     #home-services .textwidget .button {

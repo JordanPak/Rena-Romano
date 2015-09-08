@@ -54,8 +54,9 @@
         display: block;
         margin: 0;
         color: $white;
-        font-size: 1.66em;
-        font-weight: 400;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
     }
 
     p {
@@ -170,6 +171,13 @@
         background: $gray-dark;
         color: $white;
         box-shadow: 0 -8px $primary, 0 8px $primary;
+        cursor: default;
+
+        @include transition-ease-in-out();
+
+        &:hover {
+            background: rgba(0,0,0,0.87);
+        }
 
         p {
             font-style: italic;
