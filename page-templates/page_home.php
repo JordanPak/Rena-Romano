@@ -15,10 +15,17 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_before_content', 'rena_home_intro' );
 function rena_home_intro() {
 
+    // Home Intro
     genesis_widget_area( 'home-intro' );
 
+    // Home Services
     echo '<div id="home-services"';
         genesis_widget_area( 'home-services' );
+    echo '</div>';
+
+    // Home - More
+    echo '<div id="home-more">';
+        genesis_widget_area( 'home-more' );
     echo '</div>';
 
 } // rena_home_intro()

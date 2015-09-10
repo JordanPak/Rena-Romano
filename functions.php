@@ -116,6 +116,16 @@ genesis_register_sidebar( array(
 ) );
 
 
+//-- HOME - MORE  WIDGET AREA --//
+genesis_register_sidebar( array(
+	'id'            => 'home-more',
+	'name'          => __( 'Home - More', 'renaromano' ),
+	'description'   => __( 'Area under Home Services', 'renaromano' ),
+    'before_widget' => '<div class="widget">',
+    'after_widget' => '</div>'
+) );
+
+
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
