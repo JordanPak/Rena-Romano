@@ -130,7 +130,7 @@ genesis_register_sidebar( array(
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
 
-	$creds = '[footer_copyright] Rena Romano. <span>Designed &amp; Developed By <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">Jordan Pakrosnis</a></span>';
+	$creds = '[footer_copyright] Rena Romano. <span>Built on WordPress/Genesis by <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">Jordan Pakrosnis</a></span>';
 
 	return $creds;
 } // sp_footer_creds_filter
