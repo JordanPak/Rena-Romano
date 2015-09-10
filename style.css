@@ -1,14 +1,14 @@
-/* 
+/*
 Theme Name: Rena Romano
 Theme URI: http://RenaRomano.com/
 Description: Custom Genesis Framework theme for Rena Romano
 Version: 2.0
 Author: Jordan Pakrosnis
-Author URI: http://JordanPak.com/  
-Template: genesis  
+Author URI: http://JordanPak.com/
+Template: genesis
 Template Version: 2.1.2
 License: GPL-2.0+
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 /* # Table of Contents
 - HTML5 Reset
@@ -1382,9 +1382,14 @@ body {
   position: absolute;
   top: 0;
   right: 0; }
+  .header-contact .widget-area {
+    display: inline-block;
+    float: left;
+    width: auto;
+    text-align: inherit; }
   .header-contact .header-contact-phone {
     display: inline-block;
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 5px 10px;
     border-top: 2px solid #FFFFFF;
     color: #FFFFFF;
@@ -1399,12 +1404,14 @@ body {
       border-top: 4px solid #FFFFFF;
       color: #FFFFFF;
       font-size: 18px; }
-  .header-contact .header-social-icons {
-    display: inline-block;
-    color: #FFFFFF;
-    margin-right: 4px; }
-    .header-contact .header-social-icons .fa {
-      margin-right: 14px; }
+  .header-contact .simple-social-icons ul li {
+    margin: 0 !important; }
+    .header-contact .simple-social-icons ul li a {
+      color: #FFFFFF !important;
+      background: none !important; }
+      .header-contact .simple-social-icons ul li a:hover {
+        color: #F2488A !important;
+        background: #FFFFFF !important; }
 
 .genesis-nav-menu {
   position: absolute;
