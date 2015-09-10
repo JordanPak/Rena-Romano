@@ -45,10 +45,9 @@
         display: inline-block;
         margin: 0;
         padding: 5px 10px;
-        border: 2px solid $white;
-        border-top: none;
-        color: $white; //$primary;
-        font-size: 14px;
+        border-top: 2px solid $white; //none;
+        color: $white;
+        font-size: 16px;
         font-weight: 700;
         cursor: default;
 
@@ -56,8 +55,9 @@
 
         &:hover {
             padding: 8px 15px;
-            background: $white;
-            color: $primary;
+            background: linear-gradient( rgba(255,255,255,0.3), rgba(0,0,0,0) );
+            border-top: 4px solid $white;
+            color: $white;
             font-size: 18px;
         }
 
@@ -70,8 +70,6 @@
 
         .fa {
             margin-right: 14px;
-            position: relative;
-            top: 3px;
         }
 
     } // .header-social-icons

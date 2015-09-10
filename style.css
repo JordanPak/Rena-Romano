@@ -1386,27 +1386,25 @@ body {
     display: inline-block;
     margin: 0;
     padding: 5px 10px;
-    border: 2px solid #FFFFFF;
-    border-top: none;
+    border-top: 2px solid #FFFFFF;
     color: #FFFFFF;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     cursor: default;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .header-contact .header-contact-phone:hover {
       padding: 8px 15px;
-      background: #FFFFFF;
-      color: #F2488A;
+      background: linear-gradient(rgba(255, 255, 255, 0.3), transparent);
+      border-top: 4px solid #FFFFFF;
+      color: #FFFFFF;
       font-size: 18px; }
   .header-contact .header-social-icons {
     display: inline-block;
     color: #FFFFFF;
     margin-right: 4px; }
     .header-contact .header-social-icons .fa {
-      margin-right: 14px;
-      position: relative;
-      top: 3px; }
+      margin-right: 14px; }
 
 .genesis-nav-menu {
   position: absolute;
