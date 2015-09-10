@@ -15,12 +15,12 @@
 .site-header {
     min-height: 0;
     background: none;
-    
+
     .wrap {
         position: relative;
-        padding: $space-default 0;
+        padding: $space-default 0 12px 0;
     }
-    
+
 } // .site-header
 
 .title-area {
@@ -40,7 +40,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    
+
     .header-contact-phone {
         display: inline-block;
         margin: 0;
@@ -51,29 +51,29 @@
         font-size: 14px;
         font-weight: 700;
         cursor: default;
-        
+
         @include transition-ease-in-out;
-        
+
         &:hover {
             padding: 8px 15px;
             background: $white;
             color: $primary;
-            font-size: 18px;   
+            font-size: 18px;
         }
-            
+
     } // .header-contact-phone
-    
+
     .header-social-icons {
         display: inline-block;
         color: $white;
         margin-right: 4px;
-        
+
         .fa {
             margin-right: 14px;
             position: relative;
             top: 3px;
         }
-    
+
     } // .header-social-icons
-    
+
 } // .header-contact

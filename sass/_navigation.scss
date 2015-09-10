@@ -5,42 +5,45 @@
 
 // Global Genesis Nav
 .genesis-nav-menu {
-    padding: 20px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0;
     font-size: 1em;
-    
+
     > li {
-        
+
         a {
         }
-        
+
         &:hover {
-        
+
             > a {
                 color: $primary;
                 background: $white;
             }
-            
+
         } // hover
-        
+
     } // > li
-    
+
     a {
         transition: all .4s ease-in-out;
-        color: $white; //$gray;
+        color: $white;
         display: block;
         padding: 20px 24px;
         font-weight: 700;
         font-size: 0.9em;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        
+
         &:hover {
             color: $primary;
             background: $white;
         }
-        
+
     } // > li > a
-    
+
     .current-menu-item > a {
         color: $primary;
         background: $white;
@@ -52,9 +55,9 @@
         color: $gray-dark;
         letter-spacing: normal;
     }
-    
+
     > .last > a {
         padding-right: 24px;
     }
-    
+
 } // .genesis-nav-menu
