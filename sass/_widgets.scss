@@ -223,4 +223,39 @@
         font-size: 2em;
     }
 
-} // .home-services
+} // #home-services
+
+#home-more {
+
+    @include post-border();
+    @include clearfix();
+
+    article.type-post {
+        float: left;
+        width: 48.5%;
+        margin-right: 3%;
+        background: $white;
+        min-height: 230px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .entry-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: $gray-dark;
+        }
+
+        time {
+            font-weight: 700;
+            color: $gray;
+        }
+
+        .entry-content p {
+            margin-bottom: 0;
+        }
+
+    } // article.type-post
+
+} // #home-more
