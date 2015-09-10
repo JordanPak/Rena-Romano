@@ -86,14 +86,27 @@ function rena_header_contact() {
 
     echo '<div class="header-contact">';
 
+        // Social Icons
+        genesis_widget_area( 'site-header-social' );
+
         // Phone
-        echo '<div class="header-social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-youtube-play"></i></div><span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
+        // echo '<div class="header-social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-youtube-play"></i></div><span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
+        echo '<span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
 
     // Close Wrap
     echo '</div>';
 
 } // rena_header_contact()
 
+
+//-- SITE-HEADER TOP WIDGET AREA //
+genesis_register_sidebar( array(
+	'id'            => 'site-header-social',
+	'name'          => __( 'Site Header - Social Icons', 'renaromano' ),
+	'description'   => __( 'For Genesis Easy Social Icons', 'renaromano' ),
+    'before_widget' => '<div class="widget-area site-header-social">',
+    'after_widget' => '</div>'
+) );
 
 
 //-- HEADER INTRO WIDGET AREA --//
