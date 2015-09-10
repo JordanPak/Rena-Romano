@@ -166,8 +166,7 @@
         padding: ($space-default + $space-default-half) $space-default;
         width: 33.333333333%;
         text-align: center;
-        border: 1px solid $gray-dark;
-        border-right: none;
+        border-right: 2px solid rgba(0,0,0,0.2);
         background: $gray-dark;
         color: $white;
         box-shadow: 0 -8px $primary, 0 8px $primary;
@@ -177,15 +176,24 @@
 
         &:hover {
             background: rgba(0,0,0,0.87);
-        }
+
+            .fa, p {
+                color: $white;
+            }
+
+        } // &:hover
 
         p {
+            margin-bottom: $space-default;
+            color: rgba(255,255,255,0.55);
             font-style: italic;
+
+            @include transition-ease-in-out();
         }
 
         .button {
             display: inline-block;
-            padding: 7px 18px;
+            padding: 3px 18px;
             font-weight: 700;
             font-size: 16px;
             line-height: 40px;
@@ -211,8 +219,11 @@
     }
 
     .fa {
+        color: rgba(255,255,255,0.55);
         font-size: 3em;
         margin-bottom: $space-default;
+
+        @include transition-ease-in-out();
     }
 
     h2 {
