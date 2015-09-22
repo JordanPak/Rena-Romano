@@ -1,0 +1,103 @@
+//==========================-==//
+//  Rena Romano | WooCommerce  //
+//=============================//
+
+.woocommerce { // Body Class
+
+
+    // .woocommerce-result-count {
+    //     display: none;
+    // }
+
+    // .woocommerce-ordering {
+    //     display: none;
+    // }
+
+    ul.products {
+
+        li.product {
+            border: none;
+            text-align: center;
+
+            h3 {
+                font-size: 24px !important;
+                font-weight: 700;
+            }
+
+            .price {
+                // color: $primary !important;
+            }
+
+        } // li.product
+
+    } // ul.products
+
+    a.button, button.button, input.button {
+        background-color: $primary !important;
+        border-radius: 0 !important;
+        color: $white !important;
+        font-size: 16px !important;
+        padding: 3px 18px !important;
+        line-height: 40px !important;
+        letter-spacing: 1px !important;
+
+        @include transition-ease-in-out();
+    }
+
+    .quantity .qty {
+        padding: 11px 18px !important;
+    }
+
+    .posted_in, .tagged_as {
+        display: none;
+    }
+
+    .related.products {
+        clear: both;
+        margin-top: $space-default * 2;
+
+        @include clearfix();
+    }
+
+    table.shop_table {
+        border: none !important;
+
+        thead {
+            border: none !important;
+            background: $gray-light;
+        }
+
+        tbody {
+            border: none !important;
+        }
+
+        td {
+            padding: 12px !important;
+        }
+
+    } // table.cart
+
+    td.actions .coupon .input-text {
+        padding: 11px 20px !important;
+        width: 160px !important;
+    }
+
+    .woocommerce-billing-fields h3, #ship-to-different-address, #order_review_heading  {
+        font-weight: 300;
+        font-size: 2em;
+    }
+
+    #order_review_heading {
+        margin-top: $space-default;
+    }
+
+    .woocommerce-checkout-payment {
+        background-color: $gray-light !important;
+        border-radius: 0 !important;
+    }
+
+    .payment_methods.methods li {
+        list-style-type: none !important;
+    }
+
+} // .woocommerce

@@ -1335,7 +1335,7 @@ body {
   .entry-title a:hover {
     color: #eecc99; }
 
-.page-template-default .entry-title {
+.page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid #f5f5f5;
@@ -1353,6 +1353,11 @@ body {
   padding-top: 0; }
 
 .content .entry, .sidebar .widget {
+  border: 8px solid #f5f5f5; }
+
+.post-type-archive-product main.content {
+  padding: 40px;
+  background: #FFFFFF;
   border: 8px solid #f5f5f5; }
 
 #header-bg {
@@ -1695,5 +1700,58 @@ body {
     color: #a7a9ae; }
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #eecc99; }
+
+.woocommerce ul.products li.product {
+  border: none;
+  text-align: center; }
+  .woocommerce ul.products li.product h3 {
+    font-size: 24px !important;
+    font-weight: 700; }
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  background-color: #eecc99 !important;
+  border-radius: 0 !important;
+  color: #FFFFFF !important;
+  font-size: 16px !important;
+  padding: 3px 18px !important;
+  line-height: 40px !important;
+  letter-spacing: 1px !important;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
+.woocommerce .quantity .qty {
+  padding: 11px 18px !important; }
+.woocommerce .posted_in, .woocommerce .tagged_as {
+  display: none; }
+.woocommerce .related.products {
+  clear: both;
+  margin-top: 80px; }
+  .woocommerce .related.products:before {
+    content: " ";
+    display: table; }
+  .woocommerce .related.products:after {
+    clear: both;
+    content: " ";
+    display: table; }
+.woocommerce table.shop_table {
+  border: none !important; }
+  .woocommerce table.shop_table thead {
+    border: none !important;
+    background: #f5f5f5; }
+  .woocommerce table.shop_table tbody {
+    border: none !important; }
+  .woocommerce table.shop_table td {
+    padding: 12px !important; }
+.woocommerce td.actions .coupon .input-text {
+  padding: 11px 20px !important;
+  width: 160px !important; }
+.woocommerce .woocommerce-billing-fields h3, .woocommerce #ship-to-different-address, .woocommerce #order_review_heading {
+  font-weight: 300;
+  font-size: 2em; }
+.woocommerce #order_review_heading {
+  margin-top: 40px; }
+.woocommerce .woocommerce-checkout-payment {
+  background-color: #f5f5f5 !important;
+  border-radius: 0 !important; }
+.woocommerce .payment_methods.methods li {
+  list-style-type: none !important; }
 
 /*# sourceMappingURL=style.css.map */
