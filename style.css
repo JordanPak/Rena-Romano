@@ -1335,7 +1335,7 @@ body {
   .entry-title a:hover {
     color: #eecc99; }
 
-.page-template-default .entry-title {
+.page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid #f5f5f5;
