@@ -82,4 +82,22 @@
         width: 160px !important;
     }
 
+    .woocommerce-billing-fields h3, #ship-to-different-address, #order_review_heading  {
+        font-weight: 300;
+        font-size: 2em;
+    }
+
+    #order_review_heading {
+        margin-top: $space-default;
+    }
+
+    .woocommerce-checkout-payment {
+        background-color: $gray-light !important;
+        border-radius: 0 !important;
+    }
+
+    .payment_methods.methods li {
+        list-style-type: none !important;
+    }
+
 } // .woocommerce

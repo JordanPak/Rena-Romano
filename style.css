@@ -1743,5 +1743,15 @@ body {
 .woocommerce td.actions .coupon .input-text {
   padding: 11px 20px !important;
   width: 160px !important; }
+.woocommerce .woocommerce-billing-fields h3, .woocommerce #ship-to-different-address, .woocommerce #order_review_heading {
+  font-weight: 300;
+  font-size: 2em; }
+.woocommerce #order_review_heading {
+  margin-top: 40px; }
+.woocommerce .woocommerce-checkout-payment {
+  background-color: #f5f5f5 !important;
+  border-radius: 0 !important; }
+.woocommerce .payment_methods.methods li {
+  list-style-type: none !important; }
 
 /*# sourceMappingURL=style.css.map */
