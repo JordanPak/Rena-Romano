@@ -32,7 +32,7 @@
 
     } // ul.products
 
-    a.button {
+    a.button, button.button {
         background-color: $primary !important;
         border-radius: 0 !important;
         color: $white !important;
@@ -42,6 +42,21 @@
         letter-spacing: 1px !important;
 
         @include transition-ease-in-out();
+    }
+
+    .quantity .qty {
+        padding: 11px 18px !important;
+    }
+
+    .posted_in, .tagged_as {
+        display: none;
+    }
+
+    .related.products {
+        clear: both;
+        margin-top: $space-default * 2;
+
+        @include clearfix();
     }
 
 } // .woocommerce
