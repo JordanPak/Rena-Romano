@@ -1701,9 +1701,21 @@ body {
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #eecc99; }
 
-.woocommerce .woocommerce-result-count {
-  display: none; }
 .woocommerce ul.products li.product {
-  border: none; }
+  border: none;
+  text-align: center; }
+  .woocommerce ul.products li.product h3 {
+    font-size: 24px !important;
+    font-weight: 700; }
+.woocommerce a.button {
+  background-color: #eecc99 !important;
+  border-radius: 0 !important;
+  color: #FFFFFF !important;
+  font-size: 16px !important;
+  padding: 3px 18px !important;
+  line-height: 40px !important;
+  letter-spacing: 1px !important;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms; }
 
 /*# sourceMappingURL=style.css.map */

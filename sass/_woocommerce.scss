@@ -5,18 +5,43 @@
 .woocommerce { // Body Class
 
 
-    .woocommerce-result-count {
-        display: none;
-    }
+    // .woocommerce-result-count {
+    //     display: none;
+    // }
 
+    // .woocommerce-ordering {
+    //     display: none;
+    // }
 
     ul.products {
 
         li.product {
             border: none;
+            text-align: center;
+
+            h3 {
+                font-size: 24px !important;
+                font-weight: 700;
+            }
+
+            .price {
+                // color: $primary !important;
+            }
+
         } // li.product
 
     } // ul.products
 
+    a.button {
+        background-color: $primary !important;
+        border-radius: 0 !important;
+        color: $white !important;
+        font-size: 16px !important;
+        padding: 3px 18px !important;
+        line-height: 40px !important;
+        letter-spacing: 1px !important;
+
+        @include transition-ease-in-out();
+    }
 
 } // .woocommerce
