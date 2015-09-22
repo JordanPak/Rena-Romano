@@ -13,3 +13,13 @@ body {
 .content .entry, .sidebar .widget {
     border: 8px solid $gray-light;
 }
+
+.full-width-content { // Body class - Full Width Layout )
+
+    main.content {
+        padding: $space-default;
+        background: $white;
+        border: 8px solid $gray-light;
+    } // main.content
+
+} // .full-width-content
