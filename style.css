@@ -1707,7 +1707,7 @@ body {
   .woocommerce ul.products li.product h3 {
     font-size: 24px !important;
     font-weight: 700; }
-.woocommerce a.button, .woocommerce button.button {
+.woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
   background-color: #eecc99 !important;
   border-radius: 0 !important;
   color: #FFFFFF !important;
@@ -1731,5 +1731,17 @@ body {
     clear: both;
     content: " ";
     display: table; }
+.woocommerce table.shop_table {
+  border: none !important; }
+  .woocommerce table.shop_table thead {
+    border: none !important;
+    background: #f5f5f5; }
+  .woocommerce table.shop_table tbody {
+    border: none !important; }
+  .woocommerce table.shop_table td {
+    padding: 12px !important; }
+.woocommerce td.actions .coupon .input-text {
+  padding: 11px 20px !important;
+  width: 160px !important; }
 
 /*# sourceMappingURL=style.css.map */

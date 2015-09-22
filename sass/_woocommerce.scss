@@ -32,7 +32,7 @@
 
     } // ul.products
 
-    a.button, button.button {
+    a.button, button.button, input.button {
         background-color: $primary !important;
         border-radius: 0 !important;
         color: $white !important;
@@ -57,6 +57,29 @@
         margin-top: $space-default * 2;
 
         @include clearfix();
+    }
+
+    table.shop_table {
+        border: none !important;
+
+        thead {
+            border: none !important;
+            background: $gray-light;
+        }
+
+        tbody {
+            border: none !important;
+        }
+
+        td {
+            padding: 12px !important;
+        }
+
+    } // table.cart
+
+    td.actions .coupon .input-text {
+        padding: 11px 20px !important;
+        width: 160px !important;
     }
 
 } // .woocommerce
