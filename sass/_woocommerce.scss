@@ -1,3 +1,22 @@
 //==========================-==//
 //  Rena Romano | WooCommerce  //
 //=============================//
+
+.woocommerce { // Body Class
+
+
+    .woocommerce-result-count {
+        display: none;
+    }
+
+
+    ul.products {
+
+        li.product {
+            border: none;
+        } // li.product
+
+    } // ul.products
+
+
+} // .woocommerce

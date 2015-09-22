@@ -1701,4 +1701,9 @@ body {
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #eecc99; }
 
+.woocommerce .woocommerce-result-count {
+  display: none; }
+.woocommerce ul.products li.product {
+  border: none; }
+
 /*# sourceMappingURL=style.css.map */
