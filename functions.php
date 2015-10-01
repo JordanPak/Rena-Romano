@@ -136,6 +136,9 @@ genesis_register_sidebar( array(
 ) );
 
 
+//-- WOOCOMMERCE SUPPORT (Uses Plugin) --//
+add_theme_support( 'genesis-connect-woocommerce' );
+
 
 //* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');

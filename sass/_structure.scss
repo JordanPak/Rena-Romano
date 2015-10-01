@@ -13,3 +13,13 @@ body {
 .content .entry, .sidebar .widget {
     border: 8px solid $gray-light;
 }
+
+.post-type-archive-product { // Body class
+
+    main.content {
+        padding: $space-default;
+        background: $white;
+        border: 8px solid $gray-light;
+    } // main.content
+
+} // .full-width-content
