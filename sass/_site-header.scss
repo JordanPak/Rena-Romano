@@ -15,12 +15,12 @@
 .site-header {
     min-height: 0;
     background: none;
-    
+
     .wrap {
         position: relative;
-        padding: $space-default 0;
+        padding: $space-default 0 12px 0;
     }
-    
+
 } // .site-header
 
 .title-area {
@@ -40,27 +40,51 @@
     position: absolute;
     top: 0;
     right: 0;
-    
+
+    .widget-area {
+        display: inline-block;
+        float: left;
+        width: auto;
+        text-align: inherit;
+    }
+
     .header-contact-phone {
         display: inline-block;
-        margin: 0;
+        margin: 0 0 0 10px;
         padding: 5px 10px;
-        border: 2px solid $white;
-        border-top: none;
-        color: $white; //$primary;
-        font-size: 14px;
+        border-top: 2px solid $white; //none;
+        color: $white;
+        font-size: 16px;
         font-weight: 700;
         cursor: default;
-        
+
         @include transition-ease-in-out;
-        
+
         &:hover {
             padding: 8px 15px;
-            background: $white;
-            color: $primary;
-            font-size: 18px;   
+            background: linear-gradient( rgba(255,255,255,0.3), rgba(0,0,0,0) );
+            border-top: 4px solid $white;
+            color: $white;
+            font-size: 18px;
         }
-            
+
     } // .header-contact-phone
+
+
+    .simple-social-icons ul li {
+        margin: 0 !important;
+
+        a {
+            color: $white !important;
+            background: none !important;
+
+            &:hover {
+                color: $primary !important;
+                background: $white !important;
+            }
+
+        } // a
+
+    } // .simple-social-icons ul li
     
 } // .header-contact
