@@ -18,13 +18,39 @@ body {
 //  HEADINGS & HEADERS  //
 //----------------------//
 
-.entry-title {
-    font-weight: 300;
-    font-size: 2.333333333em;
+.entry {
 
-    a:hover {
-        color: $primary;
-    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        a {
+            color: inherit;
+            border-bottom: 2px solid $primary;
+
+            @include transition-ease-in-out(150ms);
+
+            &:hover {
+                color: $black;
+            }
+
+        } // <a> Inside Header
+
+    } // All Entry Headers
+
+} // .entry
+
+
+.entry .entry-title {
+    
+    a {
+        border-bottom: 0;
+
+        &:hover {
+            color: $primary;
+        }
+
+    } // a
 
 } // .entry-title
 
@@ -33,15 +59,25 @@ body {
 
      .entry-title, .page-title {
          margin-bottom: $space-default;
-         padding-bottom: $space-default-half;
+         padding-bottom: $space-default + $space-default-half;
          border-bottom: 1px solid $gray-light;
-         font-size: 2.5em;
-         font-weight: 300;
-         text-transform: uppercase;
+         text-align: center;
+         font-size: 52px;
+         font-weight: 700;
+         color: $secondary-dark;
      }
 
  } // .page-template-default
 
+h2 {
+    margin-bottom: $space-default-half + 10px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-bottom: $space-default-half + 10px;
+    font-size: 30px;
+}
 
 
 //-----------//
