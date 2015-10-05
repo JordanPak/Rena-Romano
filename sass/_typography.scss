@@ -42,7 +42,7 @@ body {
 
 
 .entry .entry-title {
-    
+
     a {
         border-bottom: 0;
 
@@ -93,6 +93,15 @@ a {
 //--------//
 //  MISC  //
 //--------//
+
+.entry ul {
+
+    li {
+        margin-bottom: 10px;
+    }
+
+} // .entry ul
+
 
 hr {
     border: 0;
