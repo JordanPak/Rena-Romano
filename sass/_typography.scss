@@ -51,3 +51,15 @@ body {
 a {
     color: $primary;
 } // a
+
+
+
+//--------//
+//  MISC  //
+//--------//
+
+hr {
+    border: 0;
+    border-top: 2px solid $gray-light;
+    margin: ($space-default + $space-default-half) 0;
+}
