@@ -110,4 +110,8 @@
         text-align: center;
     }
 
+    @include breakpoint( small ) {
+        margin-top: ($space-default * 2) + $space-default-middle;
+    }
+
 } // .header-widget-area

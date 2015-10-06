@@ -1458,6 +1458,9 @@ body {
     margin-top: 70px;
     width: 100%;
     text-align: center; } }
+@media (max-width: 800px) {
+  .site-header .header-widget-area {
+    margin-top: 110px; } }
 
 .genesis-nav-menu {
   position: absolute;
