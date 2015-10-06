@@ -26,7 +26,7 @@
 .title-area {
     width: 380px;
 
-    @include breakpoint( medium ) {
+    @include breakpoint( large ) {
         margin-top: $space-default-half;
         width: 100%;
     }
@@ -39,7 +39,7 @@
         min-height: 80px;
         width: 100%;
 
-        @include breakpoint( medium ) {
+        @include breakpoint( large ) {
             background-position: center;
         }
 
@@ -101,12 +101,13 @@
 } // .header-contact
 
 
-.header-widget-area {
+.site-header .header-widget-area {
 
-    @include breakpoint( medium ) {
+    @include breakpoint( large ) {
         clear: both;
         margin-top: $space-default + $space-default-middle;
         width: 100%;
+        text-align: center;
     }
 
 } // .header-widget-area
