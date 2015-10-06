@@ -1,0 +1,68 @@
+//=======================================//
+//  RenaRomano | Responsive Breakpoints  //
+//=======================================//
+
+
+
+//=============//
+//  VARIABLES  //
+//=============//
+
+//  BREAKPOINT                      Width       DESCRIPTION
+//  ----------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  380px;      // Extra Extra Small up to Extra Small
+    $breakpoint-extra-small:        600px;      // Extra Small up tp Small
+    $breakpoint-small:              768px;      // Small up to Small Medium
+    $breakpoint-small-medium:       980px;      // Small Medium up to Medium
+    $breakpoint-medium:             1200px;     // Medium up to Large (Desktop)
+    $breakpoint-large:              1366px;     // Large (Desktop) to Extra Large
+    $breakpoint-extra-large:        1700px;     // Extra Large to Extra Extra Large)
+    $breakpoint-extra-extra-large:  1920px;     // Extra Extra Large and Greater
+
+    $breakpoint-height-large:       890px;      // To be used with menu fixing vs absolute
+    $breakpoint-height-medium:      710px;
+
+
+
+//=========//
+//  MIXIN  //
+//=========//
+
+@mixin breakpoint( $class ) {
+
+
+    //-- WIDTHS --//
+
+    @if $class == extra-extra-small {
+        @media (max-width: $breakpoint-extra-extra-small) { @content; }
+    }
+
+    @if $class == extra-small {
+        @media (max-width: $breakpoint-extra-small) { @content; }
+    }
+
+    @if $class == small {
+        @media (max-width: $breakpoint-small) { @content; }
+    }
+
+    @if $class == small-medium {
+        @media (max-width: $breakpoint-small-medium) { @content; }
+    }
+
+    @if $class == medium {
+        @media (max-width: $breakpoint-medium) { @content; }
+    }
+
+    @if $class == large {
+        @media (max-width: $breakpoint-large) { @content; }
+    }
+
+    @if $class == extra-large {
+        @media (max-width: $breakpoint-extra-large) { @content; }
+    }
+
+    @if $class == extra-extra-large {
+        @media (max-width: $breakpoint-extra-extra-large) { @content; }
+    }
+
+} // breakpoint()
