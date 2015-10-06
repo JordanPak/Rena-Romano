@@ -86,5 +86,16 @@
         } // a
 
     } // .simple-social-icons ul li
-    
+
 } // .header-contact
+
+
+.header-widget-area {
+
+    @include breakpoint( medium ) {
+        clear: both;
+        margin-top: $space-default + $space-default-half;
+        width: 100%;
+    }
+
+} // .header-widget-area
