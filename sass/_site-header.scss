@@ -19,7 +19,13 @@
     .wrap {
         position: relative;
         padding: $space-default 0 12px 0;
-    }
+
+        @include breakpoint( small ) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+    } // .wrap
 
 } // .site-header
 
@@ -29,6 +35,10 @@
     @include breakpoint( large ) {
         margin-top: $space-default-half;
         width: 100%;
+    }
+
+    @include breakpoint( small ) {
+        width: 75%;
     }
 
 } // .title-area
@@ -41,6 +51,10 @@
 
         @include breakpoint( large ) {
             background-position: center;
+        }
+
+        @include breakpoint( small ) {
+            background-position: left;
         }
 
     } // .site-title > a
@@ -98,6 +112,10 @@
 
     } // .simple-social-icons ul li
 
+    @include breakpoint( small ) {
+        padding-right: 5%;
+    }
+
 } // .header-contact
 
 
@@ -111,7 +129,7 @@
     }
 
     @include breakpoint( small ) {
-        margin-top: ($space-default * 2) + $space-default-middle;
+        display: none;
     }
 
 } // .header-widget-area

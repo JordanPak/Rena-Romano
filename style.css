@@ -1508,6 +1508,10 @@ body {
   .site-header .wrap {
     position: relative;
     padding: 40px 0 12px 0; }
+    @media (max-width: 800px) {
+      .site-header .wrap {
+        padding-left: 5%;
+        padding-right: 5%; } }
 
 .title-area {
   width: 380px; }
@@ -1515,6 +1519,9 @@ body {
     .title-area {
       margin-top: 20px;
       width: 100%; } }
+  @media (max-width: 800px) {
+    .title-area {
+      width: 75%; } }
 
 .header-image .site-title > a {
   min-height: 80px;
@@ -1522,6 +1529,9 @@ body {
   @media (max-width: 1200px) {
     .header-image .site-title > a {
       background-position: center; } }
+  @media (max-width: 800px) {
+    .header-image .site-title > a {
+      background-position: left; } }
 
 .header-contact {
   position: absolute;
@@ -1557,6 +1567,9 @@ body {
       .header-contact .simple-social-icons ul li a:hover {
         color: #eecc99 !important;
         background: #FFFFFF !important; }
+  @media (max-width: 800px) {
+    .header-contact {
+      padding-right: 5%; } }
 
 @media (max-width: 1200px) {
   .site-header .header-widget-area {
@@ -1566,7 +1579,11 @@ body {
     text-align: center; } }
 @media (max-width: 800px) {
   .site-header .header-widget-area {
-    margin-top: 110px; } }
+    display: none; } }
+
+@media (max-width: 800px) {
+  .nav-header {
+    display: none; } }
 
 .genesis-nav-menu {
   position: absolute;
@@ -1606,6 +1623,76 @@ body {
       color: #eecc99; }
   .genesis-nav-menu > .last > a {
     padding-right: 24px; }
+
+.menu-btn {
+  display: none;
+  position: relative;
+  float: right;
+  margin-top: 48px;
+  margin-right: 0;
+  padding: 15px 13px;
+  margin-bottom: 8px;
+  background-color: #FFFFFF;
+  background-image: none;
+  border-radius: 6px; }
+  .menu-btn:hover .icon-bar {
+    background-color: #FFFFFF; }
+  .menu-btn .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #004F70; }
+  .menu-btn .icon-bar + .icon-bar {
+    margin-top: 4px; }
+  .menu-btn .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0; }
+  .menu-btn:hover, .menu-btn:focus {
+    background-color: #eecc99;
+    border-color: #eecc99; }
+  @media (max-width: 800px) {
+    .menu-btn {
+      display: block; } }
+
+.pushy {
+  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.8);
+  background: #000000;
+  background: #004F70;
+  border-left: 4px solid #FFFFFF; }
+  .pushy .genesis-nav-menu {
+    position: static; }
+    .pushy .genesis-nav-menu > li {
+      box-shadow: none;
+      float: none;
+      width: 100%; }
+      .pushy .genesis-nav-menu > li:hover {
+        box-shadow: none;
+        background: #FFFFFF; }
+        .pushy .genesis-nav-menu > li:hover > a {
+          color: #004F70; }
+    .pushy .genesis-nav-menu a {
+      float: none;
+      width: 100%;
+      clear: both;
+      padding: 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-align: center; }
+      .pushy .genesis-nav-menu a:hover {
+        color: #eecc99;
+        background: #FFFFFF; }
+    .pushy .genesis-nav-menu .current-menu-item > a {
+      color: #000000;
+      box-shadow: none;
+      background: #FFFFFF; }
 
 .site-footer {
   background: #292929;
