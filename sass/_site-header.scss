@@ -25,6 +25,12 @@
 
 .title-area {
     width: 380px;
+
+    @include breakpoint( medium ) {
+        margin-top: $space-default-half;
+        width: 100%;
+    }
+
 } // .title-area
 
 .header-image {
@@ -32,7 +38,12 @@
     .site-title > a {
         min-height: 80px;
         width: 100%;
-    }
+
+        @include breakpoint( medium ) {
+            background-position: center;
+        }
+
+    } // .site-title > a
 
 } // .header-image
 
@@ -94,7 +105,7 @@
 
     @include breakpoint( medium ) {
         clear: both;
-        margin-top: $space-default + $space-default-half;
+        margin-top: $space-default + $space-default-middle;
         width: 100%;
     }
 

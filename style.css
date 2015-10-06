@@ -1405,10 +1405,17 @@ body {
 
 .title-area {
   width: 380px; }
+  @media (max-width: 980px) {
+    .title-area {
+      margin-top: 20px;
+      width: 100%; } }
 
 .header-image .site-title > a {
   min-height: 80px;
   width: 100%; }
+  @media (max-width: 980px) {
+    .header-image .site-title > a {
+      background-position: center; } }
 
 .header-contact {
   position: absolute;
@@ -1448,7 +1455,7 @@ body {
 @media (max-width: 980px) {
   .header-widget-area {
     clear: both;
-    margin-top: 60px;
+    margin-top: 70px;
     width: 100%; } }
 
 .genesis-nav-menu {
