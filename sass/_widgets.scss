@@ -316,6 +316,23 @@
             margin-bottom: 0;
         }
 
+        @include breakpoint( small ) {
+            float: none;
+            margin: 0 0 $space-default 0;
+            padding: $space-default-half;
+            width: 100%;
+
+            .entry-title {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .entry-meta {
+                margin-bottom: 14px;
+            }
+
+        } // Breakpoint: Sm
+
     } // article.type-post
 
 } // #home-more

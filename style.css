@@ -1929,6 +1929,17 @@ body {
       color: #a7a9ae; }
     #home-more article.type-post .entry-content p {
       margin-bottom: 0; }
+    @media (max-width: 800px) {
+      #home-more article.type-post {
+        float: none;
+        margin: 0 0 40px 0;
+        padding: 20px;
+        width: 100%; }
+        #home-more article.type-post .entry-title {
+          font-size: 24px;
+          margin-bottom: 5px; }
+        #home-more article.type-post .entry-meta {
+          margin-bottom: 14px; } }
 
 .cycle-slideshow {
   margin-bottom: 60px;
