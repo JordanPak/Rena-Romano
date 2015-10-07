@@ -48,6 +48,7 @@
     .site-title > a {
         min-height: 80px;
         width: 100%;
+        background-size: contain;
 
         @include breakpoint( large ) {
             background-position: center;
@@ -55,6 +56,10 @@
 
         @include breakpoint( small ) {
             background-position: left;
+        }
+
+        @include breakpoint( extra-small ) {
+            background-size: contain;
         }
 
     } // .site-title > a

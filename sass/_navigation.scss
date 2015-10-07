@@ -134,6 +134,10 @@
         display: block;
     }
 
+    @include breakpoint( extra-extra-small ) {
+        padding: 12px 10px;
+    }
+
 } // .menu-btn
 
 

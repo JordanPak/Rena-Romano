@@ -8,7 +8,13 @@ body {
 
 .site-inner {
     padding-top: 0;
-}
+
+    @include breakpoint( extra-small ) {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+} // .site-inner
 
 .content .entry, .sidebar .widget {
     border: 8px solid $gray-light;

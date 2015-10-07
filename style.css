@@ -1484,6 +1484,10 @@ body {
 
 .site-inner {
   padding-top: 0; }
+  @media (max-width: 600px) {
+    .site-inner {
+      padding-left: 2%;
+      padding-right: 2%; } }
 
 .content .entry, .sidebar .widget {
   border: 8px solid #f5f5f5; }
@@ -1525,13 +1529,17 @@ body {
 
 .header-image .site-title > a {
   min-height: 80px;
-  width: 100%; }
+  width: 100%;
+  background-size: contain; }
   @media (max-width: 1200px) {
     .header-image .site-title > a {
       background-position: center; } }
   @media (max-width: 800px) {
     .header-image .site-title > a {
       background-position: left; } }
+  @media (max-width: 600px) {
+    .header-image .site-title > a {
+      background-size: contain; } }
 
 .header-contact {
   position: absolute;
@@ -1660,6 +1668,9 @@ body {
   @media (max-width: 800px) {
     .menu-btn {
       display: block; } }
+  @media (max-width: 460px) {
+    .menu-btn {
+      padding: 12px 10px; } }
 
 .pushy {
   background: rgba(255, 255, 255, 0.8);
@@ -1793,6 +1804,25 @@ body {
       .home-intro .enews form input[type="submit"]:hover, .home-intro .enews form input[type="submit"]:focus {
         background: #FFFFFF;
         color: #eecc99; }
+  @media (max-width: 800px) {
+    .home-intro .enews .widget-title, .home-intro .enews p {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .home-intro .enews form {
+      position: static;
+      width: 100%;
+      text-align: left; } }
+  @media (max-width: 600px) {
+    .home-intro .enews form input {
+      display: block;
+      margin: 0 0 10px 0;
+      width: 100%;
+      clear: both; }
+    .home-intro .enews form input[type="submit"] {
+      margin: 0;
+      width: 100%;
+      clear: both; } }
 
 .gcta-wrap {
   margin-bottom: 0 !important;
@@ -1854,6 +1884,11 @@ body {
       #home-services .textwidget .button:hover {
         background: #eecc99;
         color: #FFFFFF; }
+    @media (max-width: 800px) {
+      #home-services .textwidget {
+        margin: 0;
+        width: 100%;
+        clear: both; } }
   #home-services .widget:last-child .textwidget {
     border-right: 1px solid #292929; }
   #home-services .fa {
@@ -1862,6 +1897,9 @@ body {
     margin-bottom: 40px;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
+    @media (max-width: 800px) {
+      #home-services .fa {
+        display: none; } }
   #home-services h2 {
     display: block;
     margin-bottom: 20px;
@@ -1895,6 +1933,17 @@ body {
       color: #a7a9ae; }
     #home-more article.type-post .entry-content p {
       margin-bottom: 0; }
+    @media (max-width: 800px) {
+      #home-more article.type-post {
+        float: none;
+        margin: 0 0 40px 0;
+        padding: 20px;
+        width: 100%; }
+        #home-more article.type-post .entry-title {
+          font-size: 24px;
+          margin-bottom: 5px; }
+        #home-more article.type-post .entry-meta {
+          margin-bottom: 14px; } }
 
 .cycle-slideshow {
   margin-bottom: 60px;
@@ -1912,6 +1961,20 @@ body {
       font-size: 120px;
       color: #eecc99;
       text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
+      @media (max-width: 600px) {
+        .cycle-slideshow blockquote::before {
+          top: -40px;
+          left: 45%;
+          text-align: center; } }
+    @media (max-width: 800px) {
+      .cycle-slideshow blockquote {
+        padding: 0 60px !important; } }
+    @media (max-width: 600px) {
+      .cycle-slideshow blockquote {
+        padding: 60px 40px 0 40px !important; } }
+    @media (max-width: 460px) {
+      .cycle-slideshow blockquote {
+        padding: 60px 0 0 0 !important; } }
   .cycle-slideshow .testimonial_body {
     margin-bottom: 40px;
     font-size: 32px;
@@ -1919,6 +1982,12 @@ body {
     font-weight: 400; }
     .cycle-slideshow .testimonial_body strong, .cycle-slideshow .testimonial_body b {
       font-weight: 700; }
+    @media (max-width: 800px) {
+      .cycle-slideshow .testimonial_body {
+        font-size: 24px; } }
+    @media (max-width: 600px) {
+      .cycle-slideshow .testimonial_body {
+        font-size: 22px; } }
   .cycle-slideshow .testimonial-client {
     font-size: 20px;
     font-weight: 700; }
