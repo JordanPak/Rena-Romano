@@ -1800,6 +1800,25 @@ body {
       .home-intro .enews form input[type="submit"]:hover, .home-intro .enews form input[type="submit"]:focus {
         background: #FFFFFF;
         color: #eecc99; }
+  @media (max-width: 800px) {
+    .home-intro .enews .widget-title, .home-intro .enews p {
+      display: block;
+      width: 100%;
+      text-align: center; }
+    .home-intro .enews form {
+      position: static;
+      width: 100%;
+      text-align: left; } }
+  @media (max-width: 600px) {
+    .home-intro .enews form input {
+      display: block;
+      margin: 0 0 10px 0;
+      width: 100%;
+      clear: both; }
+    .home-intro .enews form input[type="submit"] {
+      margin: 0;
+      width: 100%;
+      clear: both; } }
 
 .gcta-wrap {
   margin-bottom: 0 !important;

@@ -130,6 +130,44 @@
 
     } // form
 
+    @include breakpoint( small ) {
+
+        .widget-title, p {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            position: static;
+            width: 100%;
+            text-align: left;
+        } // form
+
+    } // Breakpoint: S
+
+
+    @include breakpoint ( extra-small ) {
+
+        form {
+
+            input {
+                display: block;
+                margin: 0 0 10px 0;
+                width: 100%;
+                clear: both;
+            }
+
+            input[type="submit"] {
+                margin: 0;
+                width: 100%;
+                clear: both;
+            }
+
+        } // form
+
+    } // Breakpoint: XS
+
 } // .home-intro .enews
 
 .gcta-wrap {
