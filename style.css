@@ -1484,6 +1484,10 @@ body {
 
 .site-inner {
   padding-top: 0; }
+  @media (max-width: 600px) {
+    .site-inner {
+      padding-left: 2%;
+      padding-right: 2%; } }
 
 .content .entry, .sidebar .widget {
   border: 8px solid #f5f5f5; }
