@@ -1946,6 +1946,20 @@ body {
       font-size: 120px;
       color: #eecc99;
       text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
+      @media (max-width: 600px) {
+        .cycle-slideshow blockquote::before {
+          top: -40px;
+          left: 45%;
+          text-align: center; } }
+    @media (max-width: 800px) {
+      .cycle-slideshow blockquote {
+        padding: 0 60px !important; } }
+    @media (max-width: 600px) {
+      .cycle-slideshow blockquote {
+        padding: 60px 40px 0 40px !important; } }
+    @media (max-width: 460px) {
+      .cycle-slideshow blockquote {
+        padding: 60px 0 0 0 !important; } }
   .cycle-slideshow .testimonial_body {
     margin-bottom: 40px;
     font-size: 32px;
@@ -1953,6 +1967,12 @@ body {
     font-weight: 400; }
     .cycle-slideshow .testimonial_body strong, .cycle-slideshow .testimonial_body b {
       font-weight: 700; }
+    @media (max-width: 800px) {
+      .cycle-slideshow .testimonial_body {
+        font-size: 24px; } }
+    @media (max-width: 600px) {
+      .cycle-slideshow .testimonial_body {
+        font-size: 22px; } }
   .cycle-slideshow .testimonial-client {
     font-size: 20px;
     font-weight: 700; }

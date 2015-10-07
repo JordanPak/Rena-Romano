@@ -340,6 +340,26 @@
             font-size: 120px;
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+
+            @include breakpoint( extra-small ) {
+                // position: static;
+                top: -$space-default;
+                left: 45%;
+                text-align: center;
+            }
+
+        } // &::before
+
+        @include breakpoint( small ) {
+            padding: 0 ($space-default + $space-default-half) !important;
+        }
+
+        @include breakpoint( extra-small ) {
+            padding: 60px $space-default 0 $space-default !important;
+        }
+
+        @include breakpoint( extra-extra-small ) {
+            padding: 60px 0 0 0 !important;
         }
 
     } // blockquote
@@ -352,6 +372,14 @@
 
         strong, b {
             font-weight: 700;
+        }
+
+        @include breakpoint( small ) {
+            font-size: 24px;
+        }
+
+        @include breakpoint( extra-small ) {
+            font-size: 22px;
         }
 
     } // .testimonial_body
