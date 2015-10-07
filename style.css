@@ -1861,6 +1861,11 @@ body {
       #home-services .textwidget .button:hover {
         background: #eecc99;
         color: #FFFFFF; }
+    @media (max-width: 800px) {
+      #home-services .textwidget {
+        margin: 0;
+        width: 100%;
+        clear: both; } }
   #home-services .widget:last-child .textwidget {
     border-right: 1px solid #292929; }
   #home-services .fa {
@@ -1869,6 +1874,9 @@ body {
     margin-bottom: 40px;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
+    @media (max-width: 800px) {
+      #home-services .fa {
+        display: none; } }
   #home-services h2 {
     display: block;
     margin-bottom: 20px;

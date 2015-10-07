@@ -212,6 +212,12 @@
 
         } // .button
 
+        @include breakpoint( small ) {
+            margin: 0;
+            width: 100%;
+            clear: both;
+        } // small br
+
     } // .textwidget
 
     .widget:last-child .textwidget {
@@ -224,7 +230,12 @@
         margin-bottom: $space-default;
 
         @include transition-ease-in-out();
-    }
+
+        @include breakpoint( small ) {
+            display: none;
+        }
+
+    } // .fa
 
     h2 {
         display: block;
