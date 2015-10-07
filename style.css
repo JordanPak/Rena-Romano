@@ -1525,13 +1525,17 @@ body {
 
 .header-image .site-title > a {
   min-height: 80px;
-  width: 100%; }
+  width: 100%;
+  background-size: contain; }
   @media (max-width: 1200px) {
     .header-image .site-title > a {
       background-position: center; } }
   @media (max-width: 800px) {
     .header-image .site-title > a {
       background-position: left; } }
+  @media (max-width: 600px) {
+    .header-image .site-title > a {
+      background-size: contain; } }
 
 .header-contact {
   position: absolute;
@@ -1660,6 +1664,9 @@ body {
   @media (max-width: 800px) {
     .menu-btn {
       display: block; } }
+  @media (max-width: 460px) {
+    .menu-btn {
+      padding: 12px 10px; } }
 
 .pushy {
   background: rgba(255, 255, 255, 0.8);
