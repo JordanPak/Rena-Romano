@@ -1459,6 +1459,13 @@ body {
   font-size: 52px;
   font-weight: 700;
   color: #004F70; }
+  @media (max-width: 800px) {
+    .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
+      font-size: 48px; } }
+  @media (max-width: 600px) {
+    .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
+      font-size: 42px;
+      padding-bottom: 40px; } }
 
 h2 {
   margin-bottom: 30px;
@@ -1491,6 +1498,13 @@ body {
 
 .content .entry, .sidebar .widget {
   border: 8px solid #f5f5f5; }
+
+@media (max-width: 800px) {
+  .content .entry {
+    padding: 40px; } }
+@media (max-width: 600px) {
+  .content .entry {
+    padding: 30px; } }
 
 .post-type-archive-product main.content {
   padding: 40px;
