@@ -64,6 +64,15 @@
 
         } // .added_to_cart.wc-forward
 
+        @include breakpoint( extra-small ) {
+
+            li.product {
+                margin: 0 0 ($space-default + $space-default-middle) 0 !important;
+                width: 100% !important;
+            }
+
+        } // Breakpoint: XS
+
     } // ul.products
 
     a.button, button.button, input.button {
