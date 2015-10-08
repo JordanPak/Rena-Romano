@@ -80,19 +80,50 @@
 } // .genesis-nav-menu
 
 
-
-// MOBILE PRIMARY MENU //
-.menu-btn {
+#rena-mobile-topnav {
     display: none;
     position: relative;
     float: right;
-	margin-top: 48px;
+    margin-top: 48px;
     margin-right: 0;
+
+    @include breakpoint( small ) {
+        display: block;
+    }
+
+    .cart-contents {
+        display: inline-block;
+        padding: 8px 11px 9px 11px;
+        margin-bottom: 8px;
+        height: 44px;
+        background-color: $white;
+        border-radius: 6px 0 0 6px;
+        color: $secondary-dark;
+
+        .fa {
+            margin-right: 7px;
+        }
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+
+    } // .cart-contents
+
+} // #rena-mobile-topnav
+
+
+// MOBILE PRIMARY MENU //
+.menu-btn {
+    display: inline-block;
     padding: 15px 13px;
     margin-bottom: 8px;
+    height: 44px;
 	background-color: $white;
     background-image: none;
-	border-radius: 6px;
+	border-radius: 0 6px 6px 0;
+    border-left: 2px solid $gray-light;
 
     &:hover {
 
@@ -128,10 +159,6 @@
     &:hover, &:focus {
         background-color: $primary;
         border-color: $primary;
-    }
-
-    @include breakpoint( small ) {
-        display: block;
     }
 
     @include breakpoint( extra-extra-small ) {

@@ -85,12 +85,18 @@ function rena_mobile_menu_button() {
     // Output Button
     ?>
 
-    <button type="button" class="menu-btn">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
+    <div id="rena-mobile-topnav">
+
+        <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+            <i class="fa fa-shopping-cart"></i><?php echo sprintf (_n( '%d', '%d', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?>
+        </a><button type="button" class="menu-btn">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+    </div><!-- /#rena-mobile-topnav -->
 
     <?php
 

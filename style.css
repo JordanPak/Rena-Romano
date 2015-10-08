@@ -1646,17 +1646,38 @@ body {
   .genesis-nav-menu > .last > a {
     padding-right: 24px; }
 
-.menu-btn {
+#rena-mobile-topnav {
   display: none;
   position: relative;
   float: right;
   margin-top: 48px;
-  margin-right: 0;
+  margin-right: 0; }
+  @media (max-width: 800px) {
+    #rena-mobile-topnav {
+      display: block; } }
+  #rena-mobile-topnav .cart-contents {
+    display: inline-block;
+    padding: 8px 11px 9px 11px;
+    margin-bottom: 8px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 6px 0 0 6px;
+    color: #004F70; }
+    #rena-mobile-topnav .cart-contents .fa {
+      margin-right: 7px; }
+    #rena-mobile-topnav .cart-contents:hover {
+      background: #eecc99;
+      color: #FFFFFF; }
+
+.menu-btn {
+  display: inline-block;
   padding: 15px 13px;
   margin-bottom: 8px;
+  height: 44px;
   background-color: #FFFFFF;
   background-image: none;
-  border-radius: 6px; }
+  border-radius: 0 6px 6px 0;
+  border-left: 2px solid #f5f5f5; }
   .menu-btn:hover .icon-bar {
     background-color: #FFFFFF; }
   .menu-btn .icon-bar {
@@ -1679,9 +1700,6 @@ body {
   .menu-btn:hover, .menu-btn:focus {
     background-color: #eecc99;
     border-color: #eecc99; }
-  @media (max-width: 800px) {
-    .menu-btn {
-      display: block; } }
   @media (max-width: 460px) {
     .menu-btn {
       padding: 12px 10px; } }
