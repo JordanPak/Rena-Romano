@@ -190,6 +190,11 @@
 
     } // .gcta-button
 
+    @include breakpoint( small ) {
+        text-align: center !important;
+        background-image: none !important;
+    }
+
 } // gcta-wrap
 
 #home-services {
