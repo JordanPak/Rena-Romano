@@ -34,6 +34,7 @@
     input[type="submit"] {
         background: $primary;
         font-weight: 700;
+        border-radius: 0;
     }
 
 } // .enews-widget
@@ -88,6 +89,7 @@
             width: 36%;
             font-size: 16px;
             font-weight: 400;
+            border-radius: 0;
 
             &::-webkit-input-placeholder {
                font-weight: 400;
@@ -244,6 +246,7 @@
             letter-spacing: 1px;
             background: none;
             border: 2px solid $primary;
+            border-radius: 0;
             color: $primary;
 
             @include transition-ease-in-out();
