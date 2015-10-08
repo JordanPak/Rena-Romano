@@ -65,7 +65,18 @@ body {
          font-size: 52px;
          font-weight: 700;
          color: $secondary-dark;
-     }
+
+         @include breakpoint( small ) {
+             font-size: 48px;
+         }
+
+         @include breakpoint( extra-small ) {
+             font-size: 42px;
+             padding-bottom: $space-default;
+         }
+
+
+     } // .entry-title, .page-title
 
  } // .page-template-default
 

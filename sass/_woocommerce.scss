@@ -4,14 +4,30 @@
 
 .woocommerce { // Body Class
 
+    .product_title {
+        padding-bottom: $space-default !important;
+        text-align: left !important;
 
-    // .woocommerce-result-count {
-    //     display: none;
-    // }
+        @include breakpoint( medium ) {
+            font-size: 42px;
+        }
 
-    // .woocommerce-ordering {
-    //     display: none;
-    // }
+        @include breakpoint( small ) {
+            text-align: center !important;
+        }
+
+    } // .product_title
+
+    .price {
+        font-size: 24px !important;
+        font-weight: 700 !important;
+        text-align: left !important;
+
+        @include breakpoint( small ) {
+            text-align: center !important;
+        }
+
+    } // .price
 
     ul.products {
 
@@ -25,10 +41,37 @@
             }
 
             .price {
-                // color: $primary !important;
+                text-align: center !important;
             }
 
         } // li.product
+
+        .added_to_cart.wc-forward {
+            display: inline-block !important;
+            box-sizing: border-box !important;
+            padding: 8px 13px !important;
+            border: 2px solid $wc-green;
+            text-transform: uppercase !important;
+            font-size: 16px !important;
+            color: $wc-green !important;
+
+            @include transition-ease-in-out();
+
+            &:hover {
+                background: $wc-green;
+                color: $white !important;
+            }
+
+        } // .added_to_cart.wc-forward
+
+        @include breakpoint( extra-small ) {
+
+            li.product {
+                margin: 0 0 ($space-default + $space-default-middle) 0 !important;
+                width: 100% !important;
+            }
+
+        } // Breakpoint: XS
 
     } // ul.products
 
@@ -55,9 +98,16 @@
     .related.products {
         clear: both;
         margin-top: $space-default * 2;
+        padding-top: $space-default + $space-default-half;
+        border-top: 2px solid $gray-light;
 
         @include clearfix();
-    }
+
+        h2 {
+            margin-bottom: $space-default !important;
+        }
+
+    } // .related_products
 
     table.shop_table {
         border: none !important;
@@ -101,3 +151,29 @@
     }
 
 } // .woocommerce
+
+
+.woocommerce-checkout {
+
+    .woocommerce {
+
+        h2, h3 {
+            font-weight: 700 !important;
+        }
+
+        h3 {
+            font-size: 32px !important;
+        }
+
+        .col2-set .col-2, .col2-set .col-1 {
+
+            @include breakpoint( medium ) {
+                width: 100% !important;
+                margin: 0 0 ($space-default + $space-default-half) 0 !important;
+            }
+
+        } // .col2-set .col-2
+
+    } // .woocommerce
+
+} // .woocommerce-checkout

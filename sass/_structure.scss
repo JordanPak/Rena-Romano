@@ -20,6 +20,18 @@ body {
     border: 8px solid $gray-light;
 }
 
+.content .entry {
+
+    @include breakpoint( small ) {
+        padding: $space-default;
+    }
+
+    @include breakpoint( extra-small ) {
+        padding: $space-default-middle;
+    }
+
+} // .content .entry
+
 .post-type-archive-product { // Body class
 
     main.content {
