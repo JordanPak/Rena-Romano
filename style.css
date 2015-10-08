@@ -1848,6 +1848,10 @@ body {
   .gcta-wrap .gcta-button:hover {
     background: #eecc99 !important;
     border-color: #eecc99 !important; }
+  @media (max-width: 800px) {
+    .gcta-wrap {
+      text-align: center !important;
+      background-image: none !important; } }
 
 #home-services {
   margin-bottom: 40px;
