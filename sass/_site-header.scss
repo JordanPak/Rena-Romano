@@ -25,6 +25,11 @@
             padding-right: 5%;
         }
 
+        @include breakpoint( extra-extra-small ) {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+
     } // .wrap
 
 } // .site-header
@@ -39,6 +44,10 @@
 
     @include breakpoint( small ) {
         width: 75%;
+    }
+
+    @include breakpoint( 540px ) {
+        width: 66%;
     }
 
 } // .title-area

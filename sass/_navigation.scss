@@ -87,12 +87,9 @@
     margin-top: 48px;
     margin-right: 0;
 
-    @include breakpoint( small ) {
-        display: block;
-    }
-
     .cart-contents {
-        display: inline-block;
+        display: block;
+        float: left;
         padding: 8px 12px 9px 11px;
         margin-bottom: 8px;
         height: 44px;
@@ -111,12 +108,17 @@
 
     } // .cart-contents
 
+    @include breakpoint( small ) {
+        display: block;
+    }
+
 } // #rena-mobile-topnav
 
 
 // MOBILE PRIMARY MENU //
 .menu-btn {
-    display: inline-block;
+    display: block;
+    float: left;
     padding: 15px 13px;
     margin-bottom: 8px;
     height: 44px;

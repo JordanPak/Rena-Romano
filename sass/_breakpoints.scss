@@ -47,4 +47,8 @@
         @media (max-width: $breakpoint-large) { @content; }
     }
 
+    @else {
+        @media (max-width: $class) { @content; }
+    }
+
 } // breakpoint()
