@@ -1,0 +1,54 @@
+//=======================================//
+//  RenaRomano | Responsive Breakpoints  //
+//=======================================//
+
+
+
+//=============//
+//  VARIABLES  //
+//=============//
+
+//  BREAKPOINT                      Width       DESCRIPTION
+//  ----------------------------------------------------------------------------------
+    $breakpoint-extra-extra-small:  460px; //380px;      // Extra Extra Small up to Extra Small
+    $breakpoint-extra-small:        600px;      // Extra Small up tp Small
+    $breakpoint-small:              800px;      // Small up to Small Medium
+    $breakpoint-medium:             980px;      // Small Medium up to Medium
+    $breakpoint-large:             1200px;      // Medium up to Large (Desktop)
+
+
+
+//=========//
+//  MIXIN  //
+//=========//
+
+@mixin breakpoint( $class ) {
+
+
+    //-- WIDTHS --//
+
+    @if $class == extra-extra-small {
+        @media (max-width: $breakpoint-extra-extra-small) { @content; }
+    }
+
+    @if $class == extra-small {
+        @media (max-width: $breakpoint-extra-small) { @content; }
+    }
+
+    @if $class == small {
+        @media (max-width: $breakpoint-small) { @content; }
+    }
+
+    @if $class == medium {
+        @media (max-width: $breakpoint-medium) { @content; }
+    }
+
+    @if $class == large {
+        @media (max-width: $breakpoint-large) { @content; }
+    }
+
+    @else {
+        @media (max-width: $class) { @content; }
+    }
+
+} // breakpoint()

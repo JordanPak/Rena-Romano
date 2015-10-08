@@ -2,6 +2,14 @@
 //  Rena Romano | Navigation  //
 //============================//
 
+.nav-header {
+
+    @include breakpoint( small ) {
+        display: none;
+    }
+
+} // .nav-header
+
 
 // Global Genesis Nav
 .genesis-nav-menu {
@@ -18,7 +26,7 @@
         a {
         }
 
-        &:hover {
+        &:hover, .wpmenucart-contents {
             box-shadow: inset 0 -6px $white;
             background: linear-gradient( rgba(0,0,0,0), rgba(255,255,255,0.3) );
 
@@ -70,3 +78,153 @@
     }
 
 } // .genesis-nav-menu
+
+
+#rena-mobile-topnav {
+    display: none;
+    position: relative;
+    float: right;
+    margin-top: 48px;
+    margin-right: 0;
+
+    .cart-contents {
+        display: block;
+        float: left;
+        padding: 8px 12px 9px 11px;
+        margin-bottom: 8px;
+        height: 44px;
+        background-color: $white;
+        border-radius: 6px 0 0 6px;
+        color: $secondary-dark;
+
+        span {
+            margin-left: 7px;
+        }
+
+        &:hover {
+            background: $primary;
+            color: $white;
+        }
+
+    } // .cart-contents
+
+    @include breakpoint( small ) {
+        display: block;
+    }
+
+} // #rena-mobile-topnav
+
+
+// MOBILE PRIMARY MENU //
+.menu-btn {
+    display: block;
+    float: left;
+    padding: 15px 13px;
+    margin-bottom: 8px;
+    height: 44px;
+	background-color: $white;
+    background-image: none;
+	border-radius: 0 6px 6px 0;
+    border-left: 2px solid $gray-light;
+
+    &:hover {
+
+        .icon-bar {
+            background-color: $white;
+        }
+
+    } // hover
+
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $secondary-dark;
+    } // .icon-bar
+
+    .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    } // .sr-only
+
+    &:hover, &:focus {
+        background-color: $primary;
+        border-color: $primary;
+    }
+
+    @include breakpoint( extra-extra-small ) {
+        padding: 12px 10px;
+    }
+
+} // .menu-btn
+
+
+
+.pushy {
+    background: rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.8);
+    background: $black;
+    background: $secondary-dark;
+    border-left: 4px solid $white;
+
+    .genesis-nav-menu {
+        position: static;
+
+        > li {
+            box-shadow: none;
+            float: none;
+            width: 100%;
+
+            a {
+            }
+
+            &:hover, .wpmenucart-contents {
+                box-shadow: none;
+                background: $white;
+                color: $secondary-dark;
+
+                > a {
+                    color: $secondary-dark; //$primary;
+                    // background: $white;
+                }
+
+            } // hover
+
+        } // > li
+
+        a {
+            float: none;
+            width: 100%;
+            clear: both;
+            padding: $space-default-half;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+
+            &:hover {
+                color: $primary;
+                background: $white;
+            }
+
+        } // > li > a
+
+        .current-menu-item > a {
+            color: $black;
+            box-shadow: none;
+            background: $white;
+        }
+
+    } // .genesis-nav-menu
+
+} // .pushy .genesis-nav-menu

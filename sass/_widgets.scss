@@ -34,6 +34,7 @@
     input[type="submit"] {
         background: $primary;
         font-weight: 700;
+        border-radius: 0;
     }
 
 } // .enews-widget
@@ -88,6 +89,7 @@
             width: 36%;
             font-size: 16px;
             font-weight: 400;
+            border-radius: 0;
 
             &::-webkit-input-placeholder {
                font-weight: 400;
@@ -130,6 +132,44 @@
 
     } // form
 
+    @include breakpoint( small ) {
+
+        .widget-title, p {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            position: static;
+            width: 100%;
+            text-align: left;
+        } // form
+
+    } // Breakpoint: S
+
+
+    @include breakpoint ( extra-small ) {
+
+        form {
+
+            input {
+                display: block;
+                margin: 0 0 10px 0;
+                width: 100%;
+                clear: both;
+            }
+
+            input[type="submit"] {
+                margin: 0;
+                width: 100%;
+                clear: both;
+            }
+
+        } // form
+
+    } // Breakpoint: XS
+
 } // .home-intro .enews
 
 .gcta-wrap {
@@ -151,6 +191,11 @@
         }
 
     } // .gcta-button
+
+    @include breakpoint( small ) {
+        text-align: center !important;
+        background-image: none !important;
+    }
 
 } // gcta-wrap
 
@@ -201,6 +246,7 @@
             letter-spacing: 1px;
             background: none;
             border: 2px solid $primary;
+            border-radius: 0;
             color: $primary;
 
             @include transition-ease-in-out();
@@ -211,6 +257,12 @@
             }
 
         } // .button
+
+        @include breakpoint( small ) {
+            margin: 0;
+            width: 100%;
+            clear: both;
+        } // small br
 
     } // .textwidget
 
@@ -224,7 +276,12 @@
         margin-bottom: $space-default;
 
         @include transition-ease-in-out();
-    }
+
+        @include breakpoint( small ) {
+            display: none;
+        }
+
+    } // .fa
 
     h2 {
         display: block;
@@ -267,6 +324,23 @@
             margin-bottom: 0;
         }
 
+        @include breakpoint( small ) {
+            float: none;
+            margin: 0 0 $space-default 0;
+            padding: $space-default-half;
+            width: 100%;
+
+            .entry-title {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .entry-meta {
+                margin-bottom: 14px;
+            }
+
+        } // Breakpoint: Sm
+
     } // article.type-post
 
 } // #home-more
@@ -291,6 +365,26 @@
             font-size: 120px;
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+
+            @include breakpoint( extra-small ) {
+                // position: static;
+                top: -$space-default;
+                left: 45%;
+                text-align: center;
+            }
+
+        } // &::before
+
+        @include breakpoint( small ) {
+            padding: 0 ($space-default + $space-default-half) !important;
+        }
+
+        @include breakpoint( extra-small ) {
+            padding: 60px $space-default 0 $space-default !important;
+        }
+
+        @include breakpoint( extra-extra-small ) {
+            padding: 60px 0 0 0 !important;
         }
 
     } // blockquote
@@ -303,6 +397,14 @@
 
         strong, b {
             font-weight: 700;
+        }
+
+        @include breakpoint( small ) {
+            font-size: 24px;
+        }
+
+        @include breakpoint( extra-small ) {
+            font-size: 22px;
         }
 
     } // .testimonial_body
