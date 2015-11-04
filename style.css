@@ -1535,10 +1535,11 @@ body {
 .site-header {
   margin-bottom: 40px;
   min-height: 0;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  border-bottom: 8px solid #257090; }
   .site-header .wrap {
     position: relative;
-    padding: 14px 0; }
+    padding: 5px 0; }
     @media (max-width: 800px) {
       .site-header .wrap {
         padding-left: 5%;
@@ -1557,7 +1558,7 @@ body {
         padding-right: 2.5%; } }
 
 .title-area {
-  width: 380px; }
+  width: 300px; }
   @media (max-width: 1200px) {
     .title-area {
       margin-top: 20px;
