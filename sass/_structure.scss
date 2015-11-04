@@ -3,7 +3,7 @@
 //===========================//
 
 body {
-    background: $gray-light;
+	background: url('images/page-bg.jpg') no-repeat top center $primary-bg;
 }
 
 .site-inner {
@@ -17,7 +17,7 @@ body {
 } // .site-inner
 
 .content .entry, .sidebar .widget {
-    border: 8px solid $gray-light;
+    // border: 8px solid $gray-light;
 }
 
 .content .entry {
