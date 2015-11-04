@@ -69,7 +69,7 @@
 
 .header-contact {
     position: absolute;
-    top: 0;
+    top: 14px;
     right: 0;
 
     .widget-area {
@@ -81,21 +81,24 @@
 
     .header-contact-phone {
         display: inline-block;
+		position: relative;
+		top: -1px;
         margin: 0 0 0 10px;
-        padding: 5px 10px;
-        border-top: 2px solid $white; //none;
-        color: $primary;
-        font-size: 16px;
+        padding: 6px 12px;
+        color: $white;
+        font-size: 14px;
         font-weight: 700;
+		line-height: 14px;
         cursor: default;
+		border-radius: 4px;
+		background: $primary;
 
         @include transition-ease-in-out;
 
         &:hover {
             padding: 8px 15px;
-            border-top: 4px solid $primary;
-            color: $primary;
             font-size: 18px;
+			background: $secondary;
         }
 
     } // .header-contact-phone
@@ -105,12 +108,20 @@
         margin: 0 !important;
 
         a {
-            color: $primary !important;
-            background: none !important;
+			margin-left: 6px;
+			padding: 6px;
+            background: $gray-light !important;
+			border-radius: 4px;
+            color: $gray !important;
+			font-size: 14px;
 
             &:hover {
-                color: $primary !important;
-                background: $white !important;
+				margin-left: 6px;
+				padding: 6px;
+	            background: $primary !important;
+				border-radius: 4px;
+	            color: $white !important;
+				font-size: 14px;
             }
 
         } // a
