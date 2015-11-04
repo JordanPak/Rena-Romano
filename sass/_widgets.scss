@@ -194,7 +194,6 @@
 
 #home-services {
     margin-bottom: $space-default;
-    border: 8px solid $gray-light;
 
     @include clearfix();
 
@@ -287,8 +286,6 @@
 } // #home-services
 
 #home-more {
-
-    @include post-border();
     @include clearfix();
 
     article.type-post {
