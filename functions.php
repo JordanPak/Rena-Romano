@@ -58,21 +58,6 @@ function renaromano_global_scripts() {
 
 
 
-//-- HEADER BG --//
-add_action( 'genesis_before_header', 'rena_header_bg' );
-/**
- * Header Background
- *
- * @author Jordan Pakrosnis
- */
-function rena_header_bg() {
-
-    echo '<div id="header-bg"></div>';
-
-} // rena_header_background()
-
-
-
 add_action( 'genesis_header', 'rena_mobile_menu_button', 14 );
 /**
  * RenaRomano Mobile Menu Button
