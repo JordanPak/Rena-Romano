@@ -2,23 +2,14 @@
 //  Rena Romano | Site Header  //
 //=============================//
 
-#header-bg {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    width: 100%;
-	height: auto;
-    background: $white;
-    background-position: center;
-}
-
 .site-header {
+	margin-bottom: 40px;
     min-height: 0;
-    background: none;
+    background: $white;
 
     .wrap {
         position: relative;
-        padding: $space-default 0 12px 0;
+        padding: 14px 0;
 
         @include breakpoint( small ) {
             padding-left: 5%;
