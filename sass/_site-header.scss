@@ -83,7 +83,7 @@
         margin: 0 0 0 10px;
         padding: 5px 10px;
         border-top: 2px solid $white; //none;
-        color: $white;
+        color: $primary;
         font-size: 16px;
         font-weight: 700;
         cursor: default;
@@ -92,9 +92,8 @@
 
         &:hover {
             padding: 8px 15px;
-            background: linear-gradient( rgba(255,255,255,0.3), rgba(0,0,0,0) );
-            border-top: 4px solid $white;
-            color: $white;
+            border-top: 4px solid $primary;
+            color: $primary;
             font-size: 18px;
         }
 
@@ -105,7 +104,7 @@
         margin: 0 !important;
 
         a {
-            color: $white !important;
+            color: $primary !important;
             background: none !important;
 
             &:hover {
