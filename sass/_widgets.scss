@@ -10,7 +10,6 @@
     .widget-title {
         font-weight: 700;
         font-size: 1.5em;
-//        color: $white;
     }
 
 } // .widget
@@ -42,12 +41,9 @@
 // eNews Widget on Home
 .home-intro .enews {
     position: relative;
-    background: $gray-dark;
+    background: $primary-bg-darker;
     margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
     padding: $space-default-half + 10px;
-
-    @include post-border();
-    border-top: none;
 
     @include clearfix();
 
@@ -64,9 +60,8 @@
         display: block;
         margin: 0;
         font-size: 16px;
-        color: $primary;
+        color: $secondary;
         font-style: italic;
-        text-shadow: 1px 1px $black;
     }
 
     form {
@@ -175,8 +170,6 @@
 .gcta-wrap {
 
     margin-bottom: 0 !important;
-    border: 8px solid $gray-light;
-    border-bottom: 0;
     box-shadow: inset 0 -4px $white;
 
     .widget-title strong {
