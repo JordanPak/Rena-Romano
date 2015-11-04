@@ -203,26 +203,26 @@
         padding: ($space-default + $space-default-half) $space-default;
         width: 33.333333333%;
         text-align: center;
-        border-right: 2px solid rgba(0,0,0,0.2);
-        background: $gray-dark;
-        color: $white;
-        box-shadow: 0 -8px $primary, 0 8px $primary;
+        background: $white;
+        box-shadow: 0 -8px $primary-bg-darker, 0 8px $primary-bg-darker;
         cursor: default;
+		border-left: 1px solid $gray-light;
+		border-right: 1px solid $gray-light;
 
         @include transition-ease-in-out();
 
         &:hover {
-            background: rgba(0,0,0,0.87);
+            background: $gray-light;
 
             .fa, p {
-                color: $white;
+                color: $body-text;
             }
 
         } // &:hover
 
         p {
             margin-bottom: $space-default;
-            color: rgba(255,255,255,0.55);
+			color: $gray;
             font-style: italic;
 
             @include transition-ease-in-out();
@@ -230,7 +230,7 @@
 
         .button {
             display: inline-block;
-            padding: 3px 18px;
+            padding: 0 16px 1px 16px;
             font-weight: 700;
             font-size: 16px;
             line-height: 40px;
@@ -238,7 +238,7 @@
             letter-spacing: 1px;
             background: none;
             border: 2px solid $primary;
-            border-radius: 0;
+            border-radius: 4px;
             color: $primary;
 
             @include transition-ease-in-out();
@@ -258,12 +258,9 @@
 
     } // .textwidget
 
-    .widget:last-child .textwidget {
-        border-right: 1px solid $gray-dark;
-    }
 
     .fa {
-        color: rgba(255,255,255,0.55);
+        color: $gray;
         font-size: 3em;
         margin-bottom: $space-default;
 
@@ -278,7 +275,7 @@
     h2 {
         display: block;
         margin-bottom: $space-default-half;
-        color: $white;
+        color: $primary-bg-darker;
         font-weight: 700;
         font-size: 2em;
     }

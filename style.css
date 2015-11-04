@@ -1971,26 +1971,26 @@ body {
     padding: 60px 40px;
     width: 33.333333333%;
     text-align: center;
-    border-right: 2px solid rgba(0, 0, 0, 0.2);
-    background: #292929;
-    color: #FFFFFF;
-    box-shadow: 0 -8px #00567c, 0 8px #00567c;
+    background: #FFFFFF;
+    box-shadow: 0 -8px #00405F, 0 8px #00405F;
     cursor: default;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #f5f5f5;
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     #home-services .textwidget:hover {
-      background: rgba(0, 0, 0, 0.87); }
+      background: #f5f5f5; }
       #home-services .textwidget:hover .fa, #home-services .textwidget:hover p {
-        color: #FFFFFF; }
+        color: #333333; }
     #home-services .textwidget p {
       margin-bottom: 40px;
-      color: rgba(255, 255, 255, 0.55);
+      color: #a7a9ae;
       font-style: italic;
       -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
     #home-services .textwidget .button {
       display: inline-block;
-      padding: 3px 18px;
+      padding: 0 16px 1px 16px;
       font-weight: 700;
       font-size: 16px;
       line-height: 40px;
@@ -1998,7 +1998,7 @@ body {
       letter-spacing: 1px;
       background: none;
       border: 2px solid #00567c;
-      border-radius: 0;
+      border-radius: 4px;
       color: #00567c;
       -webkit-transition: all ease-in-out 200ms;
       transition: all ease-in-out 200ms; }
@@ -2015,10 +2015,8 @@ body {
         margin: 0;
         width: 100%;
         clear: both; } }
-  #home-services .widget:last-child .textwidget {
-    border-right: 1px solid #292929; }
   #home-services .fa {
-    color: rgba(255, 255, 255, 0.55);
+    color: #a7a9ae;
     font-size: 3em;
     margin-bottom: 40px;
     -webkit-transition: all ease-in-out 200ms;
@@ -2032,7 +2030,7 @@ body {
   #home-services h2 {
     display: block;
     margin-bottom: 20px;
-    color: #FFFFFF;
+    color: #00405F;
     font-weight: 700;
     font-size: 2em; }
 
