@@ -1720,13 +1720,13 @@ body {
     padding: 8px 12px 9px 11px;
     margin-bottom: 8px;
     height: 44px;
-    background-color: #FFFFFF;
+    background-color: #00567c;
     border-radius: 6px 0 0 6px;
-    color: #a78455; }
+    color: #FFFFFF; }
     #rena-mobile-topnav .cart-contents span {
       margin-left: 7px; }
     #rena-mobile-topnav .cart-contents:hover {
-      background: #00567c;
+      background: #014b6e;
       color: #FFFFFF; }
   @media (max-width: 800px) {
     #rena-mobile-topnav {
@@ -1741,10 +1741,10 @@ body {
   padding: 15px 13px;
   margin-bottom: 8px;
   height: 44px;
-  background-color: #FFFFFF;
+  background-color: #00567c;
   background-image: none;
   border-radius: 0 6px 6px 0;
-  border-left: 2px solid #f5f5f5; }
+  border-left: 2px solid #014b6e; }
   .menu-btn:hover .icon-bar {
     background-color: #FFFFFF; }
   .menu-btn .icon-bar {
@@ -1752,7 +1752,7 @@ body {
     width: 22px;
     height: 2px;
     border-radius: 1px;
-    background-color: #a78455; }
+    background-color: #FFFFFF; }
   .menu-btn .icon-bar + .icon-bar {
     margin-top: 4px; }
   .menu-btn .sr-only {
@@ -1765,8 +1765,8 @@ body {
     clip: rect(0, 0, 0, 0);
     border: 0; }
   .menu-btn:hover, .menu-btn:focus {
-    background-color: #00567c;
-    border-color: #00567c; }
+    background-color: #014b6e;
+    border-color: #00405F; }
   @media (max-width: 460px) {
     .menu-btn {
       padding: 12px 10px; } }
