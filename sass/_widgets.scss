@@ -193,7 +193,7 @@
 } // gcta-wrap
 
 #home-services {
-    margin-bottom: $space-default;
+    margin-bottom: 80px;
 
     @include clearfix();
 
@@ -413,9 +413,8 @@
 
     .testimonial-position {
         text-transform: uppercase;
-        // font-weight: 700;
-        font-size: 16px;
-        color: $gray;
+        font-size: 18px;
+        color: $secondary;
     }
 
     .cycle-pager span {
@@ -427,3 +426,30 @@
     }
 
 } // .cycle-slidshow
+
+.page-template-page_home .cycle-slideshow {
+    color: $white;
+    text-shadow: none;
+
+    .testimonial_body {
+        text-shadow: none;
+    }
+
+    blockquote {
+
+        &::before {
+            color: $secondary;
+            text-shadow: none;
+        } // &::before
+
+    } // blockquote
+
+    .cycle-pager span {
+        color: $white;
+    }
+
+    .cycle-pager span.cycle-pager-active {
+        color: $secondary;
+    }
+
+} // .page-template-page_home .cycle-slideshow

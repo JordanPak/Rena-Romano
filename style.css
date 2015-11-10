@@ -1957,7 +1957,7 @@ body {
       background-image: none !important; } }
 
 #home-services {
-  margin-bottom: 40px; }
+  margin-bottom: 80px; }
   #home-services:before {
     content: " ";
     display: table; }
@@ -2156,12 +2156,25 @@ body {
       margin: 0 auto; }
   .cycle-slideshow .testimonial-position {
     text-transform: uppercase;
-    font-size: 16px;
-    color: #a7a9ae; }
+    font-size: 18px;
+    color: #d0ae7c; }
   .cycle-slideshow .cycle-pager span {
     color: #a7a9ae; }
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #00567c; }
+
+.page-template-page_home .cycle-slideshow {
+  color: #FFFFFF;
+  text-shadow: none; }
+  .page-template-page_home .cycle-slideshow .testimonial_body {
+    text-shadow: none; }
+  .page-template-page_home .cycle-slideshow blockquote::before {
+    color: #d0ae7c;
+    text-shadow: none; }
+  .page-template-page_home .cycle-slideshow .cycle-pager span {
+    color: #FFFFFF; }
+  .page-template-page_home .cycle-slideshow .cycle-pager span.cycle-pager-active {
+    color: #d0ae7c; }
 
 .woocommerce .product_title {
   padding-bottom: 40px !important;
