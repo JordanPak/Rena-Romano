@@ -4,7 +4,7 @@
 
 .nav-header {
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         display: none;
     }
 
@@ -118,7 +118,7 @@
 
     } // .cart-contents
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         display: block;
     }
 
@@ -173,7 +173,7 @@
         border-color: $primary-darker;
     }
 
-    @include breakpoint( extra-extra-small ) {
+    @include breakpoint( xxs ) {
         padding: 12px 10px;
     }
 

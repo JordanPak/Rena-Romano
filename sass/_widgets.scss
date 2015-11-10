@@ -127,7 +127,7 @@
 
     } // form
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
 
         .widget-title, p {
             display: block;
@@ -144,7 +144,7 @@
     } // Breakpoint: S
 
 
-    @include breakpoint ( extra-small ) {
+    @include breakpoint( xs ) {
 
         form {
 
@@ -185,7 +185,7 @@
 
     } // .gcta-button
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         text-align: center !important;
         background-image: none !important;
     }
@@ -250,7 +250,7 @@
 
         } // .button
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             margin: 0;
             width: 100%;
             clear: both;
@@ -266,7 +266,7 @@
 
         @include transition-ease-in-out();
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             display: none;
         }
 
@@ -311,7 +311,7 @@
             margin-bottom: 0;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             float: none;
             margin: 0 0 $space-default 0;
             padding: $space-default-half;
@@ -353,7 +353,7 @@
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
-            @include breakpoint( extra-small ) {
+            @include breakpoint( xs ) {
                 // position: static;
                 top: -$space-default;
                 left: 45%;
@@ -362,15 +362,15 @@
 
         } // &::before
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             padding: 0 ($space-default + $space-default-half) !important;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             padding: 60px $space-default 0 $space-default !important;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             padding: 60px 0 0 0 !important;
         }
 
@@ -386,11 +386,11 @@
             font-weight: 700;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             font-size: 24px;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             font-size: 22px;
         }
 

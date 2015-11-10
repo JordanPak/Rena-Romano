@@ -8,11 +8,11 @@
         padding-bottom: $space-default !important;
         text-align: left !important;
 
-        @include breakpoint( medium ) {
+        @include breakpoint( med ) {
             font-size: 42px;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             text-align: center !important;
         }
 
@@ -23,7 +23,7 @@
         font-weight: 700 !important;
         text-align: left !important;
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             text-align: center !important;
         }
 
@@ -64,7 +64,7 @@
 
         } // .added_to_cart.wc-forward
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
 
             li.product {
                 margin: 0 0 ($space-default + $space-default-middle) 0 !important;
@@ -167,7 +167,7 @@
 
         .col2-set .col-2, .col2-set .col-1 {
 
-            @include breakpoint( medium ) {
+            @include breakpoint( med ) {
                 width: 100% !important;
                 margin: 0 0 ($space-default + $space-default-half) 0 !important;
             }

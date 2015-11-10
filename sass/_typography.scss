@@ -66,11 +66,11 @@ body {
          font-weight: 700;
          color: $secondary-dark;
 
-         @include breakpoint( small ) {
+         @include breakpoint( sm ) {
              font-size: 48px;
          }
 
-         @include breakpoint( extra-small ) {
+         @include breakpoint( xs ) {
              font-size: 42px;
              padding-bottom: $space-default;
          }

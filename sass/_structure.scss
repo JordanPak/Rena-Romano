@@ -9,7 +9,7 @@ body {
 .site-inner {
     padding-top: 0;
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         padding-left: 2%;
         padding-right: 2%;
     }
@@ -21,11 +21,11 @@ body {
 
 .content .entry {
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding: $space-default;
     }
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         padding: $space-default-middle;
     }
 

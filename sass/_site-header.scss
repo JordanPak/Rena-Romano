@@ -12,12 +12,12 @@
         position: relative;
         padding: 5px 0;
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             padding-left: 5%;
             padding-right: 5%;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             padding-left: 2.5%;
             padding-right: 2.5%;
         }
@@ -29,12 +29,12 @@
 .title-area {
     width: 300px;
 
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         margin-top: $space-default-half;
         width: 100%;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         width: 75%;
     }
 
@@ -51,15 +51,15 @@
         width: 100%;
         background-size: contain;
 
-        @include breakpoint( large ) {
+        @include breakpoint( lg ) {
             background-position: center;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             background-position: left;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             background-size: contain;
         }
 
@@ -128,7 +128,7 @@
 
     } // .simple-social-icons ul li
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding-right: 5%;
     }
 
@@ -137,14 +137,14 @@
 
 .site-header .header-widget-area {
 
-    @include breakpoint( large ) {
+    @include breakpoint( lg ) {
         clear: both;
         margin-top: $space-default + $space-default-middle;
         width: 100%;
         text-align: center;
     }
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         display: none;
     }
 
