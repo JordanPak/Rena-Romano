@@ -182,11 +182,10 @@
 
 
 .pushy {
-    background: rgba(255,255,255,0.8);
-    background: rgba(0,0,0,0.8);
-    background: $black;
-    background: $secondary-dark;
-    border-left: 4px solid $white;
+	background: $primary;
+    border-left: 4px solid $primary-dark;
+	-moz-box-shadow: none;
+	box-shadow: none;
 
     .genesis-nav-menu {
         position: static;
@@ -238,3 +237,8 @@
     } // .genesis-nav-menu
 
 } // .pushy .genesis-nav-menu
+
+
+.pushy-active .site-overlay {
+	background-color: rgba(167, 132, 85, 0.85);
+}

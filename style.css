@@ -1775,11 +1775,10 @@ body {
       padding: 12px 10px; } }
 
 .pushy {
-  background: rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.8);
-  background: #000000;
-  background: #a78455;
-  border-left: 4px solid #FFFFFF; }
+  background: #00567c;
+  border-left: 4px solid #014b6e;
+  -moz-box-shadow: none;
+  box-shadow: none; }
   .pushy .genesis-nav-menu {
     position: static; }
     .pushy .genesis-nav-menu > li {
@@ -1807,6 +1806,9 @@ body {
       color: #000000;
       box-shadow: none;
       background: #FFFFFF; }
+
+.pushy-active .site-overlay {
+  background-color: rgba(167, 132, 85, 0.85); }
 
 .site-footer {
   background: #00405F;
