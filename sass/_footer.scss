@@ -3,20 +3,20 @@
 //========================//
 
 .site-footer {
-    background: $gray-dark;
+    background: $primary-bg-darker;
     color: $white;
-    
+
     a:hover {
         color: $primary;
     }
-    
+
     span {
         color: $gray;
-        
+
         a {
             color: $white;
         }
-        
+
     } // span
-    
+
 } // .site-footer
