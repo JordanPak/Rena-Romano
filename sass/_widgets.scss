@@ -41,7 +41,7 @@
 // eNews Widget on Home
 .home-intro .enews {
     position: relative;
-    background: $primary-bg-darker;
+    background: $primary-darker;
     margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
     padding: $space-default-half + 10px;
 
@@ -204,7 +204,7 @@
         width: 33.333333333%;
         text-align: center;
         background: $white;
-        box-shadow: 0 -8px $primary-bg-darker, 0 8px $primary-bg-darker;
+        box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         cursor: default;
 		border-left: 1px solid $gray-light;
 		border-right: 1px solid $gray-light;
@@ -275,7 +275,7 @@
     h2 {
         display: block;
         margin-bottom: $space-default-half;
-        color: $primary-bg-darker;
+        color: $primary-darker;
         font-weight: 700;
         font-size: 2em;
     }
