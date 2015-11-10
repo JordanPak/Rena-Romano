@@ -1521,12 +1521,29 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 body {
   background: url("images/page-bg.jpg") no-repeat top center #014b6e; }
 
-.site-inner {
-  padding-top: 0; }
+.site-inner, .wrap {
+  padding: 0; }
+  @media (max-width: 1500px) {
+    .site-inner, .wrap {
+      max-width: 1200px; } }
+  @media (max-width: 1260px) {
+    .site-inner, .wrap {
+      max-width: 1024px; } }
+  @media (max-width: 1080px) {
+    .site-inner, .wrap {
+      max-width: 960px; } }
+  @media (max-width: 1024px) {
+    .site-inner, .wrap {
+      max-width: 800px; } }
+  @media (max-width: 860px) {
+    .site-inner, .wrap {
+      width: 90%; } }
   @media (max-width: 600px) {
-    .site-inner {
-      padding-left: 2%;
-      padding-right: 2%; } }
+    .site-inner, .wrap {
+      width: 90%; } }
+  @media (max-width: 460px) {
+    .site-inner, .wrap {
+      width: 95%; } }
 
 @media (max-width: 860px) {
   .content .entry {

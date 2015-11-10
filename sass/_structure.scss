@@ -6,15 +6,35 @@ body {
 	background: url('images/page-bg.jpg') no-repeat top center $primary-dark;
 }
 
-.site-inner {
-    padding-top: 0;
 
-    @include breakpoint( xs ) {
-        padding-left: 2%;
-        padding-right: 2%;
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
+    padding: 0;
+
+    @include breakpoint( xl ) {
+        max-width: $bp-xl-wrap;
     }
+    @include breakpoint( lg ) {
+        max-width: $bp-lg-wrap;
+    }
+    @include breakpoint( med-lg ) {
+        max-width: $bp-med-lg-wrap;
+    }
+    @include breakpoint( med ) {
+        max-width: $bp-med-wrap;
+    }
+    @include breakpoint( sm ) {
+        width: $bp-sm-wrap;
+    }
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+	@include breakpoint( xxs ) {
+		width: $bp-xxs-wrap;
+	}
 
-} // .site-inner
+} // .site-inner, .wrap
+
 
 .content .entry, .sidebar .widget {
 }
