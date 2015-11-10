@@ -64,17 +64,24 @@
 
     } // .current-menu-item > a
 
-    .sub-menu a {
-        text-transform: capitalize;
-        font-weight: 400;
-        color: $gray-dark;
-        letter-spacing: normal;
+	.sub-menu {
+		-moz-box-shadow: 0 3px 4px rgba( $primary, 0.2 );
+		box-shadow: 0 2px 6px rgba( $primary, 0.2 );
 
-        &:hover {
-            color: $primary;
-        }
+		a {
+	        text-transform: capitalize;
+	        font-weight: 400;
+			font-size: 16px;
+	        color: $gray-dark;
+	        letter-spacing: normal;
 
-    } // .sub-menu a
+	        &:hover {
+	            color: $primary;
+	        }
+
+	    } // .sub-menu a
+
+	} // .sub-menu
 
     > .last > a {
         padding-right: 24px;

@@ -1694,13 +1694,17 @@ body {
     background: linear-gradient(transparent, rgba(255, 255, 255, 0.3)); }
     .genesis-nav-menu .current-menu-item > a:hover {
       color: #edcb99; }
-  .genesis-nav-menu .sub-menu a {
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #292929;
-    letter-spacing: normal; }
-    .genesis-nav-menu .sub-menu a:hover {
-      color: #00567c; }
+  .genesis-nav-menu .sub-menu {
+    -moz-box-shadow: 0 3px 4px rgba(0, 86, 124, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 86, 124, 0.2); }
+    .genesis-nav-menu .sub-menu a {
+      text-transform: capitalize;
+      font-weight: 400;
+      font-size: 16px;
+      color: #292929;
+      letter-spacing: normal; }
+      .genesis-nav-menu .sub-menu a:hover {
+        color: #00567c; }
   .genesis-nav-menu > .last > a {
     padding-right: 24px; }
 
