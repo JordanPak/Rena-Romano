@@ -208,11 +208,11 @@
 
             &:hover, .wpmenucart-contents {
                 box-shadow: none;
-                background: $white;
-                color: $secondary-dark;
+                background: $primary-dark;
+                color: $white;
 
                 > a {
-                    color: $secondary-dark;
+                    color: $white;
                 }
 
             } // hover
@@ -229,17 +229,23 @@
             text-align: center;
 
             &:hover {
-                color: $primary;
-                background: $white;
+				color: $white;
+                background: $primary-dark;
             }
 
         } // > li > a
 
         .current-menu-item > a {
-            color: $black;
+            color: $primary-dark;
             box-shadow: none;
             background: $white;
-        }
+
+			&:hover {
+				background: $primary-dark;
+				color: $white;
+			}
+
+        } // .current-menu-item > a
 
     } // .genesis-nav-menu
 

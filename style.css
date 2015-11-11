@@ -1775,10 +1775,10 @@ body {
       width: 100%; }
       .pushy .genesis-nav-menu > li:hover, .pushy .genesis-nav-menu > li .wpmenucart-contents {
         box-shadow: none;
-        background: #FFFFFF;
-        color: #a78455; }
+        background: #014b6e;
+        color: #FFFFFF; }
         .pushy .genesis-nav-menu > li:hover > a, .pushy .genesis-nav-menu > li .wpmenucart-contents > a {
-          color: #a78455; }
+          color: #FFFFFF; }
     .pushy .genesis-nav-menu a {
       float: none;
       width: 100%;
@@ -1788,12 +1788,15 @@ body {
       text-transform: uppercase;
       text-align: center; }
       .pushy .genesis-nav-menu a:hover {
-        color: #00567c;
-        background: #FFFFFF; }
+        color: #FFFFFF;
+        background: #014b6e; }
     .pushy .genesis-nav-menu .current-menu-item > a {
-      color: #000000;
+      color: #014b6e;
       box-shadow: none;
       background: #FFFFFF; }
+      .pushy .genesis-nav-menu .current-menu-item > a:hover {
+        background: #014b6e;
+        color: #FFFFFF; }
 
 .pushy-active .site-overlay {
   background-color: rgba(167, 132, 85, 0.85); }
@@ -1846,8 +1849,8 @@ body {
     background: #00567c;
     font-weight: 700; }
     .enews-widget form input[type="submit"]:hover, .enews-widget form input[type="submit"]:focus, .sidebar .widget.enews-widget form input[type="submit"]:hover, .sidebar .widget.enews-widget form input[type="submit"]:focus {
-      background: #FFFFFF;
-      color: #00567c; }
+      background: #d0ae7c;
+      color: #FFFFFF; }
 
 .home-intro .enews {
   position: relative;
@@ -1916,8 +1919,8 @@ body {
       background: #00567c;
       font-weight: 700; }
       .home-intro .enews form input[type="submit"]:hover, .home-intro .enews form input[type="submit"]:focus {
-        background: #FFFFFF;
-        color: #00567c; }
+        background: #d0ae7c;
+        color: #FFFFFF; }
   @media (max-width: 860px) {
     .home-intro .enews .widget-title, .home-intro .enews p {
       display: block;
