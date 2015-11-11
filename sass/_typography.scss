@@ -41,6 +41,7 @@ body {
 } // .entry
 
 
+// REMOVE LINK BORDER //
 .entry .entry-title {
 
     a {
@@ -55,6 +56,7 @@ body {
 } // .entry-title
 
 
+// HUGE "BANNER" TITLE //
  .page-template-default, .full-width-content {
 
      .entry-title, .page-title {
@@ -80,6 +82,45 @@ body {
      } // .entry-title, .page-title
 
  } // .page-template-default
+
+ .post-type-archive-product {
+
+	.page-title {
+		background: $primary-darker;
+		padding: 60px;
+	}
+
+} // .post-type-archive-product
+
+
+// SMALLER "BANNER" TITLE & META //
+.single {
+
+
+
+	.entry-title {
+		color: $white;
+	}
+
+	.entry-header .entry-meta {
+		margin-bottom: 0;
+		color: $gray-light;
+
+		a {
+			color: $secondary;
+		}
+
+	} // .entry-meta
+
+} // .single
+
+
+// BLUE TEXT TITLE //
+.woocommerce div.product .product_title, .page-template-page_blog .entry-title {
+	color: $primary;
+	text-transform: none;
+} // .woocommerce div.product .product_title
+
 
 h2 {
     margin-bottom: $space-default-half + 10px;

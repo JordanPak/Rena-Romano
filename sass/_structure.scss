@@ -78,7 +78,7 @@ body {
 
 } // .content .entry
 
-.page-template-default, .full-width-content {
+.page-template-default, .full-width-content, .single {
 
 	main {
 
@@ -95,6 +95,10 @@ body {
 			padding: 50px 60px;
 		}
 
+		.entry-footer {
+			padding: 0 60px 50px 60px;
+		}
+
 	} // main
 
 } // .page-template-default, .full-width-content
@@ -103,7 +107,7 @@ body {
 
     main.content {
 		margin-bottom: 40px;
-        padding: 50px 60px;
+		padding: 0;
         background: $white;
     } // main.content
 
