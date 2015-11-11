@@ -10,14 +10,14 @@
     .widget-title {
         font-weight: 700;
         font-size: 1.5em;
-//        color: $white;
     }
 
 } // .widget
 
 
-.enews-widget {
-    text-align: center;
+.enews-widget, .sidebar .widget.enews-widget {
+	background: $primary-darker;
+	text-align: center;
 
     .widget-title {
         font-size: 32px;
@@ -26,28 +26,62 @@
 
     p {
         font-size: 18px;
-        color: $primary;
+        color: $secondary;
         font-style: italic;
-        text-shadow: 1px 1px $black;
     }
 
-    input[type="submit"] {
-        background: $primary;
-        font-weight: 700;
-        border-radius: 0;
-    }
+	form {
+
+        input {
+            box-sizing: border-box;
+            display: block;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 0;
+			border: 0;
+
+            &::-webkit-input-placeholder {
+               font-weight: 400;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               font-weight: 400;
+            }
+
+            &::-moz-placeholder,  {  /* Firefox 19+ */
+               font-weight: 400;
+            }
+
+            &:-ms-input-placeholder {
+               font-weight: 400;
+            }
+
+        } // input
+
+        input[type="submit"] {
+            display: block;
+            padding: 15px 20px;
+            background: $primary;
+            font-weight: 700;
+
+            &:hover, &:focus {
+                background: $white;
+                color: $primary;
+            }
+
+        } // input[submit]
+
+    } // form
 
 } // .enews-widget
 
 // eNews Widget on Home
 .home-intro .enews {
     position: relative;
-    background: $gray-dark;
+    background: $primary-darker;
     margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
     padding: $space-default-half + 10px;
-
-    @include post-border();
-    border-top: none;
 
     @include clearfix();
 
@@ -64,9 +98,8 @@
         display: block;
         margin: 0;
         font-size: 16px;
-        color: $primary;
+        color: $secondary;
         font-style: italic;
-        text-shadow: 1px 1px $black;
     }
 
     form {
@@ -132,7 +165,7 @@
 
     } // form
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
 
         .widget-title, p {
             display: block;
@@ -149,7 +182,7 @@
     } // Breakpoint: S
 
 
-    @include breakpoint ( extra-small ) {
+    @include breakpoint( xs ) {
 
         form {
 
@@ -175,8 +208,6 @@
 .gcta-wrap {
 
     margin-bottom: 0 !important;
-    border: 8px solid $gray-light;
-    border-bottom: 0;
     box-shadow: inset 0 -4px $white;
 
     .widget-title strong {
@@ -192,7 +223,7 @@
 
     } // .gcta-button
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         text-align: center !important;
         background-image: none !important;
     }
@@ -200,8 +231,7 @@
 } // gcta-wrap
 
 #home-services {
-    margin-bottom: $space-default;
-    border: 8px solid $gray-light;
+    margin-bottom: 80px;
 
     @include clearfix();
 
@@ -211,26 +241,26 @@
         padding: ($space-default + $space-default-half) $space-default;
         width: 33.333333333%;
         text-align: center;
-        border-right: 2px solid rgba(0,0,0,0.2);
-        background: $gray-dark;
-        color: $white;
-        box-shadow: 0 -8px $primary, 0 8px $primary;
+        background: $white;
+        box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         cursor: default;
+		border-left: 1px solid $gray-light;
+		border-right: 1px solid $gray-light;
 
         @include transition-ease-in-out();
 
         &:hover {
-            background: rgba(0,0,0,0.87);
+            background: $gray-light;
 
             .fa, p {
-                color: $white;
+                color: $body-text;
             }
 
         } // &:hover
 
         p {
             margin-bottom: $space-default;
-            color: rgba(255,255,255,0.55);
+			color: $gray;
             font-style: italic;
 
             @include transition-ease-in-out();
@@ -238,7 +268,7 @@
 
         .button {
             display: inline-block;
-            padding: 3px 18px;
+            padding: 0 16px 1px 16px;
             font-weight: 700;
             font-size: 16px;
             line-height: 40px;
@@ -246,7 +276,7 @@
             letter-spacing: 1px;
             background: none;
             border: 2px solid $primary;
-            border-radius: 0;
+            border-radius: 4px;
             color: $primary;
 
             @include transition-ease-in-out();
@@ -258,7 +288,7 @@
 
         } // .button
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             margin: 0;
             width: 100%;
             clear: both;
@@ -266,18 +296,15 @@
 
     } // .textwidget
 
-    .widget:last-child .textwidget {
-        border-right: 1px solid $gray-dark;
-    }
 
     .fa {
-        color: rgba(255,255,255,0.55);
+        color: $gray;
         font-size: 3em;
         margin-bottom: $space-default;
 
         @include transition-ease-in-out();
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             display: none;
         }
 
@@ -286,7 +313,7 @@
     h2 {
         display: block;
         margin-bottom: $space-default-half;
-        color: $white;
+        color: $primary-darker;
         font-weight: 700;
         font-size: 2em;
     }
@@ -294,8 +321,6 @@
 } // #home-services
 
 #home-more {
-
-    @include post-border();
     @include clearfix();
 
     article.type-post {
@@ -324,7 +349,7 @@
             margin-bottom: 0;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             float: none;
             margin: 0 0 $space-default 0;
             padding: $space-default-half;
@@ -366,7 +391,7 @@
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
-            @include breakpoint( extra-small ) {
+            @include breakpoint( xs ) {
                 // position: static;
                 top: -$space-default;
                 left: 45%;
@@ -375,15 +400,15 @@
 
         } // &::before
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             padding: 0 ($space-default + $space-default-half) !important;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             padding: 60px $space-default 0 $space-default !important;
         }
 
-        @include breakpoint( extra-extra-small ) {
+        @include breakpoint( xxs ) {
             padding: 60px 0 0 0 !important;
         }
 
@@ -399,11 +424,11 @@
             font-weight: 700;
         }
 
-        @include breakpoint( small ) {
+        @include breakpoint( sm ) {
             font-size: 24px;
         }
 
-        @include breakpoint( extra-small ) {
+        @include breakpoint( xs ) {
             font-size: 22px;
         }
 
@@ -426,9 +451,8 @@
 
     .testimonial-position {
         text-transform: uppercase;
-        // font-weight: 700;
-        font-size: 16px;
-        color: $gray;
+        font-size: 18px;
+        color: $secondary;
     }
 
     .cycle-pager span {
@@ -440,3 +464,30 @@
     }
 
 } // .cycle-slidshow
+
+.page-template-page_home .cycle-slideshow {
+    color: $white;
+    text-shadow: none;
+
+    .testimonial_body {
+        text-shadow: none;
+    }
+
+    blockquote {
+
+        &::before {
+            color: $secondary;
+            text-shadow: none;
+        } // &::before
+
+    } // blockquote
+
+    .cycle-pager span {
+        color: $white;
+    }
+
+    .cycle-pager span.cycle-pager-active {
+        color: $secondary;
+    }
+
+} // .page-template-page_home .cycle-slideshow

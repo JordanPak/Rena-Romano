@@ -3,30 +3,76 @@
 //===========================//
 
 body {
-    background: $gray-light;
+	background: url('images/page-bg.jpg') no-repeat top center $primary-dark;
 }
 
-.site-inner {
-    padding-top: 0;
 
-    @include breakpoint( extra-small ) {
-        padding-left: 2%;
-        padding-right: 2%;
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
+    padding: 0;
+
+    @include breakpoint( xl ) {
+        max-width: $bp-xl-wrap;
+    }
+    @include breakpoint( lg ) {
+        max-width: $bp-lg-wrap;
+    }
+    @include breakpoint( med-lg ) {
+        max-width: $bp-med-lg-wrap;
+    }
+    @include breakpoint( med ) {
+        max-width: $bp-med-wrap;
+    }
+    @include breakpoint( sm ) {
+        width: $bp-sm-wrap;
+    }
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+	@include breakpoint( xxs ) {
+		width: $bp-xxs-wrap;
+	}
+
+} // .site-inner, .wrap
+
+
+//-- CONTENT & SIDEBAR FIXES --//
+.content {
+
+    @include breakpoint( lg ) {
+        width: 660px;
     }
 
-} // .site-inner
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
 
-.content .entry, .sidebar .widget {
-    border: 8px solid $gray-light;
-}
+    @include breakpoint( med ) {
+        width: 100%;
+    }
+
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
+
 
 .content .entry {
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         padding: $space-default;
     }
 
-    @include breakpoint( extra-small ) {
+    @include breakpoint( xs ) {
         padding: $space-default-middle;
     }
 
@@ -35,9 +81,9 @@ body {
 .post-type-archive-product { // Body class
 
     main.content {
+		margin-bottom: 40px;
         padding: $space-default;
         background: $white;
-        border: 8px solid $gray-light;
     } // main.content
 
 } // .full-width-content

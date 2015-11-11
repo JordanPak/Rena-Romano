@@ -4,7 +4,7 @@
 
 .nav-header {
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         display: none;
     }
 
@@ -18,21 +18,26 @@
     bottom: 0;
     padding: 0;
     font-size: 1em;
+	width: auto;
+
+	@include breakpoint( med ) {
+		position: static;
+		right: auto;
+		bottom: auto;
+		margin-top: 8px;
+		text-align: left;
+	}
 
     > li {
-        box-shadow: inset 0 -6px rgba(0,0,0,0);
         transition: all .4s ease-in-out;
 
         a {
         }
 
         &:hover, .wpmenucart-contents {
-            box-shadow: inset 0 -6px $white;
-            background: linear-gradient( rgba(0,0,0,0), rgba(255,255,255,0.3) );
 
             > a {
-                color: $white; //$primary;
-                // background: $white;
+                color: $primary-light;
             }
 
         } // hover
@@ -41,37 +46,51 @@
 
     a {
         transition: all .4s ease-in-out;
-        color: $white;
+        color: $primary;
         display: block;
-        padding: 0 19px 25px 19px;
+        padding: 22px 19px;
         font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.015em;
 
         &:hover {
             color: $primary;
         }
+
+		@include breakpoint( med-lg ) {
+			padding: 22px 16px;
+		}
 
     } // > li > a
 
     .current-menu-item > a {
-        color: $white;
-        box-shadow: inset 0 -6px $white;
-        background: linear-gradient( rgba(0,0,0,0), rgba(255,255,255,0.3) );
-    }
+        color: $secondary;
+        box-shadow: inset 0 -3px $secondary;
 
-    .sub-menu a {
-        text-transform: capitalize;
-        font-weight: 400;
-        color: $gray-dark;
-        letter-spacing: normal;
+		&:hover {
+			color: $secondary-light;
+		}
 
-        &:hover {
-            color: $primary;
-        }
+    } // .current-menu-item > a
 
-    } // .sub-menu a
+	.sub-menu {
+		-moz-box-shadow: 0 3px 4px rgba( $primary, 0.2 );
+		box-shadow: 0 2px 6px rgba( $primary, 0.2 );
+
+		a {
+	        text-transform: capitalize;
+	        font-weight: 400;
+			font-size: 16px;
+	        color: $gray-dark;
+	        letter-spacing: normal;
+
+	        &:hover {
+	            color: $primary;
+	        }
+
+	    } // .sub-menu a
+
+	} // .sub-menu
 
     > .last > a {
         padding-right: 24px;
@@ -84,8 +103,8 @@
     display: none;
     position: relative;
     float: right;
-    margin-top: 48px;
-    margin-right: 0;
+    margin: 0;
+	padding-top: 18px;
 
     .cart-contents {
         display: block;
@@ -93,22 +112,22 @@
         padding: 8px 12px 9px 11px;
         margin-bottom: 8px;
         height: 44px;
-        background-color: $white;
+        background-color: $primary;
         border-radius: 6px 0 0 6px;
-        color: $secondary-dark;
+        color: $white;
 
         span {
             margin-left: 7px;
         }
 
         &:hover {
-            background: $primary;
+            background: $primary-dark;
             color: $white;
         }
 
     } // .cart-contents
 
-    @include breakpoint( small ) {
+    @include breakpoint( sm ) {
         display: block;
     }
 
@@ -122,10 +141,10 @@
     padding: 15px 13px;
     margin-bottom: 8px;
     height: 44px;
-	background-color: $white;
+	background-color: $primary;
     background-image: none;
 	border-radius: 0 6px 6px 0;
-    border-left: 2px solid $gray-light;
+    border-left: 2px solid $primary-dark;
 
     &:hover {
 
@@ -140,7 +159,7 @@
         width: 22px;
         height: 2px;
         border-radius: 1px;
-        background-color: $secondary-dark;
+        background-color: $white;
     } // .icon-bar
 
     .icon-bar + .icon-bar {
@@ -159,24 +178,22 @@
     } // .sr-only
 
     &:hover, &:focus {
-        background-color: $primary;
-        border-color: $primary;
+        background-color: $primary-dark;
+        border-color: $primary-darker;
     }
 
-    @include breakpoint( extra-extra-small ) {
+    @include breakpoint( xxs ) {
         padding: 12px 10px;
     }
 
 } // .menu-btn
 
 
-
 .pushy {
-    background: rgba(255,255,255,0.8);
-    background: rgba(0,0,0,0.8);
-    background: $black;
-    background: $secondary-dark;
-    border-left: 4px solid $white;
+	background: $primary;
+    border-left: 4px solid $primary-dark;
+	-moz-box-shadow: none;
+	box-shadow: none;
 
     .genesis-nav-menu {
         position: static;
@@ -195,8 +212,7 @@
                 color: $secondary-dark;
 
                 > a {
-                    color: $secondary-dark; //$primary;
-                    // background: $white;
+                    color: $secondary-dark;
                 }
 
             } // hover
@@ -228,3 +244,8 @@
     } // .genesis-nav-menu
 
 } // .pushy .genesis-nav-menu
+
+
+.pushy-active .site-overlay {
+	background-color: rgba(167, 132, 85, 0.85);
+}

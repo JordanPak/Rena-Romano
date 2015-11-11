@@ -64,13 +64,13 @@ body {
          text-align: center;
          font-size: 52px;
          font-weight: 700;
-         color: $secondary-dark;
+         color: $primary;
 
-         @include breakpoint( small ) {
+         @include breakpoint( sm ) {
              font-size: 48px;
          }
 
-         @include breakpoint( extra-small ) {
+         @include breakpoint( xs ) {
              font-size: 42px;
              padding-bottom: $space-default;
          }
@@ -125,6 +125,13 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
     display: inline-block;
     font-weight: 700;
     letter-spacing: 1px;
-    background: $secondary-dark;
+    background: $primary;
     border-radius: 5px;
-}
+
+	@include transition-ease-in-out();
+
+	&:hover {
+		background: $primary-darker;
+	}
+
+} // buttons
