@@ -1935,27 +1935,32 @@ body {
   #home-services .textwidget {
     display: block;
     float: left;
-    padding: 60px 40px;
     width: 33.333333333%;
     text-align: center;
-    background: -webkit-linear-gradient(#FFFFFF 30%, #DCDCDC) #FFFFFF;
-    background: -o-linear-gradient(#FFFFFF 30%, #DCDCDC) #FFFFFF;
-    background: -moz-linear-gradient(#FFFFFF 30%, #DCDCDC) #FFFFFF;
-    background: linear-gradient(#FFFFFF 30%, #DCDCDC) #FFFFFF;
+    background: -webkit-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
+    background: -o-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
+    background: -moz-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
+    background: linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
     box-shadow: 0 -8px #00405F, 0 8px #00405F;
     cursor: default;
     border-left: 1px solid #f5f5f5;
-    border-right: 1px solid #f5f5f5; }
+    border-right: 1px solid #f5f5f5;
+    -webkit-transition: all ease-in-out 200ms;
+    transition: all ease-in-out 200ms; }
     #home-services .textwidget:hover {
       background: -webkit-linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF;
       background: -o-linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF;
       background: linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF; }
+      #home-services .textwidget:hover .button {
+        background: #00567c;
+        color: #FFFFFF; }
+    #home-services .textwidget a {
+      display: block;
+      padding: 50px 40px; }
     #home-services .textwidget p {
       margin-bottom: 40px;
       color: #a7a9ae;
-      font-style: italic;
-      -webkit-transition: all ease-in-out 200ms;
-      transition: all ease-in-out 200ms; }
+      font-style: italic; }
     #home-services .textwidget .button {
       display: inline-block;
       padding: 0 16px 1px 16px;
@@ -1967,12 +1972,7 @@ body {
       background: none;
       border: 2px solid #00567c;
       border-radius: 4px;
-      color: #00567c;
-      -webkit-transition: all ease-in-out 200ms;
-      transition: all ease-in-out 200ms; }
-      #home-services .textwidget .button:hover {
-        background: #00567c;
-        color: #FFFFFF; }
+      color: #00567c; }
   #home-services h2 {
     display: block;
     margin-bottom: 40px;
@@ -1983,9 +1983,7 @@ body {
   #home-services .fa {
     color: #00567c;
     font-size: 62px;
-    margin-bottom: 10px;
-    -webkit-transition: all ease-in-out 200ms;
-    transition: all ease-in-out 200ms; }
+    margin-bottom: 10px; }
     @media (max-width: 860px) {
       #home-services .fa {
         display: none; } }
