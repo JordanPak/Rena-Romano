@@ -202,3 +202,12 @@ function sp_footer_creds_filter( $creds ) {
 
 	return $creds;
 } // sp_footer_creds_filter
+
+
+// THEME COLOR META //
+add_action( 'genesis_meta', 'rr_meta_theme_color', 13 );
+function rr_meta_theme_color() {
+
+	echo '<meta name="theme-color" content="#d0ae7c">';
+
+} // rr_meta_theme_color()
