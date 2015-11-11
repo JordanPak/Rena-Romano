@@ -1325,6 +1325,31 @@ li.comment {
 
   .sidebar .widget.enews-widget {
     padding: 40px; } }
+@media (min-width: 1920px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 255, 0, 0.5); } }
+@media (max-width: 1500px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 1260px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 1080px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+@media (max-width: 1024px) {
+  .wrap, .site-inner {
+    background-color: rgba(128, 0, 128, 0.4); } }
+@media (max-width: 860px) {
+  .wrap, .site-inner {
+    background-color: rgba(255, 0, 0, 0.4); } }
+@media (max-width: 600px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 0, 255, 0.4); } }
+@media (max-width: 460px) {
+  .wrap, .site-inner {
+    background-color: rgba(0, 128, 0, 0.4); } }
+
 /*! Pushy - v0.9.2 - 2014-9-13
 * Pushy is a responsive off-canvas navigation menu using CSS transforms & transitions.
 * https://github.com/christophery/pushy/
@@ -1549,6 +1574,12 @@ body {
 
 .title-area {
   width: 300px; }
+  @media (max-width: 600px) {
+    .title-area {
+      width: 270px; } }
+  @media (max-width: 460px) {
+    .title-area {
+      width: 66%; } }
 
 .header-image .site-title > a {
   min-height: 63px;
@@ -1559,10 +1590,8 @@ body {
       background-position: center; } }
   @media (max-width: 860px) {
     .header-image .site-title > a {
+      background-image: url("images/logo-2x.png");
       background-position: left; } }
-  @media (max-width: 600px) {
-    .header-image .site-title > a {
-      background-size: contain; } }
 
 .header-contact {
   float: right; }
@@ -1575,6 +1604,9 @@ body {
       width: 100%;
       padding: 0;
       text-align: center; } }
+  @media (max-width: 600px) {
+    .header-contact {
+      margin-bottom: 10px; } }
   .header-contact .widget-area {
     display: inline-block;
     float: none;

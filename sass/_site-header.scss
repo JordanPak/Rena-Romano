@@ -27,9 +27,13 @@
 .title-area {
     width: 300px;
 
-    @include breakpoint( 540px ) {
-        width: 66%;
-    }
+	@include breakpoint( xs ) {
+		width: 270px;
+	}
+
+	@include breakpoint( xxs ) {
+		width: 66%;
+	}
 
 } // .title-area
 
@@ -45,11 +49,11 @@
         }
 
         @include breakpoint( sm ) {
+			background-image: url('images/logo-2x.png');
             background-position: left;
         }
 
         @include breakpoint( xs ) {
-            background-size: contain;
         }
 
     } // .site-title > a
@@ -68,6 +72,10 @@
 		width: 100%;
 		padding: 0;
 		text-align: center;
+	}
+
+	@include breakpoint( xs ) {
+		margin-bottom: 10px;
 	}
 
     .widget-area {
