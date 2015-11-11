@@ -29,9 +29,9 @@
 .title-area {
     width: 300px;
 
-    @include breakpoint( lg ) {
+    @include breakpoint( med-lg ) {
         margin-top: $space-default-half;
-        width: 100%;
+        // width: 100%;
     }
 
     @include breakpoint( sm ) {
@@ -51,7 +51,7 @@
         width: 100%;
         background-size: contain;
 
-        @include breakpoint( lg ) {
+        @include breakpoint( med-lg ) {
             background-position: center;
         }
 
@@ -137,7 +137,7 @@
 
 .site-header .header-widget-area {
 
-    @include breakpoint( lg ) {
+    @include breakpoint( med-lg ) {
         clear: both;
         margin-top: $space-default + $space-default-middle;
         width: 100%;

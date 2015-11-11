@@ -1551,10 +1551,9 @@ body {
 
 .title-area {
   width: 300px; }
-  @media (max-width: 1260px) {
+  @media (max-width: 1080px) {
     .title-area {
-      margin-top: 20px;
-      width: 100%; } }
+      margin-top: 20px; } }
   @media (max-width: 860px) {
     .title-area {
       width: 75%; } }
@@ -1563,7 +1562,7 @@ body {
   min-height: 63px;
   width: 100%;
   background-size: contain; }
-  @media (max-width: 1260px) {
+  @media (max-width: 1080px) {
     .header-image .site-title > a {
       background-position: center; } }
   @media (max-width: 860px) {
@@ -1621,7 +1620,7 @@ body {
     .header-contact {
       padding-right: 5%; } }
 
-@media (max-width: 1260px) {
+@media (max-width: 1080px) {
   .site-header .header-widget-area {
     clear: both;
     margin-top: 70px;
