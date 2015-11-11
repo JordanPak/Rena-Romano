@@ -1795,20 +1795,42 @@ body {
   font-weight: 700;
   font-size: 1.5em; }
 
-.enews-widget {
+.enews-widget, .sidebar .widget.enews-widget {
+  background: #00405F;
   text-align: center; }
-  .enews-widget .widget-title {
+  .enews-widget .widget-title, .sidebar .widget.enews-widget .widget-title {
     font-size: 32px;
     font-weight: 400; }
-  .enews-widget p {
+  .enews-widget p, .sidebar .widget.enews-widget p {
     font-size: 18px;
-    color: #00567c;
-    font-style: italic;
-    text-shadow: 1px 1px #000000; }
-  .enews-widget input[type="submit"] {
+    color: #d0ae7c;
+    font-style: italic; }
+  .enews-widget form input, .sidebar .widget.enews-widget form input {
+    box-sizing: border-box;
+    display: block;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 0;
+    border: 0; }
+    .enews-widget form input::-webkit-input-placeholder, .sidebar .widget.enews-widget form input::-webkit-input-placeholder {
+      font-weight: 400; }
+    .enews-widget form input:-moz-placeholder, .sidebar .widget.enews-widget form input:-moz-placeholder {
+      /* Firefox 18- */
+      font-weight: 400; }
+    .enews-widget form input::-moz-placeholder, .sidebar .widget.enews-widget form input::-moz-placeholder {
+      /* Firefox 19+ */
+      font-weight: 400; }
+    .enews-widget form input:-ms-input-placeholder, .sidebar .widget.enews-widget form input:-ms-input-placeholder {
+      font-weight: 400; }
+  .enews-widget form input[type="submit"], .sidebar .widget.enews-widget form input[type="submit"] {
+    display: block;
+    padding: 15px 20px;
     background: #00567c;
-    font-weight: 700;
-    border-radius: 0; }
+    font-weight: 700; }
+    .enews-widget form input[type="submit"]:hover, .enews-widget form input[type="submit"]:focus, .sidebar .widget.enews-widget form input[type="submit"]:hover, .sidebar .widget.enews-widget form input[type="submit"]:focus {
+      background: #FFFFFF;
+      color: #00567c; }
 
 .home-intro .enews {
   position: relative;
