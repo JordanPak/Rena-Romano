@@ -7,33 +7,38 @@
 
     @include clearfix();
 
+	@include breakpoint( sm ) {
+		margin: 0;
+		width: 100%;
+		clear: both;
+	} // BP: sm
+
     .textwidget {
         display: block;
         float: left;
         padding: ($space-default + $space-default-half) $space-default;
         width: 33.333333333%;
         text-align: center;
-        background: $white;
+		background: -webkit-linear-gradient( $white 30%, #DCDCDC ) $white;
+		background: -o-linear-gradient( $white 30%, #DCDCDC ) $white;
+		background: -moz-linear-gradient( $white 30%, #DCDCDC ) $white;
+		background: linear-gradient( $white 30%, #DCDCDC ) $white;
         box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         cursor: default;
 		border-left: 1px solid $gray-light;
 		border-right: 1px solid $gray-light;
 
-        @include transition-ease-in-out();
-
         &:hover {
-            background: $gray-light;
-
-            .fa, p {
-                color: $body-text;
-            }
-
+			background: -webkit-linear-gradient($white 30%, $white ) $white;
+			background: -o-linear-gradient($white 30%, $white ) $white;
+			background: linear-gradient($white 30%, $white ) $white;
         } // &:hover
 
         p {
             margin-bottom: $space-default;
 			color: $gray;
             font-style: italic;
+
 
             @include transition-ease-in-out();
         }
@@ -60,19 +65,21 @@
 
         } // .button
 
-        @include breakpoint( sm ) {
-            margin: 0;
-            width: 100%;
-            clear: both;
-        } // small br
-
     } // .textwidget
 
+    h2 {
+        display: block;
+        margin-bottom: 40px;
+        color: $primary;
+        font-weight: 700;
+        font-size: 26px;
+		text-transform: uppercase;
+    }
 
     .fa {
-        color: $gray;
-        font-size: 3em;
-        margin-bottom: $space-default;
+        color: $primary;
+        font-size: 62px;
+        margin-bottom: 10px;
 
         @include transition-ease-in-out();
 
@@ -81,13 +88,5 @@
         }
 
     } // .fa
-
-    h2 {
-        display: block;
-        margin-bottom: $space-default-half;
-        color: $primary-darker;
-        font-weight: 700;
-        font-size: 2em;
-    }
 
 } // #home-services
