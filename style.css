@@ -1545,18 +1545,10 @@ body {
         padding: 15px 0 0 0; } }
     @media (max-width: 860px) {
       .site-header .wrap {
-        padding-left: 5%;
-        padding-right: 5%; } }
-    @media (max-width: 460px) {
-      .site-header .wrap {
-        padding-left: 2.5%;
-        padding-right: 2.5%; } }
+        padding: 15px 0; } }
 
 .title-area {
   width: 300px; }
-  @media (max-width: 860px) {
-    .title-area {
-      width: 75%; } }
 
 .header-image .site-title > a {
   min-height: 63px;
@@ -1573,21 +1565,25 @@ body {
       background-size: contain; } }
 
 .header-contact {
-  position: absolute;
-  top: 14px;
-  right: 0; }
+  float: right; }
   @media (max-width: 1024px) {
     .header-contact {
-      top: 26px; } }
+      padding-top: 12px; } }
+  @media (max-width: 860px) {
+    .header-contact {
+      float: none;
+      width: 100%;
+      padding: 0;
+      text-align: center; } }
   .header-contact .widget-area {
     display: inline-block;
-    float: left;
+    float: none;
     width: auto;
     text-align: inherit; }
   .header-contact .header-contact-phone {
     display: inline-block;
     position: relative;
-    top: -1px;
+    top: -9px;
     margin: 0 0 0 10px;
     padding: 6px 12px;
     color: #FFFFFF;
@@ -1600,8 +1596,6 @@ body {
     -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .header-contact .header-contact-phone:hover {
-      padding: 8px 15px;
-      font-size: 18px;
       background: #d0ae7c; }
   .header-contact .simple-social-icons ul li {
     margin: 0 !important; }
@@ -1619,9 +1613,6 @@ body {
         border-radius: 4px;
         color: #FFFFFF !important;
         font-size: 14px; }
-  @media (max-width: 860px) {
-    .header-contact {
-      padding-right: 5%; } }
 
 @media (max-width: 1024px) {
   .site-header .header-widget-area {
@@ -1690,8 +1681,8 @@ body {
   display: none;
   position: relative;
   float: right;
-  margin-top: 48px;
-  margin-right: 0; }
+  margin: 0;
+  padding-top: 18px; }
   #rena-mobile-topnav .cart-contents {
     display: block;
     float: left;

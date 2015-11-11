@@ -17,13 +17,7 @@
 		}
 
         @include breakpoint( sm ) {
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-
-        @include breakpoint( xxs ) {
-            padding-left: 2.5%;
-            padding-right: 2.5%;
+			padding: 15px 0;
         }
 
     } // .wrap
@@ -32,10 +26,6 @@
 
 .title-area {
     width: 300px;
-
-    @include breakpoint( sm ) {
-        width: 75%;
-    }
 
     @include breakpoint( 540px ) {
         width: 66%;
@@ -67,17 +57,22 @@
 } // .header-image
 
 .header-contact {
-    position: absolute;
-    top: 14px;
-    right: 0;
+	float: right;
 
 	@include breakpoint( med ) {
-		top: 26px;
+		padding-top: 12px;
+	}
+
+	@include breakpoint( sm ) {
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
 	}
 
     .widget-area {
         display: inline-block;
-        float: left;
+        float: none;
         width: auto;
         text-align: inherit;
     }
@@ -85,7 +80,7 @@
     .header-contact-phone {
         display: inline-block;
 		position: relative;
-		top: -1px;
+		top: -9px;
         margin: 0 0 0 10px;
         padding: 6px 12px;
         color: $white;
@@ -99,8 +94,6 @@
         @include transition-ease-in-out;
 
         &:hover {
-            padding: 8px 15px;
-            font-size: 18px;
 			background: $secondary;
         }
 
@@ -130,10 +123,6 @@
         } // a
 
     } // .simple-social-icons ul li
-
-    @include breakpoint( sm ) {
-        padding-right: 5%;
-    }
 
 } // .header-contact
 
