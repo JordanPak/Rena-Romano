@@ -208,6 +208,6 @@ function sp_footer_creds_filter( $creds ) {
 add_action( 'genesis_meta', 'rr_meta_theme_color', 13 );
 function rr_meta_theme_color() {
 
-	echo '<meta name="theme-color" content="#d0ae7c">';
+	echo '<meta name="theme-color" content="#00567c">';
 
 } // rr_meta_theme_color()
