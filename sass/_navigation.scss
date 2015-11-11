@@ -20,6 +20,14 @@
     font-size: 1em;
 	width: auto;
 
+	@include breakpoint( med ) {
+		position: static;
+		right: auto;
+		bottom: auto;
+		margin-top: 8px;
+		text-align: left;
+	}
+
     > li {
         transition: all .4s ease-in-out;
 

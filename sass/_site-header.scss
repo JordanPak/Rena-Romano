@@ -12,6 +12,10 @@
         position: relative;
         padding: 15px 0;
 
+		@include breakpoint( med ) {
+			padding: 15px 0 0 0;
+		}
+
         @include breakpoint( sm ) {
             padding-left: 5%;
             padding-right: 5%;
@@ -66,6 +70,10 @@
     position: absolute;
     top: 14px;
     right: 0;
+
+	@include breakpoint( med ) {
+		top: 26px;
+	}
 
     .widget-area {
         display: inline-block;
@@ -134,9 +142,8 @@
 
     @include breakpoint( med ) {
         clear: both;
-        margin-top: $space-default + $space-default-middle;
         width: 100%;
-        text-align: center;
+		text-align: left;
     }
 
     @include breakpoint( sm ) {
