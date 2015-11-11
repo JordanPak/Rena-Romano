@@ -7,6 +7,21 @@ body {
 }
 
 
+// General Element Responsiveness Fixes
+.archive-description, .author-box, .comment-respond, .entry-comments, .entry-pings, .sidebar .widget {
+	padding: 40px;
+
+	@include breakpoint( sm ) {
+		padding: $space-default;
+	}
+
+	@include breakpoint( xs ) {
+		padding: $space-default-middle;
+	}
+
+} // General Element Responsiveness Fixes
+
+
 //-- SITE-INNER & WRAP --//
 .site-inner, .wrap {
     padding: 0;
@@ -67,15 +82,6 @@ body {
 
 
 .content .entry {
-
-    @include breakpoint( sm ) {
-        padding: $space-default;
-    }
-
-    @include breakpoint( xs ) {
-        padding: $space-default-middle;
-    }
-
 } // .content .entry
 
 .page-template-default, .full-width-content, .single {
@@ -93,6 +99,15 @@ body {
 
 		.entry-content {
 			padding: 50px 60px;
+
+			@include breakpoint( sm ) {
+		        padding: $space-default;
+		    }
+
+		    @include breakpoint( xs ) {
+		        padding: $space-default-middle;
+		    }
+
 		}
 
 		.entry-footer {

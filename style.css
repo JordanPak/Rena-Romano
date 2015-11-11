@@ -1510,6 +1510,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   letter-spacing: 1px;
   background: #00567c;
   border-radius: 5px;
+  text-align: center;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
@@ -1517,6 +1518,15 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 
 body {
   background: url("images/page-bg.jpg") no-repeat top center #014b6e; }
+
+.archive-description, .author-box, .comment-respond, .entry-comments, .entry-pings, .sidebar .widget {
+  padding: 40px; }
+  @media (max-width: 860px) {
+    .archive-description, .author-box, .comment-respond, .entry-comments, .entry-pings, .sidebar .widget {
+      padding: 40px; } }
+  @media (max-width: 600px) {
+    .archive-description, .author-box, .comment-respond, .entry-comments, .entry-pings, .sidebar .widget {
+      padding: 30px; } }
 
 .site-inner, .wrap {
   padding: 0; }
@@ -1559,13 +1569,6 @@ body {
   .sidebar-primary {
     width: 100%; } }
 
-@media (max-width: 860px) {
-  .content .entry {
-    padding: 40px; } }
-@media (max-width: 600px) {
-  .content .entry {
-    padding: 30px; } }
-
 .page-template-default main article, .full-width-content main article, .single main article {
   padding: 0; }
 .page-template-default main .entry-header, .full-width-content main .entry-header, .single main .entry-header {
@@ -1573,6 +1576,12 @@ body {
   background: #00405F; }
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
   padding: 50px 60px; }
+  @media (max-width: 860px) {
+    .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
+      padding: 40px; } }
+  @media (max-width: 600px) {
+    .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
+      padding: 30px; } }
 .page-template-default main .entry-footer, .full-width-content main .entry-footer, .single main .entry-footer {
   padding: 0 60px 50px 60px; }
 
