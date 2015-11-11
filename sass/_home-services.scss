@@ -7,12 +7,6 @@
 
     @include clearfix();
 
-	@include breakpoint( sm ) {
-		margin: 0;
-		width: 100%;
-		clear: both;
-	} // BP: sm
-
     .textwidget {
         display: block;
         float: left;
@@ -22,6 +16,7 @@
 		background: -o-linear-gradient( $white 30%, #E8E8E8 ) $white;
 		background: -moz-linear-gradient( $white 30%, #E8E8E8 ) $white;
 		background: linear-gradient( $white 30%, #E8E8E8 ) $white;
+		-moz-box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         cursor: default;
 		border-left: 1px solid $gray-light;
@@ -41,10 +36,28 @@
 
         } // &:hover
 
+		@include breakpoint( sm ) {
+			margin: 0;
+			width: 100%;
+			background: $white;
+			box-shadow: none;
+			border: 0;
+			border-top: 8px solid $gray-light;
+		} // BP: sm
+
 		a {
 			display: block;
 			padding: 50px 40px;
-		}
+
+			@include breakpoint( sm ) {
+				padding: 40px 40px 50px 40px;
+			}
+
+			@include breakpoint( xs ) {
+				padding: 30px 30px 50px 30px;
+			}
+
+		} // a (wrapper)
 
         p {
             margin-bottom: $space-default;
@@ -81,11 +94,6 @@
         color: $primary;
         font-size: 62px;
         margin-bottom: 10px;
-
-        @include breakpoint( sm ) {
-            display: none;
-        }
-
     } // .fa
 
 } // #home-services

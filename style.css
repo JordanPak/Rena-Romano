@@ -1927,11 +1927,6 @@ body {
     clear: both;
     content: " ";
     display: table; }
-  @media (max-width: 860px) {
-    #home-services {
-      margin: 0;
-      width: 100%;
-      clear: both; } }
   #home-services .textwidget {
     display: block;
     float: left;
@@ -1941,6 +1936,7 @@ body {
     background: -o-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
     background: -moz-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
     background: linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
+    -moz-box-shadow: 0 -8px #00405F, 0 8px #00405F;
     box-shadow: 0 -8px #00405F, 0 8px #00405F;
     cursor: default;
     border-left: 1px solid #f5f5f5;
@@ -1954,9 +1950,23 @@ body {
       #home-services .textwidget:hover .button {
         background: #00567c;
         color: #FFFFFF; }
+    @media (max-width: 860px) {
+      #home-services .textwidget {
+        margin: 0;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: none;
+        border: 0;
+        border-top: 8px solid #f5f5f5; } }
     #home-services .textwidget a {
       display: block;
       padding: 50px 40px; }
+      @media (max-width: 860px) {
+        #home-services .textwidget a {
+          padding: 40px 40px 50px 40px; } }
+      @media (max-width: 600px) {
+        #home-services .textwidget a {
+          padding: 30px 30px 50px 30px; } }
     #home-services .textwidget p {
       margin-bottom: 40px;
       color: #a7a9ae;
@@ -1984,9 +1994,6 @@ body {
     color: #00567c;
     font-size: 62px;
     margin-bottom: 10px; }
-    @media (max-width: 860px) {
-      #home-services .fa {
-        display: none; } }
 
 .enews-widget, .sidebar .widget.enews-widget {
   background: #00405F;
