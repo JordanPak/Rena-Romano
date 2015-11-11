@@ -29,11 +29,6 @@
 .title-area {
     width: 300px;
 
-    @include breakpoint( med-lg ) {
-        margin-top: $space-default-half;
-        // width: 100%;
-    }
-
     @include breakpoint( sm ) {
         width: 75%;
     }
@@ -137,7 +132,7 @@
 
 .site-header .header-widget-area {
 
-    @include breakpoint( med-lg ) {
+    @include breakpoint( med ) {
         clear: both;
         margin-top: $space-default + $space-default-middle;
         width: 100%;
