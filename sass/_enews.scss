@@ -1,0 +1,197 @@
+//==============================//
+//  Rena Romano | eNews Widget  //
+//==============================//
+
+.enews-widget, .sidebar .widget.enews-widget {
+	background: $primary-darker;
+	text-align: center;
+
+    .widget-title {
+        font-size: 32px;
+        font-weight: 700;
+		padding-bottom: 0;
+		border: 0;
+		color: $white;
+		text-transform: none;
+    }
+
+    p {
+        font-size: 18px;
+        color: $secondary;
+        font-style: italic;
+    }
+
+	form {
+
+        input {
+            box-sizing: border-box;
+            display: block;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 0;
+			border: 0;
+
+            &::-webkit-input-placeholder {
+               font-weight: 400;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               font-weight: 400;
+            }
+
+            &::-moz-placeholder,  {  /* Firefox 19+ */
+               font-weight: 400;
+            }
+
+            &:-ms-input-placeholder {
+               font-weight: 400;
+            }
+
+        } // input
+
+        input[type="submit"] {
+            display: block;
+            padding: 15px 20px;
+            background: $primary;
+            font-weight: 700;
+
+            &:hover, &:focus {
+                background: $secondary;
+                color: $white;
+            }
+
+        } // input[submit]
+
+    } // form
+
+} // .enews-widget
+
+// eNews Widget on Home
+.home-intro .enews {
+    position: relative;
+    background: $primary-darker;
+    margin: 0 0 $space-default 0;
+    padding: $space-default-half + 10px;
+
+    @include clearfix();
+
+    .widget-title {
+        display: block;
+        margin: 0;
+        color: $white;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        color: $secondary;
+        font-style: italic;
+    }
+
+    form {
+        display: block;
+        float: right;
+        margin-top: 25px;
+        position: absolute;
+        right: $space-default-half + 5px;
+        top: 10px;
+        text-align: right;
+        width: 50%;
+
+        input {
+            box-sizing: border-box;
+            display: block;
+            float: left;
+            margin-left: 1.75%;
+            margin-bottom: 0;
+            padding: 14px;
+            width: 36%;
+            font-size: 16px;
+            font-weight: 400;
+            border-radius: 0;
+
+            &::-webkit-input-placeholder {
+               font-weight: 400;
+            }
+
+            &:-moz-placeholder { /* Firefox 18- */
+               font-weight: 400;
+            }
+
+            &::-moz-placeholder,  {  /* Firefox 19+ */
+               font-weight: 400;
+            }
+
+            &:-ms-input-placeholder {
+               font-weight: 400;
+            }
+
+            &#subbox1 {
+                margin-left: 0;
+            }
+
+        } // input
+
+        input[type="submit"] {
+            display: block;
+            float: left;
+            margin: 0;
+            margin-left: 1.75%;
+            padding: 15px 20px;
+            width: 24%;
+            background: $primary;
+            font-weight: 700;
+
+            &:hover, &:focus {
+                background: $secondary;
+                color: $white;
+            }
+
+        } // input[submit]
+
+    } // form
+
+    @include breakpoint( sm ) {
+
+        .widget-title, p {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        form {
+            position: static;
+            width: 100%;
+            text-align: left;
+        } // form
+
+    } // Breakpoint: S
+
+
+    @include breakpoint( xs ) {
+
+        form {
+
+            input {
+                display: block;
+                margin: 0 0 10px 0;
+                width: 100%;
+                clear: both;
+            }
+
+            input[type="submit"] {
+                margin: 0;
+                width: 100%;
+                clear: both;
+            }
+
+        } // form
+
+    } // Breakpoint: XS
+
+} // .home-intro .enews

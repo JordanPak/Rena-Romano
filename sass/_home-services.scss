@@ -1,0 +1,93 @@
+//===============================//
+//  Rena Romano | Home Services  //
+//===============================//
+
+#home-services {
+    margin-bottom: 80px;
+
+    @include clearfix();
+
+    .textwidget {
+        display: block;
+        float: left;
+        padding: ($space-default + $space-default-half) $space-default;
+        width: 33.333333333%;
+        text-align: center;
+        background: $white;
+        box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
+        cursor: default;
+		border-left: 1px solid $gray-light;
+		border-right: 1px solid $gray-light;
+
+        @include transition-ease-in-out();
+
+        &:hover {
+            background: $gray-light;
+
+            .fa, p {
+                color: $body-text;
+            }
+
+        } // &:hover
+
+        p {
+            margin-bottom: $space-default;
+			color: $gray;
+            font-style: italic;
+
+            @include transition-ease-in-out();
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0 16px 1px 16px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 40px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            background: none;
+            border: 2px solid $primary;
+            border-radius: 4px;
+            color: $primary;
+
+            @include transition-ease-in-out();
+
+            &:hover {
+                background: $primary;
+                color: $white;
+            }
+
+        } // .button
+
+        @include breakpoint( sm ) {
+            margin: 0;
+            width: 100%;
+            clear: both;
+        } // small br
+
+    } // .textwidget
+
+
+    .fa {
+        color: $gray;
+        font-size: 3em;
+        margin-bottom: $space-default;
+
+        @include transition-ease-in-out();
+
+        @include breakpoint( sm ) {
+            display: none;
+        }
+
+    } // .fa
+
+    h2 {
+        display: block;
+        margin-bottom: $space-default-half;
+        color: $primary-darker;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+} // #home-services
