@@ -1656,7 +1656,7 @@ body {
     padding: 22px 19px;
     font-weight: 700;
     font-size: 16px;
-    letter-spacing: 0.05em; }
+    letter-spacing: 0.015em; }
     .genesis-nav-menu a:hover {
       color: #00567c; }
   .genesis-nav-menu .current-menu-item > a {
