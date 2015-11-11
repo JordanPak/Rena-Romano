@@ -4,6 +4,10 @@
 
 .woocommerce { // Body Class
 
+	div.product {
+		margin-bottom: 40px !important;
+	}
+
     .product_title {
         padding-bottom: $space-default !important;
         text-align: left !important;

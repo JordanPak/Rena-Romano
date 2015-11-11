@@ -2132,6 +2132,8 @@ body {
   .page-template-page_home .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #d0ae7c; }
 
+.woocommerce div.product {
+  margin-bottom: 40px !important; }
 .woocommerce .product_title {
   padding-bottom: 40px !important;
   text-align: left !important; }
