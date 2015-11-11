@@ -189,7 +189,6 @@
 } // .menu-btn
 
 
-
 .pushy {
 	background: $primary;
     border-left: 4px solid $primary-dark;
@@ -213,8 +212,7 @@
                 color: $secondary-dark;
 
                 > a {
-                    color: $secondary-dark; //$primary;
-                    // background: $white;
+                    color: $secondary-dark;
                 }
 
             } // hover

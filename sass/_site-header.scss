@@ -25,11 +25,7 @@
 } // .site-header
 
 .title-area {
-    width: 300px;
-
-	@include breakpoint( xs ) {
-		width: 270px;
-	}
+    width: 276px;
 
 	@include breakpoint( xxs ) {
 		width: 66%;
@@ -42,7 +38,6 @@
     .site-title > a {
         min-height: 63px;
         width: 100%;
-        background-size: contain;
 
         @include breakpoint( med-lg ) {
             background-position: center;
@@ -50,10 +45,8 @@
 
         @include breakpoint( sm ) {
 			background-image: url('images/logo-2x.png');
+        	background-size: contain;
             background-position: left;
-        }
-
-        @include breakpoint( xs ) {
         }
 
     } // .site-title > a
