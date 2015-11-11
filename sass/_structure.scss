@@ -8,7 +8,7 @@ body {
 
 
 // General Element Responsiveness Fixes
-.archive-description, .author-box, .comment-respond, .entry-comments, .entry-pings, .sidebar .widget {
+.archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget {
 	padding: 40px;
 
 	@include breakpoint( sm ) {
