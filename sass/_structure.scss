@@ -81,9 +81,9 @@ body {
 .post-type-archive-product { // Body class
 
     main.content {
+		margin-bottom: 40px;
         padding: $space-default;
         background: $white;
-        border: 8px solid $gray-light;
     } // main.content
 
 } // .full-width-content
