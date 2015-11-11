@@ -1466,8 +1466,7 @@ body {
       font-size: 48px; } }
   @media (max-width: 600px) {
     .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
-      font-size: 42px;
-      padding-bottom: 40px; } }
+      font-size: 42px; } }
 
 .post-type-archive-product .page-title {
   background: #00405F;
@@ -1576,12 +1575,12 @@ body {
   background: #00405F; }
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
   padding: 50px 60px; }
-  @media (max-width: 860px) {
-    .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
-      padding: 40px; } }
-  @media (max-width: 600px) {
-    .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
-      padding: 30px; } }
+@media (max-width: 860px) {
+  .page-template-default main .entry-header, .page-template-default main .entry-content, .full-width-content main .entry-header, .full-width-content main .entry-content, .single main .entry-header, .single main .entry-content {
+    padding: 40px; } }
+@media (max-width: 600px) {
+  .page-template-default main .entry-header, .page-template-default main .entry-content, .full-width-content main .entry-header, .full-width-content main .entry-content, .single main .entry-header, .single main .entry-content {
+    padding: 30px; } }
 .page-template-default main .entry-footer, .full-width-content main .entry-footer, .single main .entry-footer {
   padding: 0 60px 50px 60px; }
 
@@ -1595,6 +1594,12 @@ body {
   min-height: 0;
   background: #FFFFFF;
   border-bottom: 3px solid #4A90AB; }
+  @media (max-width: 600px) {
+    .site-header {
+      margin-bottom: 30px; } }
+  @media (max-width: 460px) {
+    .site-header {
+      margin-bottom: 12px; } }
   .site-header .wrap {
     position: relative;
     padding: 15px 0; }
@@ -1992,8 +1997,10 @@ body {
 .gcta-wrap {
   margin-bottom: 0 !important;
   box-shadow: inset 0 -4px #FFFFFF; }
-  .gcta-wrap .widget-title strong {
-    border-color: #00567c !important; }
+  .gcta-wrap .widget-title {
+    text-transform: none !important; }
+    .gcta-wrap .widget-title strong {
+      border-color: #00567c !important; }
   .gcta-wrap .gcta-button:hover {
     background: #00567c !important;
     border-color: #00567c !important; }

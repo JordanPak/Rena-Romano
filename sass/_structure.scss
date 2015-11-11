@@ -99,14 +99,17 @@ body {
 
 		.entry-content {
 			padding: 50px 60px;
+		}
+
+		.entry-header, .entry-content {
 
 			@include breakpoint( sm ) {
-		        padding: $space-default;
-		    }
+				padding: $space-default;
+			}
 
-		    @include breakpoint( xs ) {
-		        padding: $space-default-middle;
-		    }
+			@include breakpoint( xs ) {
+				padding: $space-default-middle;
+			}
 
 		}
 
