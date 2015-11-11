@@ -2,6 +2,8 @@
 //  Rena Romano | Widgets  //
 //=========================//
 
+
+// GLOBAL //
 .widget {
 
     &.user-profile {
@@ -9,210 +11,34 @@
 
     .widget-title {
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 18px;
+		text-transform: uppercase;
+		color: $primary-dark;
     }
 
 } // .widget
 
-
-.enews-widget, .sidebar .widget.enews-widget {
-	background: $primary-darker;
-	text-align: center;
-
-    .widget-title {
-        font-size: 32px;
-        font-weight: 400;
-    }
-
-    p {
-        font-size: 18px;
-        color: $secondary;
-        font-style: italic;
-    }
-
-	form {
-
-        input {
-            box-sizing: border-box;
-            display: block;
-            padding: 14px;
-            font-size: 16px;
-            font-weight: 400;
-            border-radius: 0;
-			border: 0;
-
-            &::-webkit-input-placeholder {
-               font-weight: 400;
-            }
-
-            &:-moz-placeholder { /* Firefox 18- */
-               font-weight: 400;
-            }
-
-            &::-moz-placeholder,  {  /* Firefox 19+ */
-               font-weight: 400;
-            }
-
-            &:-ms-input-placeholder {
-               font-weight: 400;
-            }
-
-        } // input
-
-        input[type="submit"] {
-            display: block;
-            padding: 15px 20px;
-            background: $primary;
-            font-weight: 700;
-
-            &:hover, &:focus {
-                background: $secondary;
-                color: $white;
-            }
-
-        } // input[submit]
-
-    } // form
-
-} // .enews-widget
-
-// eNews Widget on Home
-.home-intro .enews {
-    position: relative;
-    background: $primary-darker;
-    margin: 0 0 $space-default 0;
-    padding: $space-default-half + 10px;
-
-    @include clearfix();
-
-    .widget-title {
-        display: block;
-        margin: 0;
-        color: $white;
-        font-size: 1.5em;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    p {
-        display: block;
-        margin: 0;
-        font-size: 16px;
-        color: $secondary;
-        font-style: italic;
-    }
-
-    form {
-        display: block;
-        float: right;
-        margin-top: 25px;
-        position: absolute;
-        right: $space-default-half + 5px;
-        top: 10px;
-        text-align: right;
-        width: 50%;
-
-        input {
-            box-sizing: border-box;
-            display: block;
-            float: left;
-            margin-left: 1.75%;
-            margin-bottom: 0;
-            padding: 14px;
-            width: 36%;
-            font-size: 16px;
-            font-weight: 400;
-            border-radius: 0;
-
-            &::-webkit-input-placeholder {
-               font-weight: 400;
-            }
-
-            &:-moz-placeholder { /* Firefox 18- */
-               font-weight: 400;
-            }
-
-            &::-moz-placeholder,  {  /* Firefox 19+ */
-               font-weight: 400;
-            }
-
-            &:-ms-input-placeholder {
-               font-weight: 400;
-            }
-
-            &#subbox1 {
-                margin-left: 0;
-            }
-
-        } // input
-
-        input[type="submit"] {
-            display: block;
-            float: left;
-            margin: 0;
-            margin-left: 1.75%;
-            padding: 15px 20px;
-            width: 24%;
-            background: $primary;
-            font-weight: 700;
-
-            &:hover, &:focus {
-                background: $secondary;
-                color: $white;
-            }
-
-        } // input[submit]
-
-    } // form
-
-    @include breakpoint( sm ) {
-
-        .widget-title, p {
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-
-        form {
-            position: static;
-            width: 100%;
-            text-align: left;
-        } // form
-
-    } // Breakpoint: S
+.sidebar .widget-title {
+	color: $gray;
+	padding-bottom: 4px;
+	border-bottom: 2px solid $gray-light;
+}
 
 
-    @include breakpoint( xs ) {
-
-        form {
-
-            input {
-                display: block;
-                margin: 0 0 10px 0;
-                width: 100%;
-                clear: both;
-            }
-
-            input[type="submit"] {
-                margin: 0;
-                width: 100%;
-                clear: both;
-            }
-
-        } // form
-
-    } // Breakpoint: XS
-
-} // .home-intro .enews
-
+// GENESIS CALL TO ACTION //
 .gcta-wrap {
 
     margin-bottom: 0 !important;
     box-shadow: inset 0 -4px $white;
 
-    .widget-title strong {
-        border-color: $primary !important;
-    }
+	.widget-title {
+		text-transform: none !important;
+
+		strong {
+			border-color: $primary !important;
+		}
+
+	}
 
     .gcta-button {
 
@@ -230,96 +56,8 @@
 
 } // gcta-wrap
 
-#home-services {
-    margin-bottom: 80px;
 
-    @include clearfix();
-
-    .textwidget {
-        display: block;
-        float: left;
-        padding: ($space-default + $space-default-half) $space-default;
-        width: 33.333333333%;
-        text-align: center;
-        background: $white;
-        box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
-        cursor: default;
-		border-left: 1px solid $gray-light;
-		border-right: 1px solid $gray-light;
-
-        @include transition-ease-in-out();
-
-        &:hover {
-            background: $gray-light;
-
-            .fa, p {
-                color: $body-text;
-            }
-
-        } // &:hover
-
-        p {
-            margin-bottom: $space-default;
-			color: $gray;
-            font-style: italic;
-
-            @include transition-ease-in-out();
-        }
-
-        .button {
-            display: inline-block;
-            padding: 0 16px 1px 16px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 40px;
-            text-decoration: none;
-            letter-spacing: 1px;
-            background: none;
-            border: 2px solid $primary;
-            border-radius: 4px;
-            color: $primary;
-
-            @include transition-ease-in-out();
-
-            &:hover {
-                background: $primary;
-                color: $white;
-            }
-
-        } // .button
-
-        @include breakpoint( sm ) {
-            margin: 0;
-            width: 100%;
-            clear: both;
-        } // small br
-
-    } // .textwidget
-
-
-    .fa {
-        color: $gray;
-        font-size: 3em;
-        margin-bottom: $space-default;
-
-        @include transition-ease-in-out();
-
-        @include breakpoint( sm ) {
-            display: none;
-        }
-
-    } // .fa
-
-    h2 {
-        display: block;
-        margin-bottom: $space-default-half;
-        color: $primary-darker;
-        font-weight: 700;
-        font-size: 2em;
-    }
-
-} // #home-services
-
+// HOME - MORE WIDGET AREA //
 #home-more {
     @include clearfix();
 
@@ -371,123 +109,7 @@
 } // #home-more
 
 
-// TESTIMONIALS SLIDER
-.cycle-slideshow {
-    margin-bottom: $space-default + $space-default-half;
-    text-align: center;
-    text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
-
-    blockquote {
-        padding: 0 80px !important;
-
-        &::before {
-            position: absolute;
-            display: block;
-            top: -$space-default;
-            left: 0;
-            font-weight: 700;
-            text-align: left;
-            font-size: 120px;
-            color: $primary;
-            text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
-
-            @include breakpoint( xs ) {
-                // position: static;
-                top: -$space-default;
-                left: 45%;
-                text-align: center;
-            }
-
-        } // &::before
-
-        @include breakpoint( sm ) {
-            padding: 0 ($space-default + $space-default-half) !important;
-        }
-
-        @include breakpoint( xs ) {
-            padding: 60px $space-default 0 $space-default !important;
-        }
-
-        @include breakpoint( xxs ) {
-            padding: 60px 0 0 0 !important;
-        }
-
-    } // blockquote
-
-    .testimonial_body {
-        margin-bottom: $space-default;
-        font-size: 32px;
-        text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
-        font-weight: 400;
-
-        strong, b {
-            font-weight: 700;
-        }
-
-        @include breakpoint( sm ) {
-            font-size: 24px;
-        }
-
-        @include breakpoint( xs ) {
-            font-size: 22px;
-        }
-
-    } // .testimonial_body
-
-    .testimonial-client {
-        font-size: 20px;
-        font-weight: 700;
-
-        &::before {
-            content: '';
-            border-top: 1px solid $gray;
-            padding-bottom: $space-default-middle;
-            display: block;
-            width: 50px;
-            margin: 0 auto;
-        }
-
-    } // .testimonial-client
-
-    .testimonial-position {
-        text-transform: uppercase;
-        font-size: 18px;
-        color: $secondary;
-    }
-
-    .cycle-pager span {
-        color: $gray;
-    }
-
-    .cycle-pager span.cycle-pager-active {
-        color: $primary;
-    }
-
-} // .cycle-slidshow
-
-.page-template-page_home .cycle-slideshow {
-    color: $white;
-    text-shadow: none;
-
-    .testimonial_body {
-        text-shadow: none;
-    }
-
-    blockquote {
-
-        &::before {
-            color: $secondary;
-            text-shadow: none;
-        } // &::before
-
-    } // blockquote
-
-    .cycle-pager span {
-        color: $white;
-    }
-
-    .cycle-pager span.cycle-pager-active {
-        color: $secondary;
-    }
-
-} // .page-template-page_home .cycle-slideshow
+// GENESIS SIMPLE SHARE //
+.share-after {
+	margin: 60px 0 0 0;
+}

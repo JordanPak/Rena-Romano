@@ -8,6 +8,14 @@
     background: $white;
 	border-bottom: 3px solid $primary-light;
 
+	@include breakpoint( xs ) {
+		margin-bottom: 30px;
+	}
+
+	@include breakpoint( xxs ) {
+		margin-bottom: 12px;
+	}
+
     .wrap {
         position: relative;
         padding: 15px 0;

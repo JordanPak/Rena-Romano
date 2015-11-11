@@ -1,0 +1,123 @@
+//====================================//
+//  Rena Romano | Testimonial Widget  //
+//====================================//
+
+.cycle-slideshow {
+    margin-bottom: $space-default + $space-default-half;
+    text-align: center;
+    text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+
+    blockquote {
+        padding: 0 80px !important;
+
+        &::before {
+            position: absolute;
+            display: block;
+            top: -$space-default;
+            left: 0;
+            font-weight: 700;
+            text-align: left;
+            font-size: 120px;
+            color: $primary;
+            text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+
+            @include breakpoint( xs ) {
+                // position: static;
+                top: -$space-default;
+                left: 45%;
+                text-align: center;
+            }
+
+        } // &::before
+
+        @include breakpoint( sm ) {
+            padding: 0 ($space-default + $space-default-half) !important;
+        }
+
+        @include breakpoint( xs ) {
+            padding: 60px $space-default 0 $space-default !important;
+        }
+
+        @include breakpoint( xxs ) {
+            padding: 60px 0 0 0 !important;
+        }
+
+    } // blockquote
+
+    .testimonial_body {
+        margin-bottom: $space-default;
+        font-size: 32px;
+        text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+        font-weight: 400;
+
+        strong, b {
+            font-weight: 700;
+        }
+
+        @include breakpoint( sm ) {
+            font-size: 24px;
+        }
+
+        @include breakpoint( xs ) {
+            font-size: 22px;
+        }
+
+    } // .testimonial_body
+
+    .testimonial-client {
+        font-size: 20px;
+        font-weight: 700;
+
+        &::before {
+            content: '';
+            border-top: 1px solid $gray;
+            padding-bottom: $space-default-middle;
+            display: block;
+            width: 50px;
+            margin: 0 auto;
+        }
+
+    } // .testimonial-client
+
+    .testimonial-position {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $secondary;
+    }
+
+    .cycle-pager span {
+        color: $gray;
+    }
+
+    .cycle-pager span.cycle-pager-active {
+        color: $primary;
+    }
+
+} // .cycle-slidshow
+
+.page-template-page_home .cycle-slideshow {
+    color: $white;
+    text-shadow: none;
+
+    .testimonial_body {
+        text-shadow: none;
+    }
+
+    blockquote {
+
+        &::before {
+            color: $secondary;
+            text-shadow: none;
+        } // &::before
+
+    } // blockquote
+
+    .cycle-pager span {
+        color: $white;
+    }
+
+    .cycle-pager span.cycle-pager-active {
+        color: $secondary;
+    }
+
+} // .page-template-page_home .cycle-slideshow

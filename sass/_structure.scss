@@ -7,6 +7,21 @@ body {
 }
 
 
+// General Element Responsiveness Fixes
+.archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget {
+	padding: 40px;
+
+	@include breakpoint( sm ) {
+		padding: $space-default;
+	}
+
+	@include breakpoint( xs ) {
+		padding: $space-default-middle;
+	}
+
+} // General Element Responsiveness Fixes
+
+
 //-- SITE-INNER & WRAP --//
 .site-inner, .wrap {
     padding: 0;
@@ -67,22 +82,50 @@ body {
 
 
 .content .entry {
-
-    @include breakpoint( sm ) {
-        padding: $space-default;
-    }
-
-    @include breakpoint( xs ) {
-        padding: $space-default-middle;
-    }
-
 } // .content .entry
+
+.page-template-default, .full-width-content, .single {
+
+	main {
+
+		article {
+			padding: 0;
+		}
+
+		.entry-header {
+			padding: 60px;
+			background: $primary-darker;
+		}
+
+		.entry-content {
+			padding: 50px 60px;
+		}
+
+		.entry-header, .entry-content {
+
+			@include breakpoint( sm ) {
+				padding: $space-default;
+			}
+
+			@include breakpoint( xs ) {
+				padding: $space-default-middle;
+			}
+
+		}
+
+		.entry-footer {
+			padding: 0 60px 50px 60px;
+		}
+
+	} // main
+
+} // .page-template-default, .full-width-content
 
 .post-type-archive-product { // Body class
 
     main.content {
 		margin-bottom: 40px;
-        padding: $space-default;
+		padding: 0;
         background: $white;
     } // main.content
 
