@@ -66,8 +66,8 @@
             font-weight: 700;
 
             &:hover, &:focus {
-                background: $white;
-                color: $primary;
+                background: $secondary;
+                color: $white;
             }
 
         } // input[submit]
@@ -80,7 +80,7 @@
 .home-intro .enews {
     position: relative;
     background: $primary-darker;
-    margin: 0 0 $space-default 0; //($space-default-half + 10px) 0 $space-default-half 0;
+    margin: 0 0 $space-default 0;
     padding: $space-default-half + 10px;
 
     @include clearfix();
@@ -157,8 +157,8 @@
             font-weight: 700;
 
             &:hover, &:focus {
-                background: $white;
-                color: $primary;
+                background: $secondary;
+                color: $white;
             }
 
         } // input[submit]

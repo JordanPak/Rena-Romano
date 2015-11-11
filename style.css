@@ -1849,8 +1849,8 @@ body {
     background: #00567c;
     font-weight: 700; }
     .enews-widget form input[type="submit"]:hover, .enews-widget form input[type="submit"]:focus, .sidebar .widget.enews-widget form input[type="submit"]:hover, .sidebar .widget.enews-widget form input[type="submit"]:focus {
-      background: #FFFFFF;
-      color: #00567c; }
+      background: #d0ae7c;
+      color: #FFFFFF; }
 
 .home-intro .enews {
   position: relative;
@@ -1919,8 +1919,8 @@ body {
       background: #00567c;
       font-weight: 700; }
       .home-intro .enews form input[type="submit"]:hover, .home-intro .enews form input[type="submit"]:focus {
-        background: #FFFFFF;
-        color: #00567c; }
+        background: #d0ae7c;
+        color: #FFFFFF; }
   @media (max-width: 860px) {
     .home-intro .enews .widget-title, .home-intro .enews p {
       display: block;
