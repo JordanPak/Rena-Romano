@@ -1524,6 +1524,23 @@ body {
     .site-inner, .wrap {
       width: 95%; } }
 
+@media (max-width: 1260px) {
+  .content {
+    width: 660px; } }
+@media (max-width: 1080px) {
+  .content {
+    width: 600px; } }
+@media (max-width: 1024px) {
+  .content {
+    width: 100%; } }
+
+@media (max-width: 1260px) {
+  .sidebar-primary {
+    width: 320px; } }
+@media (max-width: 1024px) {
+  .sidebar-primary {
+    width: 100%; } }
+
 @media (max-width: 860px) {
   .content .entry {
     padding: 40px; } }

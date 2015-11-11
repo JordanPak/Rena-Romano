@@ -36,8 +36,35 @@ body {
 } // .site-inner, .wrap
 
 
-.content .entry, .sidebar .widget {
-}
+//-- CONTENT & SIDEBAR FIXES --//
+.content {
+
+    @include breakpoint( lg ) {
+        width: 660px;
+    }
+
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
+
+    @include breakpoint( med ) {
+        width: 100%;
+    }
+
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
+
 
 .content .entry {
 
