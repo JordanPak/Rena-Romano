@@ -9,10 +9,18 @@
 
     .widget-title {
         font-weight: 700;
-        font-size: 1.5em;
+        font-size: 18px;
+		text-transform: uppercase;
+		color: $primary-dark;
     }
 
 } // .widget
+
+.sidebar .widget-title {
+	color: $gray;
+	padding-bottom: 4px;
+	border-bottom: 2px solid $gray-light;
+}
 
 
 .enews-widget, .sidebar .widget.enews-widget {
@@ -21,7 +29,11 @@
 
     .widget-title {
         font-size: 32px;
-        font-weight: 400;
+        font-weight: 700;
+		padding-bottom: 0;
+		border: 0;
+		color: $white;
+		text-transform: none;
     }
 
     p {

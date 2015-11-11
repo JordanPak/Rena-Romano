@@ -1437,7 +1437,8 @@ body {
 
 .entry h1, .entry h2, .entry h3, .entry h4, .entry h5, .entry h6 {
   font-weight: 700;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #014b6e; }
   .entry h1 a, .entry h2 a, .entry h3 a, .entry h4 a, .entry h5 a, .entry h6 a {
     color: inherit;
     border-bottom: 2px solid #00567c;
@@ -1840,14 +1841,25 @@ body {
 
 .widget .widget-title {
   font-weight: 700;
-  font-size: 1.5em; }
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #014b6e; }
+
+.sidebar .widget-title {
+  color: #a7a9ae;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #f5f5f5; }
 
 .enews-widget, .sidebar .widget.enews-widget {
   background: #00405F;
   text-align: center; }
   .enews-widget .widget-title, .sidebar .widget.enews-widget .widget-title {
     font-size: 32px;
-    font-weight: 400; }
+    font-weight: 700;
+    padding-bottom: 0;
+    border: 0;
+    color: #FFFFFF;
+    text-transform: none; }
   .enews-widget p, .sidebar .widget.enews-widget p {
     font-size: 18px;
     color: #d0ae7c;
