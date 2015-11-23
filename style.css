@@ -2297,6 +2297,13 @@ body {
   border-radius: 0 !important; }
 .woocommerce .payment_methods.methods li {
   list-style-type: none !important; }
+.woocommerce span.onsale {
+  width: 64px !important;
+  height: 64px !important;
+  background-color: #b81c23 !important;
+  font-size: 18px !important;
+  line-height: 2.8em !important;
+  border: 3px solid #9d181e; }
 
 .woocommerce-checkout .woocommerce h2, .woocommerce-checkout .woocommerce h3 {
   font-weight: 700 !important; }

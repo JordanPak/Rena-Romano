@@ -160,6 +160,15 @@
         list-style-type: none !important;
     }
 
+	span.onsale {
+		width: 64px !important;
+		height: 64px !important;
+		background-color: $wc-red !important;
+		font-size: 18px !important;
+		line-height: 2.8em !important;
+		border: 3px solid darken( $wc-red, 6 );
+	}
+
 } // .woocommerce
 
 
