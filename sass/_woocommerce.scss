@@ -43,6 +43,8 @@
 
     } // .price
 
+
+	// PRODUCTS LISTING ("SHOP") //
     ul.products {
 		padding: 50px 60px !important;
 
@@ -103,6 +105,8 @@
 
     } // ul.products
 
+
+	// BUTTONS //
     a.button, button.button, input.button {
         background-color: $primary !important;
         border-radius: 0 !important;
@@ -128,6 +132,8 @@
         display: none;
     }
 
+
+	// RELATED PRODUCTS //
     .related.products {
         clear: both;
         margin-top: $space-default * 2;
@@ -195,6 +201,7 @@
 } // .woocommerce
 
 
+// CHECKOUT //
 .woocommerce-checkout {
 
     .woocommerce {
