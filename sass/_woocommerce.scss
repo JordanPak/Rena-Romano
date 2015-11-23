@@ -4,6 +4,8 @@
 
 .woocommerce { // Body Class
 
+
+	// PRODUCT SINGLE //
 	div.product {
 		margin-bottom: 40px !important;
 
@@ -15,6 +17,18 @@
 			}
 
 		} // p.price
+
+		div.summary {
+
+			ol, ul {
+				padding: 0 0 0 40px;
+			}
+
+			li {
+				list-style-type: disc;
+			}
+
+		} // div.summary
 
 	} // div.product
 

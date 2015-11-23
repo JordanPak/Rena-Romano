@@ -2205,6 +2205,10 @@ body {
   .woocommerce div.product p.price ins {
     color: #b81c23;
     text-decoration: none; }
+  .woocommerce div.product div.summary ol, .woocommerce div.product div.summary ul {
+    padding: 0 0 0 40px; }
+  .woocommerce div.product div.summary li {
+    list-style-type: disc; }
 .woocommerce .product_title {
   padding-bottom: 40px !important;
   text-align: left !important; }
