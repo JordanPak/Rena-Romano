@@ -28,7 +28,20 @@
 				list-style-type: disc;
 			}
 
+			.sku_wrapper {
+				display: none;
+			}
+
 		} // div.summary
+
+		form.cart .variations {
+			margin-top: 3em;
+
+			label {
+				font-size: 24px;
+			}
+
+		} // form.cart .variations
 
 	} // div.product
 

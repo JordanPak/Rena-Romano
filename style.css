@@ -2209,6 +2209,12 @@ body {
     padding: 0 0 0 40px; }
   .woocommerce div.product div.summary li {
     list-style-type: disc; }
+  .woocommerce div.product div.summary .sku_wrapper {
+    display: none; }
+  .woocommerce div.product form.cart .variations {
+    margin-top: 3em; }
+    .woocommerce div.product form.cart .variations label {
+      font-size: 24px; }
 .woocommerce .product_title {
   padding-bottom: 40px !important;
   text-align: left !important; }
