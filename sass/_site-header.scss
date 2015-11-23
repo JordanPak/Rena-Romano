@@ -2,70 +2,108 @@
 //  Rena Romano | Site Header  //
 //=============================//
 
-#header-bg {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: $header-bg-lg;
-    background: $primary url( 'images/header-bg.jpg' );
-    background-position: center;
-}
-
 .site-header {
+	margin-bottom: 40px;
     min-height: 0;
-    background: none;
+    background: $white;
+	border-bottom: 3px solid $primary-light;
+
+	@include breakpoint( xs ) {
+		margin-bottom: 30px;
+	}
+
+	@include breakpoint( xxs ) {
+		margin-bottom: 12px;
+	}
 
     .wrap {
         position: relative;
-        padding: $space-default 0 12px 0;
-    }
+        padding: 15px 0;
+
+		@include breakpoint( med ) {
+			padding: 15px 0 0 0;
+		}
+
+        @include breakpoint( sm ) {
+			padding: 15px 0;
+        }
+
+    } // .wrap
 
 } // .site-header
 
 .title-area {
-    width: 380px;
+    width: 276px;
+
+	@include breakpoint( xxs ) {
+		width: 66%;
+	}
+
 } // .title-area
 
 .header-image {
 
     .site-title > a {
-        min-height: 80px;
+        min-height: 63px;
         width: 100%;
-    }
+
+        @include breakpoint( med-lg ) {
+            background-position: center;
+        }
+
+        @include breakpoint( sm ) {
+			background-image: url('images/logo-2x.png');
+        	background-size: contain;
+            background-position: left;
+        }
+
+    } // .site-title > a
 
 } // .header-image
 
 .header-contact {
-    position: absolute;
-    top: 0;
-    right: 0;
+	float: right;
+
+	@include breakpoint( med ) {
+		padding-top: 12px;
+	}
+
+	@include breakpoint( sm ) {
+		float: none;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+	}
+
+	@include breakpoint( xs ) {
+		margin-bottom: 10px;
+	}
 
     .widget-area {
         display: inline-block;
-        float: left;
+        float: none;
         width: auto;
         text-align: inherit;
     }
 
     .header-contact-phone {
         display: inline-block;
+		position: relative;
+		top: -9px;
         margin: 0 0 0 10px;
-        padding: 5px 10px;
-        border-top: 2px solid $white; //none;
+        padding: 6px 12px;
         color: $white;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
+		line-height: 14px;
         cursor: default;
+		border-radius: 4px;
+		background: $primary;
 
         @include transition-ease-in-out;
 
         &:hover {
-            padding: 8px 15px;
-            background: linear-gradient( rgba(255,255,255,0.3), rgba(0,0,0,0) );
-            border-top: 4px solid $white;
-            color: $white;
-            font-size: 18px;
+			background: $secondary;
         }
 
     } // .header-contact-phone
@@ -75,16 +113,39 @@
         margin: 0 !important;
 
         a {
-            color: $white !important;
-            background: none !important;
+			margin-left: 6px;
+			padding: 6px;
+            background: $gray-light !important;
+			border-radius: 4px;
+            color: $gray !important;
+			font-size: 14px;
 
             &:hover {
-                color: $primary !important;
-                background: $white !important;
+				margin-left: 6px;
+				padding: 6px;
+	            background: $primary !important;
+				border-radius: 4px;
+	            color: $white !important;
+				font-size: 14px;
             }
 
         } // a
 
     } // .simple-social-icons ul li
-    
+
 } // .header-contact
+
+
+.site-header .header-widget-area {
+
+    @include breakpoint( med ) {
+        clear: both;
+        width: 100%;
+		text-align: left;
+    }
+
+    @include breakpoint( sm ) {
+        display: none;
+    }
+
+} // .header-widget-area

@@ -3,23 +3,130 @@
 //===========================//
 
 body {
-    background: $gray-light;
+	background: url('images/page-bg.jpg') no-repeat top center $primary-dark;
 }
 
-.site-inner {
-    padding-top: 0;
-}
 
-.content .entry, .sidebar .widget {
-    border: 8px solid $gray-light;
-}
+// General Element Responsiveness Fixes
+.archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget {
+	padding: 40px;
+
+	@include breakpoint( sm ) {
+		padding: $space-default;
+	}
+
+	@include breakpoint( xs ) {
+		padding: $space-default-middle;
+	}
+
+} // General Element Responsiveness Fixes
+
+
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
+    padding: 0;
+
+    @include breakpoint( xl ) {
+        max-width: $bp-xl-wrap;
+    }
+    @include breakpoint( lg ) {
+        max-width: $bp-lg-wrap;
+    }
+    @include breakpoint( med-lg ) {
+        max-width: $bp-med-lg-wrap;
+    }
+    @include breakpoint( med ) {
+        max-width: $bp-med-wrap;
+    }
+    @include breakpoint( sm ) {
+        width: $bp-sm-wrap;
+    }
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+	@include breakpoint( xxs ) {
+		width: $bp-xxs-wrap;
+	}
+
+} // .site-inner, .wrap
+
+
+//-- CONTENT & SIDEBAR FIXES --//
+.content {
+
+    @include breakpoint( lg ) {
+        width: 660px;
+    }
+
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
+
+    @include breakpoint( med ) {
+        width: 100%;
+    }
+
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
+
+
+.content .entry {
+} // .content .entry
+
+.page-template-default, .full-width-content, .single {
+
+	main {
+
+		article {
+			padding: 0;
+		}
+
+		.entry-header {
+			padding: 60px;
+			background: $primary-darker;
+		}
+
+		.entry-content {
+			padding: 50px 60px;
+		}
+
+		.entry-header, .entry-content {
+
+			@include breakpoint( sm ) {
+				padding: $space-default;
+			}
+
+			@include breakpoint( xs ) {
+				padding: $space-default-middle;
+			}
+
+		}
+
+		.entry-footer {
+			padding: 0 60px 50px 60px;
+		}
+
+	} // main
+
+} // .page-template-default, .full-width-content
 
 .post-type-archive-product { // Body class
 
     main.content {
-        padding: $space-default;
+		margin-bottom: 40px;
+		padding: 0;
         background: $white;
-        border: 8px solid $gray-light;
     } // main.content
 
 } // .full-width-content

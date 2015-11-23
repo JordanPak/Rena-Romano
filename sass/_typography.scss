@@ -18,30 +18,117 @@ body {
 //  HEADINGS & HEADERS  //
 //----------------------//
 
-.entry-title {
-    font-weight: 300;
-    font-size: 2.333333333em;
+.entry {
 
-    a:hover {
-        color: $primary;
-    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        margin-bottom: 20px;
+		color: $primary-dark;
+
+        a {
+            color: inherit;
+            border-bottom: 2px solid $primary;
+
+            @include transition-ease-in-out(150ms);
+
+            &:hover {
+                color: $black;
+            }
+
+        } // <a> Inside Header
+
+    } // All Entry Headers
+
+} // .entry
+
+
+// REMOVE LINK BORDER //
+.entry .entry-title {
+
+    a {
+        border-bottom: 0;
+
+        &:hover {
+            color: $primary;
+        }
+
+    } // a
 
 } // .entry-title
 
 
+// HUGE "BANNER" TITLE //
  .page-template-default, .full-width-content {
 
      .entry-title, .page-title {
-         margin-bottom: $space-default;
-         padding-bottom: $space-default-half;
-         border-bottom: 1px solid $gray-light;
-         font-size: 2.5em;
-         font-weight: 300;
-         text-transform: uppercase;
-     }
+         margin-bottom: 0;
+         text-align: center;
+         font-size: 56px;
+         font-weight: 700;
+		 text-transform: uppercase;
+		 word-spacing: 0.15em;
+		 letter-spacing: -.03em;
+         color: $white;
+
+         @include breakpoint( sm ) {
+             font-size: 48px;
+         }
+
+         @include breakpoint( xs ) {
+             font-size: 42px;
+         }
+
+
+     } // .entry-title, .page-title
 
  } // .page-template-default
 
+ .post-type-archive-product {
+
+	.page-title {
+		background: $primary-darker;
+		padding: 60px;
+	}
+
+} // .post-type-archive-product
+
+
+// SMALLER "BANNER" TITLE & META //
+.single {
+
+	.entry-title {
+		color: $white;
+	}
+
+	.entry-header .entry-meta {
+		margin-bottom: 0;
+		color: $gray-light;
+
+		a {
+			color: $secondary;
+		}
+
+	} // .entry-meta
+
+} // .single
+
+
+// BLUE TEXT TITLE //
+.woocommerce div.product .product_title, .page-template-page_blog .entry-title {
+	color: $primary;
+	text-transform: none;
+} // .woocommerce div.product .product_title
+
+
+h2 {
+    margin-bottom: $space-default-half + 10px;
+    font-size: 36px;
+}
+
+h3 {
+    margin-bottom: $space-default-half + 10px;
+    font-size: 30px;
+}
 
 
 //-----------//
@@ -51,3 +138,41 @@ body {
 a {
     color: $primary;
 } // a
+
+
+
+//--------//
+//  MISC  //
+//--------//
+
+.entry ul {
+
+    li {
+        margin-bottom: 10px;
+    }
+
+} // .entry ul
+
+
+hr {
+    border: 0;
+    border-top: 2px solid $gray-light;
+    margin: ($space-default + $space-default-half) 0;
+}
+
+
+button, input[type="button"], input[type="reset"], input[type="submit"], .button {
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: $primary;
+    border-radius: 5px;
+	text-align: center;
+
+	@include transition-ease-in-out();
+
+	&:hover {
+		background: $primary-darker;
+	}
+
+} // buttons

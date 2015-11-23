@@ -2,6 +2,14 @@
 //  Rena Romano | Navigation  //
 //============================//
 
+.nav-header {
+
+    @include breakpoint( sm ) {
+        display: none;
+    }
+
+} // .nav-header
+
 
 // Global Genesis Nav
 .genesis-nav-menu {
@@ -10,21 +18,26 @@
     bottom: 0;
     padding: 0;
     font-size: 1em;
+	width: auto;
+
+	@include breakpoint( med ) {
+		position: static;
+		right: auto;
+		bottom: auto;
+		margin-top: 8px;
+		text-align: left;
+	}
 
     > li {
-        box-shadow: inset 0 -8px rgba(0,0,0,0);
         transition: all .4s ease-in-out;
 
         a {
         }
 
-        &:hover {
-            box-shadow: inset 0 -8px $white;
-            background: linear-gradient( rgba(0,0,0,0), rgba(255,255,255,0.3) );
+        &:hover, .wpmenucart-contents {
 
             > a {
-                color: $white; //$primary;
-                // background: $white;
+                color: $primary-light;
             }
 
         } // hover
@@ -33,40 +46,212 @@
 
     a {
         transition: all .4s ease-in-out;
-        color: $white;
+        color: $primary;
         display: block;
-        padding: 0 24px 29px 24px;
+        padding: 22px 19px;
         font-weight: 700;
-        font-size: 0.9em;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.015em;
 
         &:hover {
             color: $primary;
         }
+
+		@include breakpoint( med-lg ) {
+			padding: 22px 16px;
+		}
 
     } // > li > a
 
     .current-menu-item > a {
-        color: $white;
-        box-shadow: inset 0 -8px $white;
-        background: linear-gradient( rgba(0,0,0,0), rgba(255,255,255,0.3) );
-    }
+        color: $secondary;
+        box-shadow: inset 0 -3px $secondary;
 
-    .sub-menu a {
-        text-transform: capitalize;
-        font-weight: 400;
-        color: $gray-dark;
-        letter-spacing: normal;
+		&:hover {
+			color: $secondary-light;
+		}
 
-        &:hover {
-            color: $primary;
-        }
+    } // .current-menu-item > a
 
-    } // .sub-menu a
+	.sub-menu {
+		-moz-box-shadow: 0 3px 4px rgba( $primary, 0.2 );
+		box-shadow: 0 2px 6px rgba( $primary, 0.2 );
+
+		a {
+	        text-transform: capitalize;
+	        font-weight: 400;
+			font-size: 16px;
+	        color: $gray-dark;
+	        letter-spacing: normal;
+
+	        &:hover {
+	            color: $primary;
+	        }
+
+	    } // .sub-menu a
+
+	} // .sub-menu
 
     > .last > a {
         padding-right: 24px;
     }
 
 } // .genesis-nav-menu
+
+
+#rena-mobile-topnav {
+    display: none;
+    position: relative;
+    float: right;
+    margin: 0;
+	padding-top: 18px;
+
+    .cart-contents {
+        display: block;
+        float: left;
+        padding: 8px 12px 9px 11px;
+        margin-bottom: 8px;
+        height: 44px;
+        background-color: $primary;
+        border-radius: 6px 0 0 6px;
+        color: $white;
+
+        span {
+            margin-left: 7px;
+        }
+
+        &:hover {
+            background: $primary-dark;
+            color: $white;
+        }
+
+    } // .cart-contents
+
+    @include breakpoint( sm ) {
+        display: block;
+    }
+
+} // #rena-mobile-topnav
+
+
+// MOBILE PRIMARY MENU //
+.menu-btn {
+    display: block;
+    float: left;
+    padding: 15px 13px;
+    margin-bottom: 8px;
+    height: 44px;
+	background-color: $primary;
+    background-image: none;
+	border-radius: 0 6px 6px 0;
+    border-left: 2px solid $primary-dark;
+
+    &:hover {
+
+        .icon-bar {
+            background-color: $white;
+        }
+
+    } // hover
+
+    .icon-bar {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $white;
+    } // .icon-bar
+
+    .icon-bar + .icon-bar {
+        margin-top: 4px;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    } // .sr-only
+
+    &:hover, &:focus {
+        background-color: $primary-dark;
+        border-color: $primary-darker;
+    }
+
+    @include breakpoint( xxs ) {
+        padding: 12px 10px;
+    }
+
+} // .menu-btn
+
+
+.pushy {
+	background: $primary;
+    border-left: 4px solid $primary-dark;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+    .genesis-nav-menu {
+        position: static;
+
+        > li {
+            box-shadow: none;
+            float: none;
+            width: 100%;
+
+            a {
+            }
+
+            &:hover, .wpmenucart-contents {
+                box-shadow: none;
+                background: $primary-dark;
+                color: $white;
+
+                > a {
+                    color: $white;
+                }
+
+            } // hover
+
+        } // > li
+
+        a {
+            float: none;
+            width: 100%;
+            clear: both;
+            padding: $space-default-half;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+
+            &:hover {
+				color: $white;
+                background: $primary-dark;
+            }
+
+        } // > li > a
+
+        .current-menu-item > a {
+            color: $primary-dark;
+            box-shadow: none;
+            background: $white;
+
+			&:hover {
+				background: $primary-dark;
+				color: $white;
+			}
+
+        } // .current-menu-item > a
+
+    } // .genesis-nav-menu
+
+} // .pushy .genesis-nav-menu
+
+
+.pushy-active .site-overlay {
+	background-color: rgba(167, 132, 85, 0.85);
+}
