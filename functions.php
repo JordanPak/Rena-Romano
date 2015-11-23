@@ -58,21 +58,6 @@ function renaromano_global_scripts() {
 
 
 
-//-- HEADER BG --//
-add_action( 'genesis_before_header', 'rena_header_bg' );
-/**
- * Header Background
- *
- * @author Jordan Pakrosnis
- */
-function rena_header_bg() {
-
-    echo '<div id="header-bg"></div>';
-
-} // rena_header_background()
-
-
-
 add_action( 'genesis_header', 'rena_mobile_menu_button', 14 );
 /**
  * RenaRomano Mobile Menu Button
@@ -217,3 +202,12 @@ function sp_footer_creds_filter( $creds ) {
 
 	return $creds;
 } // sp_footer_creds_filter
+
+
+// THEME COLOR META //
+add_action( 'genesis_meta', 'rr_meta_theme_color', 13 );
+function rr_meta_theme_color() {
+
+	echo '<meta name="theme-color" content="#00567c">';
+
+} // rr_meta_theme_color()
