@@ -2202,6 +2202,9 @@ body {
 
 .woocommerce div.product {
   margin-bottom: 40px !important; }
+  .woocommerce div.product p.price ins {
+    color: #b81c23;
+    text-decoration: none; }
 .woocommerce .product_title {
   padding-bottom: 40px !important;
   text-align: left !important; }
@@ -2228,6 +2231,9 @@ body {
       font-weight: 700; }
     .woocommerce ul.products li.product .price {
       text-align: center !important; }
+      .woocommerce ul.products li.product .price ins {
+        color: #b81c23 !important;
+        text-decoration: none !important; }
   .woocommerce ul.products .added_to_cart.wc-forward {
     display: inline-block !important;
     box-sizing: border-box !important;

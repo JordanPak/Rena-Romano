@@ -6,7 +6,17 @@
 
 	div.product {
 		margin-bottom: 40px !important;
-	}
+
+		p.price {
+
+			ins {
+				color: $wc-red;
+				text-decoration: none;
+			}
+
+		} // p.price
+
+	} // div.product
 
     .product_title {
         padding-bottom: $space-default !important;
@@ -47,7 +57,13 @@
 
             .price {
                 text-align: center !important;
-            }
+
+				ins {
+					color: $wc-red !important;
+					text-decoration: none !important;
+				}
+
+            } // .price
 
         } // li.product
 
