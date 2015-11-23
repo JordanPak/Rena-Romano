@@ -46,8 +46,9 @@
 	} // div.product
 
     .product_title {
-        padding-bottom: $space-default !important;
+        padding-bottom: 10px !important;
         text-align: left !important;
+		font-size: 42px !important;
 
         @include breakpoint( med ) {
             font-size: 42px;
@@ -60,6 +61,7 @@
     } // .product_title
 
     .price {
+		margin-bottom: 40px !important;
         font-size: 24px !important;
         font-weight: 700 !important;
         text-align: left !important;
