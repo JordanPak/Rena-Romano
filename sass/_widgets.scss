@@ -38,6 +38,7 @@
     }
 
 	.widget-title {
+		cursor: default;
 		text-transform: none !important;
 
 		strong {
@@ -45,6 +46,10 @@
 			border-width: 4px !important;
 		}
 
+	} // .widget-title
+
+	.gcta-body {
+		cursor: default;
 	}
 
     .gcta-button {
