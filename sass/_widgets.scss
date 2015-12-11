@@ -123,19 +123,34 @@
 
     article.type-post {
         float: left;
-        width: 48.5%;
-        margin-right: 3%;
+        width: 32%; // 48.5% for two-columns
+        margin-right: 2%;
 		text-align: left;
         background: $white;
         min-height: 230px;
+
+		@include breakpoint( lg ) {
+			width: 48.5%;
+			margin-right: 3%;
+
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+
+		} // BP:LG
+
+		@include breakpoint( sm ) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
 
         &:last-child {
             margin-right: 0;
         }
 
         .entry-title {
-			margin-bottom: 0;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             color: $gray-dark;
         }
@@ -148,6 +163,24 @@
         .entry-content p {
             margin-bottom: 0;
         }
+
+		.more-link {
+			display: block;
+			margin-top: 25px;
+			padding: 3px 10px;
+			width: 100px;
+			border-radius: 4px;
+			background: $primary-dark;
+			color: $white;
+			font-size: 14px;
+			font-weight: 700;
+			text-align: center;
+
+			&:hover {
+				background: $primary-darker;
+			}
+
+		} // .more-link
 
     } // article.type-post
 
