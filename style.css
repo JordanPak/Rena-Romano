@@ -1447,10 +1447,13 @@ body {
     .entry h1 a:hover, .entry h2 a:hover, .entry h3 a:hover, .entry h4 a:hover, .entry h5 a:hover, .entry h6 a:hover {
       color: #000000; }
 
-.entry .entry-title a {
-  border-bottom: 0; }
-  .entry .entry-title a:hover {
-    color: #00567c; }
+.entry .entry-title {
+  cursor: default; }
+  .entry .entry-title a {
+    cursor: pointer;
+    border-bottom: 0; }
+    .entry .entry-title a:hover {
+      color: #00567c; }
 
 .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
   margin-bottom: 0;
@@ -1865,7 +1868,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  color: #014b6e; }
+  color: #014b6e;
+  cursor: default; }
 
 .sidebar .widget-title {
   color: #a7a9ae;
@@ -2084,6 +2088,7 @@ body {
     text-transform: none; }
   .enews-widget p, .sidebar .widget.enews-widget p {
     font-size: 18px;
+    font-weight: 700;
     color: #d0ae7c;
     font-style: italic; }
   .enews-widget form input, .sidebar .widget.enews-widget form input {
@@ -2135,7 +2140,8 @@ body {
   .home-intro .enews p {
     display: block;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     color: #d0ae7c;
     font-style: italic; }
   .home-intro .enews form {

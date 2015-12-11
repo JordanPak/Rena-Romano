@@ -44,8 +44,10 @@ body {
 
 // REMOVE LINK BORDER //
 .entry .entry-title {
+	cursor: default;
 
     a {
+		cursor: pointer;
         border-bottom: 0;
 
         &:hover {
