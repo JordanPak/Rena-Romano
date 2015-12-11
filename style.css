@@ -1447,10 +1447,13 @@ body {
     .entry h1 a:hover, .entry h2 a:hover, .entry h3 a:hover, .entry h4 a:hover, .entry h5 a:hover, .entry h6 a:hover {
       color: #000000; }
 
-.entry .entry-title a {
-  border-bottom: 0; }
-  .entry .entry-title a:hover {
-    color: #00567c; }
+.entry .entry-title {
+  cursor: default; }
+  .entry .entry-title a {
+    cursor: pointer;
+    border-bottom: 0; }
+    .entry .entry-title a:hover {
+      color: #00567c; }
 
 .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
   margin-bottom: 0;
@@ -1852,6 +1855,7 @@ body {
   background-color: rgba(167, 132, 85, 0.85); }
 
 .site-footer {
+  padding: 30px;
   background: #00405F;
   color: #FFFFFF; }
   .site-footer a:hover {
@@ -1865,7 +1869,8 @@ body {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  color: #014b6e; }
+  color: #014b6e;
+  cursor: default; }
 
 .sidebar .widget-title {
   color: #a7a9ae;
@@ -1929,6 +1934,12 @@ body {
     font-size: 42px;
     letter-spacing: -2px;
     word-spacing: 6px; }
+    @media (max-width: 860px) {
+      #home-more .widget-title {
+        font-size: 36px; } }
+    @media (max-width: 600px) {
+      #home-more .widget-title {
+        font-size: 30px; } }
     #home-more .widget-title::after {
       content: ' ';
       display: block;
@@ -1992,6 +2003,12 @@ body {
     clear: both;
     content: " ";
     display: table; }
+  @media (max-width: 860px) {
+    #home-services {
+      margin-bottom: 60px; } }
+  @media (max-width: 600px) {
+    #home-services {
+      margin-bottom: 40px; } }
   #home-services .textwidget {
     display: block;
     float: left;
@@ -2072,6 +2089,7 @@ body {
     text-transform: none; }
   .enews-widget p, .sidebar .widget.enews-widget p {
     font-size: 18px;
+    font-weight: 700;
     color: #d0ae7c;
     font-style: italic; }
   .enews-widget form input, .sidebar .widget.enews-widget form input {
@@ -2123,7 +2141,8 @@ body {
   .home-intro .enews p {
     display: block;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     color: #d0ae7c;
     font-style: italic; }
   .home-intro .enews form {
@@ -2194,6 +2213,12 @@ body {
   margin-bottom: 80px;
   text-align: center;
   text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
+  @media (max-width: 860px) {
+    .cycle-slideshow {
+      margin-bottom: 60px; } }
+  @media (max-width: 600px) {
+    .cycle-slideshow {
+      margin-bottom: 40px; } }
   .cycle-slideshow blockquote {
     padding: 0 80px !important; }
     .cycle-slideshow blockquote::before {
