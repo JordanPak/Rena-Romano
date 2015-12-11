@@ -204,6 +204,50 @@ function sp_footer_creds_filter( $creds ) {
 } // sp_footer_creds_filter
 
 
+add_filter( 'the_content_more_link', 'rena_read_more_link' );
+/**
+* Customize Read More Link
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_read_more_link() {
+	return '<p><a class="more-link button button-sm" href="' . get_permalink() . '">Continue Reading</a></p>';
+}
+
+
+add_filter( 'genesis_post_info', 'rena_post_info_filter' );
+/**
+* Customize Post Meta
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_post_info_filter( $post_info ) {
+	$post_info = '[post_date format="M j, Y"]<span class="post-info-separator">|</span>[post_categories before="" sep=", "]';
+	return $post_info;
+}
+
+
+add_filter( 'genesis_post_meta', 'rena_post_meta_filter' );
+/**
+* Customize Post Footer Meta
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_post_meta_filter( $post_meta ) {
+    $post_meta = '';
+	return $post_meta;
+}
+
+
 // THEME COLOR META //
 add_action( 'genesis_meta', 'rr_meta_theme_color', 13 );
 function rr_meta_theme_color() {

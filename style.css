@@ -1483,7 +1483,7 @@ body {
   .single .entry-header .entry-meta a {
     color: #d0ae7c; }
 
-.woocommerce div.product .product_title, .page-template-page_blog .entry-title {
+.woocommerce div.product .product_title {
   color: #00567c;
   text-transform: none; }
 
@@ -1517,6 +1517,8 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   transition: all ease-in-out 200ms; }
   button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
     background: #00405F; }
+  button.button-sm, input[type="button"].button-sm, input[type="reset"].button-sm, input[type="submit"].button-sm, .button.button-sm {
+    padding: 6px 16px; }
 
 body {
   background: url("images/page-bg.jpg") no-repeat top center #014b6e; }
@@ -2208,6 +2210,62 @@ body {
       margin: 0;
       width: 100%;
       clear: both; } }
+
+.archive-description {
+  background: #00405F;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: default; }
+  .archive-description p {
+    font-style: italic;
+    font-size: 18px;
+    color: #d0ae7c; }
+
+.archive-title {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-size: 42px;
+  font-weight: 400;
+  letter-spacing: -1px; }
+  .archive-title::before {
+    content: 'Topic: ';
+    margin-right: 5px;
+    font-weight: 300; }
+
+.page-template-page_blog article, .archive.category article {
+  padding: 0; }
+.page-template-page_blog .entry-header, .archive.category .entry-header {
+  padding: 25px 40px;
+  background: #00405F;
+  color: #FFFFFF; }
+.page-template-page_blog .entry-content, .archive.category .entry-content {
+  padding: 40px; }
+.page-template-page_blog .entry-title, .archive.category .entry-title {
+  margin-bottom: 10px;
+  font-size: 32px; }
+  .page-template-page_blog .entry-title a, .archive.category .entry-title a {
+    color: #FFFFFF; }
+    .page-template-page_blog .entry-title a:hover, .archive.category .entry-title a:hover {
+      color: #d0ae7c; }
+.page-template-page_blog p:last-child, .archive.category p:last-child {
+  margin-bottom: 0; }
+
+.entry-meta {
+  font-weight: 700; }
+
+time {
+  text-transform: uppercase; }
+
+.post-info-separator {
+  color: #a7a9ae;
+  margin: 0 8px; }
+
+.entry-categories {
+  display: inline-block; }
+  .entry-categories a {
+    color: #d0ae7c; }
+    .entry-categories a:hover {
+      color: #a78455; }
 
 .cycle-slideshow {
   margin-bottom: 80px;
