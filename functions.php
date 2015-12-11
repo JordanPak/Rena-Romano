@@ -211,3 +211,21 @@ function rr_meta_theme_color() {
 	echo '<meta name="theme-color" content="#00567c">';
 
 } // rr_meta_theme_color()
+
+
+// Add strong and em compatibility with [s] and [e]
+function html_widget_title( $title ) {
+
+	// HTML tag opening/closing brackets
+	$title = str_replace( '[', '<', $title );
+	$title = str_replace( '[/', '</', $title );
+
+	// <strong></strong>
+	$title = str_replace( 's]', 'strong>', $title );
+
+	// <em></em>
+	$title = str_replace( 'e]', 'em>', $title );
+
+	return $title;
+} // html_widget_title()
+add_filter( 'widget_title', 'html_widget_title' );
