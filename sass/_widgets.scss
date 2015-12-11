@@ -80,10 +80,52 @@
 #home-more {
     @include clearfix();
 
+	text-align: center;
+
+	@include breakpoint( sm ) {
+		float: none;
+		margin: 0 0 $space-default 0;
+		padding: $space-default-half;
+		width: 100%;
+
+		.entry-title {
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+
+		.entry-meta {
+			margin-bottom: 14px;
+		}
+
+	} // Breakpoint: Sm
+
+	.widget-title {
+		margin-bottom: 40px;
+		padding: 4px 15px;
+		color: $white;
+		font-size: 42px;
+		letter-spacing: -2px;
+		word-spacing: 6px;
+
+		&::after {
+			content: ' ';
+			display: block;
+			margin: 10px auto 0 auto;
+			width: 250px;
+			border-bottom: 2px solid $primary-darker;
+		}
+
+		strong {
+			color: $secondary;
+		}
+
+	} // .widget-title
+
     article.type-post {
         float: left;
         width: 48.5%;
         margin-right: 3%;
+		text-align: left;
         background: $white;
         min-height: 230px;
 
@@ -92,6 +134,7 @@
         }
 
         .entry-title {
+			margin-bottom: 0;
             font-size: 28px;
             font-weight: 700;
             color: $gray-dark;
@@ -105,23 +148,6 @@
         .entry-content p {
             margin-bottom: 0;
         }
-
-        @include breakpoint( sm ) {
-            float: none;
-            margin: 0 0 $space-default 0;
-            padding: $space-default-half;
-            width: 100%;
-
-            .entry-title {
-                font-size: 24px;
-                margin-bottom: 5px;
-            }
-
-            .entry-meta {
-                margin-bottom: 14px;
-            }
-
-        } // Breakpoint: Sm
 
     } // article.type-post
 
