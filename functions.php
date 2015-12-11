@@ -214,7 +214,7 @@ add_filter( 'the_content_more_link', 'rena_read_more_link' );
 * @return string
 */
 function rena_read_more_link() {
-	return '<p><a class="more-link button button-xsm" href="' . get_permalink() . '">Continue Reading</a></p>';
+	return '<p><a class="more-link button button-sm" href="' . get_permalink() . '">Continue Reading</a></p>';
 }
 
 

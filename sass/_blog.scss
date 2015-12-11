@@ -1,3 +1,68 @@
 //======================//
 //  Rena Romano | Blog  //
 //======================//
+
+.page-template-page_blog {
+
+	article {
+		padding: 0;
+	}
+
+	.entry-header {
+		padding: 25px 40px;
+		background: $primary-darker;
+		color: $white;
+	}
+
+	.entry-content {
+		padding: 40px;
+	}
+
+	.entry-title {
+		margin-bottom: 10px;
+		font-size: 32px;
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $secondary;
+			}
+
+		} // a
+
+	} // .entry-title
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+} // .page-template-page_blog
+
+
+.entry-meta {
+	font-weight: 700;
+}
+
+time {
+	text-transform: uppercase;
+}
+
+.post-info-separator {
+	color: $gray;
+	margin: 0 8px;
+}
+
+.entry-categories {
+	display: inline-block;
+
+	a {
+		color: $secondary;
+
+		&:hover {
+			color: $secondary-dark;
+		}
+
+	} // a
+
+} // .entry-categories

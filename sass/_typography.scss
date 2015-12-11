@@ -116,7 +116,7 @@ body {
 
 
 // BLUE TEXT TITLE //
-.woocommerce div.product .product_title, .page-template-page_blog .entry-title {
+.woocommerce div.product .product_title {
 	color: $primary;
 	text-transform: none;
 } // .woocommerce div.product .product_title
@@ -175,6 +175,10 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
 
 	&:hover {
 		background: $primary-darker;
+	}
+
+	&.button-sm {
+		padding: 6px 16px;
 	}
 
 } // buttons
