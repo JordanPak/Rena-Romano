@@ -1929,6 +1929,12 @@ body {
     font-size: 42px;
     letter-spacing: -2px;
     word-spacing: 6px; }
+    @media (max-width: 860px) {
+      #home-more .widget-title {
+        font-size: 36px; } }
+    @media (max-width: 600px) {
+      #home-more .widget-title {
+        font-size: 30px; } }
     #home-more .widget-title::after {
       content: ' ';
       display: block;

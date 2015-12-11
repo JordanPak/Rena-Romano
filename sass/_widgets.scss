@@ -107,6 +107,14 @@
 		letter-spacing: -2px;
 		word-spacing: 6px;
 
+		@include breakpoint( sm ) {
+			font-size: 36px;
+		}
+
+		@include breakpoint( xs ) {
+			font-size: 30px;
+		}
+
 		&::after {
 			content: ' ';
 			display: block;
