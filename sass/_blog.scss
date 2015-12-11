@@ -2,7 +2,36 @@
 //  Rena Romano | Blog  //
 //======================//
 
-.page-template-page_blog {
+.archive-description {
+	background: $primary-darker;
+	color: $white;
+	text-align: center;
+	cursor: default;
+
+	p {
+		font-style: italic;
+		font-size: 18px;
+		color: $secondary;
+	}
+
+} // .archive-description
+
+.archive-title {
+	margin-bottom: 20px;
+	color: $white;
+	font-size: 42px;
+	font-weight: 400;
+	letter-spacing: -1px;
+
+	&::before {
+		content: 'Topic: ';
+		margin-right: 5px;
+		font-weight: 300;
+	}
+
+} // .archive-title
+
+.page-template-page_blog, .archive.category {
 
 	article {
 		padding: 0;
