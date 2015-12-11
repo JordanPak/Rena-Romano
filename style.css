@@ -1998,6 +1998,12 @@ body {
     clear: both;
     content: " ";
     display: table; }
+  @media (max-width: 860px) {
+    #home-services {
+      margin-bottom: 60px; } }
+  @media (max-width: 600px) {
+    #home-services {
+      margin-bottom: 40px; } }
   #home-services .textwidget {
     display: block;
     float: left;
@@ -2200,6 +2206,12 @@ body {
   margin-bottom: 80px;
   text-align: center;
   text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
+  @media (max-width: 860px) {
+    .cycle-slideshow {
+      margin-bottom: 60px; } }
+  @media (max-width: 600px) {
+    .cycle-slideshow {
+      margin-bottom: 40px; } }
   .cycle-slideshow blockquote {
     padding: 0 80px !important; }
     .cycle-slideshow blockquote::before {

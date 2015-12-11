@@ -7,6 +7,14 @@
     text-align: center;
     text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
+	@include breakpoint( sm ) {
+		margin-bottom: 60px;
+	}
+
+	@include breakpoint( xs ) {
+		margin-bottom: 40px;
+	}
+
     blockquote {
         padding: 0 80px !important;
 
