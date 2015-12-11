@@ -1855,6 +1855,7 @@ body {
   background-color: rgba(167, 132, 85, 0.85); }
 
 .site-footer {
+  padding: 30px;
   background: #00405F;
   color: #FFFFFF; }
   .site-footer a:hover {
