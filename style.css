@@ -1933,9 +1933,9 @@ body {
     margin-bottom: 40px;
     padding: 4px 15px;
     color: #FFFFFF;
-    font-size: 42px;
-    letter-spacing: -2px;
-    word-spacing: 6px; }
+    font-size: 40px;
+    letter-spacing: -1px;
+    word-spacing: 5px; }
     @media (max-width: 860px) {
       #home-more .widget-title {
         font-size: 36px; } }
@@ -2267,8 +2267,10 @@ time {
     .entry-categories a:hover {
       color: #a78455; }
 
+.easy-t-slideshow-wrap {
+  margin-bottom: 80px; }
+
 .cycle-slideshow {
-  margin-bottom: 80px;
   text-align: center;
   text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
   @media (max-width: 860px) {
@@ -2312,7 +2314,7 @@ time {
       .cycle-slideshow blockquote {
         padding: 60px 0 0 0 !important; } }
   .cycle-slideshow .testimonial_body {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     font-size: 32px;
     text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF;
     font-weight: 400; }
@@ -2329,7 +2331,6 @@ time {
     font-weight: 700; }
     .cycle-slideshow .testimonial-client::before {
       content: '';
-      border-top: 1px solid #a7a9ae;
       padding-bottom: 30px;
       display: block;
       width: 50px;
@@ -2343,18 +2344,18 @@ time {
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #00567c; }
 
-.page-template-page_home .cycle-slideshow {
+.page-template-page_home .easy-t-slideshow-wrap .cycle-slideshow {
   color: #FFFFFF;
   text-shadow: none; }
-  .page-template-page_home .cycle-slideshow .testimonial_body {
-    text-shadow: none; }
-  .page-template-page_home .cycle-slideshow blockquote::before {
-    color: #d0ae7c;
-    text-shadow: none; }
-  .page-template-page_home .cycle-slideshow .cycle-pager span {
-    color: #FFFFFF; }
-  .page-template-page_home .cycle-slideshow .cycle-pager span.cycle-pager-active {
-    color: #d0ae7c; }
+.page-template-page_home .easy-t-slideshow-wrap .testimonial_body {
+  text-shadow: none; }
+.page-template-page_home .easy-t-slideshow-wrap blockquote::before {
+  color: #d0ae7c;
+  text-shadow: none; }
+.page-template-page_home .easy-t-slideshow-wrap .cycle-pager span {
+  color: #FFFFFF; }
+.page-template-page_home .easy-t-slideshow-wrap .easy-t-cycle-pager span.cycle-pager-active {
+  color: #d0ae7c; }
 
 .woocommerce div.product {
   margin-bottom: 40px !important; }
