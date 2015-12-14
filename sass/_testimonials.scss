@@ -4,7 +4,12 @@
 
 .easy-t-slideshow-wrap {
 	margin-bottom: 80px;
-}
+
+	@include breakpoint( med ) {
+		margin-bottom: 40px;
+	}
+
+} // .easy-t-slideshow-wrap
 
 .cycle-slideshow {
     text-align: center;
@@ -29,7 +34,7 @@
             position: absolute;
             display: block;
             top: -$space-default;
-            left: 150px;
+            left: 120px;
             font-weight: 700;
             text-align: left;
             font-size: 120px;
@@ -37,7 +42,7 @@
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
 			@include breakpoint( lg ) {
-				left: 100px;
+				left: 80px;
 			}
 
 			@include breakpoint( med ) {
@@ -68,7 +73,7 @@
 
     .testimonial_body {
         margin-bottom: 20px;
-        font-size: 32px;
+        font-size: 38px;
         text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
         font-weight: 400;
 
@@ -77,11 +82,11 @@
         }
 
         @include breakpoint( sm ) {
-            font-size: 24px;
+            font-size: 32px;
         }
 
         @include breakpoint( xs ) {
-            font-size: 22px;
+            font-size: 28px;
         }
 
     } // .testimonial_body
@@ -89,11 +94,10 @@
     .testimonial-client {
         font-size: 20px;
         font-weight: 700;
+		color: $gray-mid;
 
         &::before {
             content: '';
-            // border-top: 1px solid $gray;
-            padding-bottom: $space-default-middle;
             display: block;
             width: 50px;
             margin: 0 auto;
