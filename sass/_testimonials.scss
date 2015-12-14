@@ -13,7 +13,6 @@
 
 .cycle-slideshow {
     text-align: center;
-    text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
 	@include breakpoint( sm ) {
 		margin-bottom: 60px;
@@ -39,7 +38,6 @@
             text-align: left;
             font-size: 120px;
             color: $primary;
-            text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
             @include breakpoint( xs ) {
                 top: -$space-default;
@@ -66,7 +64,6 @@
     .testimonial_body {
         margin-bottom: 20px;
         font-size: 22px;
-        text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
         font-weight: 400;
 
         strong, b {
