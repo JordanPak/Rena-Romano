@@ -2268,7 +2268,7 @@ time {
       color: #a78455; }
 
 .easy-t-slideshow-wrap {
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
   @media (max-width: 1024px) {
     .easy-t-slideshow-wrap {
       margin-bottom: 40px; } }
@@ -2285,23 +2285,17 @@ time {
   .cycle-slideshow .cycle-slide {
     width: 100%; }
   .cycle-slideshow blockquote {
-    padding: 0 80px !important; }
+    padding: 0 60px !important; }
     .cycle-slideshow blockquote::before {
       position: absolute;
       display: block;
       top: -40px;
-      left: 120px;
+      left: 0;
       font-weight: 700;
       text-align: left;
       font-size: 120px;
       color: #00567c;
       text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
-      @media (max-width: 1260px) {
-        .cycle-slideshow blockquote::before {
-          left: 80px; } }
-      @media (max-width: 1024px) {
-        .cycle-slideshow blockquote::before {
-          left: 0; } }
       @media (max-width: 600px) {
         .cycle-slideshow blockquote::before {
           top: -40px;
@@ -2318,7 +2312,7 @@ time {
         padding: 60px 0 0 0 !important; } }
   .cycle-slideshow .testimonial_body {
     margin-bottom: 20px;
-    font-size: 38px;
+    font-size: 22px;
     text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF;
     font-weight: 400; }
     .cycle-slideshow .testimonial_body strong, .cycle-slideshow .testimonial_body b {
@@ -2347,18 +2341,28 @@ time {
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #00567c; }
 
-.page-template-page_home .easy-t-slideshow-wrap .cycle-slideshow {
-  color: #FFFFFF;
-  text-shadow: none; }
-.page-template-page_home .easy-t-slideshow-wrap .testimonial_body {
-  text-shadow: none; }
-.page-template-page_home .easy-t-slideshow-wrap blockquote::before {
-  color: #d0ae7c;
-  text-shadow: none; }
-.page-template-page_home .easy-t-slideshow-wrap .cycle-pager span {
-  color: #FFFFFF; }
-.page-template-page_home .easy-t-slideshow-wrap .easy-t-cycle-pager span.cycle-pager-active {
-  color: #d0ae7c; }
+.page-template-page_home .easy-t-slideshow-wrap {
+  margin-bottom: 80px; }
+  .page-template-page_home .easy-t-slideshow-wrap .cycle-slideshow {
+    color: #FFFFFF;
+    text-shadow: none; }
+  .page-template-page_home .easy-t-slideshow-wrap .testimonial_body {
+    font-size: 38px;
+    text-shadow: none; }
+  .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
+    left: 120px;
+    color: #d0ae7c;
+    text-shadow: none; }
+    @media (max-width: 1260px) {
+      .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
+        left: 80px; } }
+    @media (max-width: 1024px) {
+      .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
+        left: 0; } }
+  .page-template-page_home .easy-t-slideshow-wrap .cycle-pager span {
+    color: #FFFFFF; }
+  .page-template-page_home .easy-t-slideshow-wrap .easy-t-cycle-pager span.cycle-pager-active {
+    color: #d0ae7c; }
 
 .woocommerce div.product {
   margin-bottom: 40px !important; }

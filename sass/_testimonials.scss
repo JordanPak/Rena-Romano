@@ -3,7 +3,7 @@
 //====================================//
 
 .easy-t-slideshow-wrap {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 
 	@include breakpoint( med ) {
 		margin-bottom: 40px;
@@ -28,26 +28,18 @@
 	}
 
     blockquote {
-        padding: 0 80px !important;
+        padding: 0 60px !important;
 
         &::before {
             position: absolute;
             display: block;
             top: -$space-default;
-            left: 120px;
+            left: 0;
             font-weight: 700;
             text-align: left;
             font-size: 120px;
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
-
-			@include breakpoint( lg ) {
-				left: 80px;
-			}
-
-			@include breakpoint( med ) {
-				left: 0;
-			}
 
             @include breakpoint( xs ) {
                 top: -$space-default;
@@ -73,7 +65,7 @@
 
     .testimonial_body {
         margin-bottom: 20px;
-        font-size: 38px;
+        font-size: 22px;
         text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
         font-weight: 400;
 
@@ -122,6 +114,7 @@
 } // .cycle-slidshow
 
 .page-template-page_home .easy-t-slideshow-wrap {
+	margin-bottom: 80px;
 
 	.cycle-slideshow {
 	    color: $white;
@@ -129,14 +122,25 @@
 	}
 
     .testimonial_body {
-        text-shadow: none;
+        font-size: 38px;
+	    text-shadow: none;
     }
 
     blockquote {
 
         &::before {
+			left: 120px;
             color: $secondary;
             text-shadow: none;
+
+			@include breakpoint( lg ) {
+				left: 80px;
+			}
+
+			@include breakpoint( med ) {
+				left: 0;
+			}
+
         } // &::before
 
     } // blockquote
