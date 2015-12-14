@@ -2277,18 +2277,26 @@ time {
   @media (max-width: 600px) {
     .cycle-slideshow {
       margin-bottom: 40px; } }
+  .cycle-slideshow .cycle-slide {
+    width: 100%; }
   .cycle-slideshow blockquote {
     padding: 0 80px !important; }
     .cycle-slideshow blockquote::before {
       position: absolute;
       display: block;
       top: -40px;
-      left: 0;
+      left: 150px;
       font-weight: 700;
       text-align: left;
       font-size: 120px;
       color: #00567c;
       text-shadow: 1px 1px 0 #FFFFFF, 2px 2px 1px #FFFFFF, 2px 2px 0 #FFFFFF; }
+      @media (max-width: 1260px) {
+        .cycle-slideshow blockquote::before {
+          left: 100px; } }
+      @media (max-width: 1024px) {
+        .cycle-slideshow blockquote::before {
+          left: 0; } }
       @media (max-width: 600px) {
         .cycle-slideshow blockquote::before {
           top: -40px;

@@ -15,6 +15,10 @@
 		margin-bottom: 40px;
 	}
 
+	.cycle-slide {
+		width: 100%;
+	}
+
     blockquote {
         padding: 0 80px !important;
 
@@ -22,15 +26,22 @@
             position: absolute;
             display: block;
             top: -$space-default;
-            left: 0;
+            left: 150px;
             font-weight: 700;
             text-align: left;
             font-size: 120px;
             color: $primary;
             text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
+			@include breakpoint( lg ) {
+				left: 100px;
+			}
+
+			@include breakpoint( med ) {
+				left: 0;
+			}
+
             @include breakpoint( xs ) {
-                // position: static;
                 top: -$space-default;
                 left: 45%;
                 text-align: center;
