@@ -104,9 +104,9 @@
 		margin-bottom: 40px;
 		padding: 4px 15px;
 		color: $white;
-		font-size: 42px;
-		letter-spacing: -2px;
-		word-spacing: 6px;
+		font-size: 32px;
+		letter-spacing: -1px;
+		word-spacing: 5px;
 
 		@include breakpoint( sm ) {
 			font-size: 36px;

@@ -2,10 +2,17 @@
 //  Rena Romano | Testimonial Widget  //
 //====================================//
 
+.easy-t-slideshow-wrap {
+	margin-bottom: 40px;
+
+	@include breakpoint( med ) {
+		margin-bottom: 40px;
+	}
+
+} // .easy-t-slideshow-wrap
+
 .cycle-slideshow {
-    margin-bottom: 80px;
     text-align: center;
-    text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
 	@include breakpoint( sm ) {
 		margin-bottom: 60px;
@@ -15,8 +22,12 @@
 		margin-bottom: 40px;
 	}
 
+	.cycle-slide {
+		width: 100%;
+	}
+
     blockquote {
-        padding: 0 80px !important;
+        padding: 0 60px !important;
 
         &::before {
             position: absolute;
@@ -27,10 +38,8 @@
             text-align: left;
             font-size: 120px;
             color: $primary;
-            text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
 
             @include breakpoint( xs ) {
-                // position: static;
                 top: -$space-default;
                 left: 45%;
                 text-align: center;
@@ -53,9 +62,8 @@
     } // blockquote
 
     .testimonial_body {
-        margin-bottom: $space-default;
-        font-size: 32px;
-        text-shadow: 1px 1px 0 $white, 2px 2px 1px $white, 2px 2px 0 $white;
+        margin-bottom: 20px;
+        font-size: 22px;
         font-weight: 400;
 
         strong, b {
@@ -63,11 +71,11 @@
         }
 
         @include breakpoint( sm ) {
-            font-size: 24px;
+            font-size: 32px;
         }
 
         @include breakpoint( xs ) {
-            font-size: 22px;
+            font-size: 28px;
         }
 
     } // .testimonial_body
@@ -75,11 +83,10 @@
     .testimonial-client {
         font-size: 20px;
         font-weight: 700;
+		color: $gray-mid;
 
         &::before {
             content: '';
-            border-top: 1px solid $gray;
-            padding-bottom: $space-default-middle;
             display: block;
             width: 50px;
             margin: 0 auto;
@@ -103,19 +110,34 @@
 
 } // .cycle-slidshow
 
-.page-template-page_home .cycle-slideshow {
-    color: $white;
-    text-shadow: none;
+.page-template-page_home .easy-t-slideshow-wrap {
+	margin-bottom: 80px;
+
+	.cycle-slideshow {
+	    color: $white;
+	    text-shadow: none;
+	}
 
     .testimonial_body {
-        text-shadow: none;
+        font-size: 38px;
+	    text-shadow: none;
     }
 
     blockquote {
 
         &::before {
+			left: 120px;
             color: $secondary;
             text-shadow: none;
+
+			@include breakpoint( lg ) {
+				left: 80px;
+			}
+
+			@include breakpoint( med ) {
+				left: 0;
+			}
+
         } // &::before
 
     } // blockquote
@@ -124,7 +146,7 @@
         color: $white;
     }
 
-    .cycle-pager span.cycle-pager-active {
+	.easy-t-cycle-pager span.cycle-pager-active {
         color: $secondary;
     }
 
