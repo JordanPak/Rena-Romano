@@ -151,8 +151,7 @@ function rena_header_contact() {
         genesis_widget_area( 'jimbo-social' );
 
         // Phone
-        // echo '<div class="header-social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-youtube-play"></i></div><span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
-        echo '<span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
+        echo 	'<a href="tel:+1-239-896-2504" class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</a>';
 
     // Close Wrap
     echo '</div>';
