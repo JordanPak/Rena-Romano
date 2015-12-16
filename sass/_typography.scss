@@ -63,6 +63,7 @@ body {
  .page-template-default, .full-width-content {
 
      .entry-title, .page-title {
+		 position: relative;
          margin-bottom: 0;
          text-align: center;
          font-size: 56px;
@@ -80,6 +81,24 @@ body {
              font-size: 42px;
          }
 
+		 .button, .woocommerce a.button {
+			position: absolute !important;
+			top: 70px;
+			right: 60px;
+			padding: 0 14px !important;
+			background: none !important;
+			border: 2px solid $white;
+			font-size: 14px !important;
+			line-height: 35px !important;
+			letter-spacing: 0.5px !important;
+			word-spacing: 3px !important;
+
+			&:hover {
+				background: $white !important;
+				color: $primary-dark !important;
+			}
+
+		} // .page-title button
 
      } // .entry-title, .page-title
 

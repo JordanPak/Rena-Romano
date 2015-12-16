@@ -1456,6 +1456,7 @@ body {
       color: #00567c; }
 
 .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
+  position: relative;
   margin-bottom: 0;
   text-align: center;
   font-size: 56px;
@@ -1470,6 +1471,20 @@ body {
   @media (max-width: 600px) {
     .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
       font-size: 42px; } }
+  .page-template-default .entry-title .button, .page-template-default .entry-title .woocommerce a.button, .page-template-default .page-title .button, .page-template-default .page-title .woocommerce a.button, .full-width-content .entry-title .button, .full-width-content .entry-title .woocommerce a.button, .full-width-content .page-title .button, .full-width-content .page-title .woocommerce a.button {
+    position: absolute !important;
+    top: 70px;
+    right: 60px;
+    padding: 0 14px !important;
+    background: none !important;
+    border: 2px solid #FFFFFF;
+    font-size: 14px !important;
+    line-height: 35px !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: 3px !important; }
+    .page-template-default .entry-title .button:hover, .page-template-default .entry-title .woocommerce a.button:hover, .page-template-default .page-title .button:hover, .page-template-default .page-title .woocommerce a.button:hover, .full-width-content .entry-title .button:hover, .full-width-content .entry-title .woocommerce a.button:hover, .full-width-content .page-title .button:hover, .full-width-content .page-title .woocommerce a.button:hover {
+      background: #FFFFFF !important;
+      color: #014b6e !important; }
 
 .post-type-archive-product .page-title {
   background: #00405F;
