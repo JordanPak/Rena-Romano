@@ -1889,7 +1889,16 @@ body {
   .site-footer span {
     color: #a7a9ae; }
     .site-footer span a {
-      color: #FFFFFF; }
+      color: #a7a9ae;
+      padding-bottom: 1px;
+      border-bottom: 2px solid #003149; }
+      .site-footer span a.jordanpak {
+        color: #FFFFFF; }
+        .site-footer span a.jordanpak:hover {
+          color: #FFFFFF; }
+      .site-footer span a:hover {
+        color: #a7a9ae;
+        border-bottom-color: #FFFFFF; }
 
 .widget .widget-title {
   font-weight: 700;
