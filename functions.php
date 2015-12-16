@@ -207,7 +207,9 @@ add_theme_support( 'genesis-connect-woocommerce' );
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
 
-	$creds = '[footer_copyright] Rena Romano. <span>Built on WordPress/Genesis by <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">Jordan Pakrosnis</a></span>';
+	$creds =	'[footer_copyright] Rena Romano' .
+				' &nbsp;|&nbsp; <span>Built with <a target="_BLANK" title="WordPress" href="https://wordpress.org/"><i class="fa fa-wordpress"></i></a> &amp; <a target="_BLANK" href="http://studiopress.com">Genesis</a> ' .
+				'by <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">JordanPak</a></span>';
 
 	return $creds;
 } // sp_footer_creds_filter
