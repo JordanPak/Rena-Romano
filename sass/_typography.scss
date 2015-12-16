@@ -83,11 +83,9 @@ body {
 
 		 .button, .woocommerce a.button {
 			position: absolute !important;
-			top: 70px;
-			right: 60px;
+			bottom: 20px;
+			right: 20px;
 			padding: 0 14px !important;
-			background: none !important;
-			border: 2px solid $white;
 			font-size: 14px !important;
 			line-height: 35px !important;
 			letter-spacing: 0.5px !important;
@@ -96,6 +94,11 @@ body {
 			&:hover {
 				background: $white !important;
 				color: $primary-dark !important;
+			}
+
+			@include breakpoint( xs ) {
+				bottom: 0;
+				right: 0;
 			}
 
 		} // .page-title button
@@ -109,7 +112,16 @@ body {
 	.page-title {
 		background: $primary-darker;
 		padding: 60px;
-	}
+
+		@include breakpoint( sm ) {
+			padding: $space-default;
+		}
+
+		@include breakpoint( xs ) {
+			padding: $space-default-middle;
+		}
+
+	} // .page-title
 
 } // .post-type-archive-product
 

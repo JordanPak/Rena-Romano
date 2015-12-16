@@ -1473,11 +1473,9 @@ body {
       font-size: 42px; } }
   .page-template-default .entry-title .button, .page-template-default .entry-title .woocommerce a.button, .page-template-default .page-title .button, .page-template-default .page-title .woocommerce a.button, .full-width-content .entry-title .button, .full-width-content .entry-title .woocommerce a.button, .full-width-content .page-title .button, .full-width-content .page-title .woocommerce a.button {
     position: absolute !important;
-    top: 70px;
-    right: 60px;
+    bottom: 20px;
+    right: 20px;
     padding: 0 14px !important;
-    background: none !important;
-    border: 2px solid #FFFFFF;
     font-size: 14px !important;
     line-height: 35px !important;
     letter-spacing: 0.5px !important;
@@ -1485,10 +1483,20 @@ body {
     .page-template-default .entry-title .button:hover, .page-template-default .entry-title .woocommerce a.button:hover, .page-template-default .page-title .button:hover, .page-template-default .page-title .woocommerce a.button:hover, .full-width-content .entry-title .button:hover, .full-width-content .entry-title .woocommerce a.button:hover, .full-width-content .page-title .button:hover, .full-width-content .page-title .woocommerce a.button:hover {
       background: #FFFFFF !important;
       color: #014b6e !important; }
+    @media (max-width: 600px) {
+      .page-template-default .entry-title .button, .page-template-default .entry-title .woocommerce a.button, .page-template-default .page-title .button, .page-template-default .page-title .woocommerce a.button, .full-width-content .entry-title .button, .full-width-content .entry-title .woocommerce a.button, .full-width-content .page-title .button, .full-width-content .page-title .woocommerce a.button {
+        bottom: 0;
+        right: 0; } }
 
 .post-type-archive-product .page-title {
   background: #00405F;
   padding: 60px; }
+  @media (max-width: 860px) {
+    .post-type-archive-product .page-title {
+      padding: 40px; } }
+  @media (max-width: 600px) {
+    .post-type-archive-product .page-title {
+      padding: 30px; } }
 
 .single .entry-title {
   color: #FFFFFF; }
