@@ -17,6 +17,15 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 // Viewport Meta Tag
 add_theme_support( 'genesis-responsive-viewport' );
 
+// Remove Edit Link
+add_filter( 'edit_post_link', '__return_false' );
+
+// Unregister Unneeded Layouts and Sidebars
+unregister_sidebar( 'sidebar-alt' );
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+
 
 
 //------------------------//
