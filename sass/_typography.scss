@@ -63,6 +63,7 @@ body {
  .page-template-default, .full-width-content {
 
      .entry-title, .page-title {
+		 position: relative;
          margin-bottom: 0;
          text-align: center;
          font-size: 56px;
@@ -71,6 +72,7 @@ body {
 		 word-spacing: 0.15em;
 		 letter-spacing: -.03em;
          color: $white;
+		 cursor: default;
 
          @include breakpoint( sm ) {
              font-size: 48px;
@@ -80,6 +82,27 @@ body {
              font-size: 42px;
          }
 
+		 .button, .woocommerce a.button {
+			position: absolute !important;
+			bottom: 20px;
+			right: 20px;
+			padding: 0 14px !important;
+			font-size: 14px !important;
+			line-height: 35px !important;
+			letter-spacing: 0.5px !important;
+			word-spacing: 3px !important;
+
+			&:hover {
+				background: $white !important;
+				color: $primary-dark !important;
+			}
+
+			@include breakpoint( xs ) {
+				bottom: 0;
+				right: 0;
+			}
+
+		} // .page-title button
 
      } // .entry-title, .page-title
 
@@ -90,7 +113,16 @@ body {
 	.page-title {
 		background: $primary-darker;
 		padding: 60px;
-	}
+
+		@include breakpoint( sm ) {
+			padding: $space-default;
+		}
+
+		@include breakpoint( xs ) {
+			padding: $space-default-middle;
+		}
+
+	} // .page-title
 
 } // .post-type-archive-product
 
