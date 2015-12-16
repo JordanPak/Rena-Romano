@@ -1881,9 +1881,10 @@ body {
   background-color: rgba(167, 132, 85, 0.85); }
 
 .site-footer {
-  padding: 30px;
+  padding: 25px;
   background: #00405F;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  line-height: 22px; }
   .site-footer a:hover {
     color: #00567c; }
   .site-footer span {
