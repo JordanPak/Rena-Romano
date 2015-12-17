@@ -148,7 +148,7 @@ function rena_header_contact() {
     echo '<div class="header-contact">';
 
         // Social Icons
-        genesis_widget_area( 'jimbo-social' );
+        genesis_widget_area( 'header-social' );
 
         // Phone
         echo '<a href="tel:+1-239-896-2504" class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</a>';
@@ -162,9 +162,9 @@ function rena_header_contact() {
 
 //-- SITE-HEADER TOP WIDGET AREA //
 genesis_register_sidebar( array(
-	'id'            => 'jimbo-social',
+	'id'            => 'header-social',
 	'name'          => __( 'Site Header - Social Icons', 'renaromano' ),
-	'description'   => __( 'For Genesis Easy Social Icons', 'renaromano' ),
+	'description'   => __( 'For Simple Social Icons Widget', 'renaromano' ),
 ) );
 
 
