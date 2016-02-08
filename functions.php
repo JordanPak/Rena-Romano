@@ -285,3 +285,23 @@ function html_widget_title( $title ) {
 	return $title;
 } // html_widget_title()
 add_filter( 'widget_title', 'html_widget_title' );
+
+
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'rena_custom_cart_button_text' );
+function rena_custom_cart_button_text() {
+
+		global $product;
+		global $post;
+
+		$price = get_post_meta( get_the_ID(), '_price', true );
+		$post_name = $post->post_name;
+
+		if ( $post_name == "puppet-no-more" ) {
+			return __( 'Signed Paperback - $' . $price, 'woocommerce' );
+		}
+
+		else {
+        	return __( 'My Button Text', 'woocommerce' );
+		}
+
+} // rena_custom_cart_button_text();
