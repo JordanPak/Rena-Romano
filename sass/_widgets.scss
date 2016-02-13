@@ -14,6 +14,7 @@
         font-size: 18px;
 		text-transform: uppercase;
 		color: $primary-dark;
+		cursor: default;
     }
 
 } // .widget
@@ -27,32 +28,51 @@
 
 // GENESIS CALL TO ACTION //
 .gcta-wrap {
-
     margin-bottom: 0 !important;
+	text-shadow: 0 0 10px rgba(0,0,0,0.33), 0 1px 4px rgba(0,0,0,0.66);
     box-shadow: inset 0 -4px $white;
 
+    @include breakpoint( sm ) {
+        text-align: center !important;
+		background-size: cover !important;
+		text-shadow: 0 0 10px $black, 0 1px 4px $black, 0 0 10px $black;
+    }
+
 	.widget-title {
+		cursor: default;
 		text-transform: none !important;
 
 		strong {
 			border-color: $primary !important;
+			border-width: 4px !important;
 		}
 
+	} // .widget-title
+
+	.gcta-body {
+		cursor: default;
 	}
 
     .gcta-button {
-
-        &:hover {
-            background: $primary !important;
-            border-color: $primary !important;
-        }
-
+		padding: 10px 26px !important;
+		border-radius: 0 !important;
+		font-size: 18px !important;
     } // .gcta-button
 
-    @include breakpoint( sm ) {
-        text-align: center !important;
-        background-image: none !important;
-    }
+	.modal {
+		text-shadow: none !important;
+	}
+
+	.modal-footer .button {
+		border-radius: 0 !important;
+
+		&:hover {
+			background: $primary;
+			color: $white;
+			border-bottom-color: $primary-dark;
+		}
+
+	} // modal footer .button
 
 } // gcta-wrap
 
@@ -61,19 +81,85 @@
 #home-more {
     @include clearfix();
 
+	text-align: center;
+
+	@include breakpoint( sm ) {
+		float: none;
+		margin: 0 0 $space-default 0;
+		padding: $space-default-half;
+		width: 100%;
+
+		.entry-title {
+			font-size: 24px;
+			margin-bottom: 5px;
+		}
+
+		.entry-meta {
+			margin-bottom: 14px;
+		}
+
+	} // Breakpoint: Sm
+
+	.widget-title {
+		margin-bottom: 40px;
+		padding: 4px 15px;
+		color: $white;
+		font-size: 32px;
+		letter-spacing: -1px;
+		word-spacing: 5px;
+
+		@include breakpoint( sm ) {
+			font-size: 36px;
+		}
+
+		@include breakpoint( xs ) {
+			font-size: 30px;
+		}
+
+		&::after {
+			content: ' ';
+			display: block;
+			margin: 10px auto 0 auto;
+			width: 250px;
+			border-bottom: 2px solid $primary-darker;
+		}
+
+		strong {
+			color: $secondary;
+		}
+
+	} // .widget-title
+
     article.type-post {
         float: left;
-        width: 48.5%;
-        margin-right: 3%;
+        width: 32%; // 48.5% for two-columns
+        margin-right: 2%;
+		text-align: left;
         background: $white;
         min-height: 230px;
+
+		@include breakpoint( lg ) {
+			width: 48.5%;
+			margin-right: 3%;
+
+			&:nth-child(odd) {
+				margin-right: 0;
+			}
+
+		} // BP:LG
+
+		@include breakpoint( sm ) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
 
         &:last-child {
             margin-right: 0;
         }
 
         .entry-title {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             color: $gray-dark;
         }
@@ -87,22 +173,23 @@
             margin-bottom: 0;
         }
 
-        @include breakpoint( sm ) {
-            float: none;
-            margin: 0 0 $space-default 0;
-            padding: $space-default-half;
-            width: 100%;
+		.more-link {
+			display: block;
+			margin-top: 25px;
+			padding: 3px 10px;
+			width: 100px;
+			border-radius: 4px;
+			background: $primary-dark;
+			color: $white;
+			font-size: 14px;
+			font-weight: 700;
+			text-align: center;
 
-            .entry-title {
-                font-size: 24px;
-                margin-bottom: 5px;
-            }
+			&:hover {
+				background: $primary-darker;
+			}
 
-            .entry-meta {
-                margin-bottom: 14px;
-            }
-
-        } // Breakpoint: Sm
+		} // .more-link
 
     } // article.type-post
 

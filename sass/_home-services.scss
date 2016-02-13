@@ -3,9 +3,17 @@
 //===============================//
 
 #home-services {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
 
     @include clearfix();
+
+	@include breakpoint( sm ) {
+		margin-bottom: 60px;
+	}
+
+	@include breakpoint( xs ) {
+		margin-bottom: 40px;
+	}
 
     .textwidget {
         display: block;

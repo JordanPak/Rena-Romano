@@ -3,8 +3,10 @@
 //========================//
 
 .site-footer {
+	padding: 25px;
     background: $primary-darker;
     color: $white;
+	line-height: 22px;
 
     a:hover {
         color: $primary;
@@ -14,8 +16,25 @@
         color: $gray;
 
         a {
-            color: $white;
-        }
+            color: $gray;
+			padding-bottom: 1px;
+			border-bottom: 2px solid $primary-darkest;
+
+			&.jordanpak {
+				color: $white;
+
+				&:hover {
+					color: $white;
+				}
+
+			} // &.jordanpak
+
+			&:hover {
+				color: $gray;
+				border-bottom-color: $white;
+			}
+
+        } // a
 
     } // span
 

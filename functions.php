@@ -17,6 +17,15 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
 // Viewport Meta Tag
 add_theme_support( 'genesis-responsive-viewport' );
 
+// Remove Edit Link
+add_filter( 'edit_post_link', '__return_false' );
+
+// Unregister Unneeded Layouts and Sidebars
+unregister_sidebar( 'sidebar-alt' );
+genesis_unregister_layout( 'content-sidebar-sidebar' );
+genesis_unregister_layout( 'sidebar-sidebar-content' );
+genesis_unregister_layout( 'sidebar-content-sidebar' );
+
 
 
 //------------------------//
@@ -139,11 +148,10 @@ function rena_header_contact() {
     echo '<div class="header-contact">';
 
         // Social Icons
-        genesis_widget_area( 'jimbo-social' );
+        genesis_widget_area( 'header-social' );
 
         // Phone
-        // echo '<div class="header-social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin"></i><i class="fa fa-youtube-play"></i></div><span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
-        echo '<span class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</span>';
+        echo '<a href="tel:+1-239-896-2504" class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</a>';
 
     // Close Wrap
     echo '</div>';
@@ -154,9 +162,9 @@ function rena_header_contact() {
 
 //-- SITE-HEADER TOP WIDGET AREA //
 genesis_register_sidebar( array(
-	'id'            => 'jimbo-social',
+	'id'            => 'header-social',
 	'name'          => __( 'Site Header - Social Icons', 'renaromano' ),
-	'description'   => __( 'For Genesis Easy Social Icons', 'renaromano' ),
+	'description'   => __( 'For Simple Social Icons Widget', 'renaromano' ),
 ) );
 
 
@@ -198,10 +206,58 @@ add_theme_support( 'genesis-connect-woocommerce' );
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
 
-	$creds = '[footer_copyright] Rena Romano. <span>Built on WordPress/Genesis by <a href="http://JordanPak.com/" target="_BLANK" title="Jordan Pakrosnis">Jordan Pakrosnis</a></span>';
-
+	$creds =	'[footer_copyright] Rena Romano. &nbsp; ' .
+				'<span>' .
+					'Built with &nbsp;<a target="_BLANK" title="WordPress" href="https://wordpress.org/"><i class="fa fa-wordpress"></i></a>&nbsp; &amp; <a target="_BLANK" href="http://studiopress.com">Genesis</a> ' .
+					'by <a class="jordanpak" href="http://jordanpak.com/" target="_BLANK" title="Jordan Pakrosnis">JordanPak</a>' .
+				'</span>';
 	return $creds;
+
 } // sp_footer_creds_filter
+
+
+add_filter( 'the_content_more_link', 'rena_read_more_link' );
+/**
+* Customize Read More Link
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_read_more_link() {
+	return '<p><a class="more-link button button-sm" href="' . get_permalink() . '">Continue Reading</a></p>';
+}
+
+
+add_filter( 'genesis_post_info', 'rena_post_info_filter' );
+/**
+* Customize Post Meta
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_post_info_filter( $post_info ) {
+	$post_info = '[post_date format="M j, Y"]<span class="post-info-separator">|</span>[post_categories before="" sep=", "]';
+	return $post_info;
+}
+
+
+add_filter( 'genesis_post_meta', 'rena_post_meta_filter' );
+/**
+* Customize Post Footer Meta
+*
+* @package RenaRomano
+* @since 1.0.0
+*
+* @return string
+*/
+function rena_post_meta_filter( $post_meta ) {
+    $post_meta = '';
+	return $post_meta;
+}
 
 
 // THEME COLOR META //
@@ -211,3 +267,41 @@ function rr_meta_theme_color() {
 	echo '<meta name="theme-color" content="#00567c">';
 
 } // rr_meta_theme_color()
+
+
+// Add strong and em compatibility with [s] and [e]
+function html_widget_title( $title ) {
+
+	// HTML tag opening/closing brackets
+	$title = str_replace( '[', '<', $title );
+	$title = str_replace( '[/', '</', $title );
+
+	// <strong></strong>
+	$title = str_replace( 's]', 'strong>', $title );
+
+	// <em></em>
+	$title = str_replace( 'e]', 'em>', $title );
+
+	return $title;
+} // html_widget_title()
+add_filter( 'widget_title', 'html_widget_title' );
+
+
+// add_filter( 'woocommerce_product_single_add_to_cart_text', 'rena_custom_cart_button_text' );
+// function rena_custom_cart_button_text() {
+//
+// 		global $product;
+// 		global $post;
+//
+// 		$price = get_post_meta( get_the_ID(), '_price', true );
+// 		$post_name = $post->post_name;
+//
+// 		if ( $post_name == "puppet-no-more" ) {
+// 			return __( 'Signed Paperback - $' . $price, 'woocommerce' );
+// 		}
+//
+// 		else {
+//         	return __( 'My Button Text', 'woocommerce' );
+// 		}
+//
+// } // rena_custom_cart_button_text();
