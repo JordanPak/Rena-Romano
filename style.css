@@ -2412,13 +2412,19 @@ time {
 .woocommerce .product_title {
   padding-bottom: 10px !important;
   text-align: left !important;
-  font-size: 42px !important; }
+  font-size: 36px !important; }
   @media (max-width: 1024px) {
     .woocommerce .product_title {
       font-size: 42px; } }
   @media (max-width: 860px) {
     .woocommerce .product_title {
       text-align: center !important; } }
+  .woocommerce .product_title small {
+    display: block;
+    color: #a7a9ae;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .2px; }
 .woocommerce .price {
   margin-bottom: 40px !important;
   font-size: 24px !important;
@@ -2446,6 +2452,14 @@ time {
       font-weight: 400;
       color: #333333;
       letter-spacing: -0.033em; }
+      .woocommerce ul.products li.product h3 small {
+        margin-bottom: 5px;
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        color: #a7a9ae;
+        text-transform: uppercase; }
     .woocommerce ul.products li.product .price {
       font-size: 18px !important;
       text-align: center !important;
