@@ -48,7 +48,7 @@
     .product_title {
         padding-bottom: 10px !important;
         text-align: left !important;
-		font-size: 42px !important;
+		font-size: 36px !important;
 
         @include breakpoint( med ) {
             font-size: 42px;
@@ -57,6 +57,15 @@
         @include breakpoint( sm ) {
             text-align: center !important;
         }
+
+		small {
+			display: block;
+			color: $gray;
+			font-size: 20px;
+			text-transform: uppercase;
+			letter-spacing: .2px;
+
+		}
 
     } // .product_title
 
@@ -97,7 +106,18 @@
                 font-weight: 400;
 				color: $body-text;
 				letter-spacing: -0.033em;
-            }
+
+				small {
+					margin-bottom: 5px;
+					display: block;
+					font-size: 16px;
+					font-weight: 700;
+					letter-spacing: .5px;
+					color: $gray;
+					text-transform: uppercase;
+				}
+
+            } // h3
 
             .price {
 				font-size: 18px !important;
