@@ -1459,7 +1459,7 @@ body {
   position: relative;
   margin-bottom: 0;
   text-align: center;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   text-transform: uppercase;
   word-spacing: 0.15em;
@@ -1491,7 +1491,7 @@ body {
 
 .post-type-archive-product .page-title {
   background: #00405F;
-  padding: 60px; }
+  padding: 35px; }
   @media (max-width: 860px) {
     .post-type-archive-product .page-title {
       padding: 40px; } }
@@ -1600,7 +1600,7 @@ body {
 .page-template-default main article, .full-width-content main article, .single main article {
   padding: 0; }
 .page-template-default main .entry-header, .full-width-content main .entry-header, .single main .entry-header {
-  padding: 60px;
+  padding: 35px;
   background: #00405F; }
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
   padding: 50px 60px; }
