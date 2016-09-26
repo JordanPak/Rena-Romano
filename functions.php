@@ -151,7 +151,7 @@ function rena_header_contact() {
         genesis_widget_area( 'header-social' );
 
         // Phone
-        echo '<a href="tel:+1-239-896-2504" class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;239-896-2504</a>';
+        echo '<a href="tel:+1-813-614-3720" class="header-contact-phone"><i class="fa fa-phone"></i>&nbsp;&nbsp;813-614-3720</a>';
 
     // Close Wrap
     echo '</div>';
