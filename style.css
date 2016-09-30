@@ -1459,7 +1459,7 @@ body {
   position: relative;
   margin-bottom: 0;
   text-align: center;
-  font-size: 56px;
+  font-size: 46px;
   font-weight: 700;
   text-transform: uppercase;
   word-spacing: 0.15em;
@@ -1491,7 +1491,7 @@ body {
 
 .post-type-archive-product .page-title {
   background: #00405F;
-  padding: 60px; }
+  padding: 35px; }
   @media (max-width: 860px) {
     .post-type-archive-product .page-title {
       padding: 40px; } }
@@ -1600,7 +1600,7 @@ body {
 .page-template-default main article, .full-width-content main article, .single main article {
   padding: 0; }
 .page-template-default main .entry-header, .full-width-content main .entry-header, .single main .entry-header {
-  padding: 60px;
+  padding: 35px;
   background: #00405F; }
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
   padding: 50px 60px; }
@@ -2164,7 +2164,7 @@ body {
 .home-intro .enews {
   position: relative;
   background: #00405F;
-  margin: 0 0 40px 0;
+  margin: 0;
   padding: 30px; }
   .home-intro .enews:before {
     content: " ";
@@ -2589,5 +2589,67 @@ time {
 
 .myaccount_user a {
   border-bottom: 1px solid #014b6e; }
+
+.logo-bar {
+  display: table;
+  width: 100%;
+  margin-bottom: 60px;
+  background: #FFFFFF; }
+  .logo-bar:before {
+    content: " ";
+    display: table; }
+  .logo-bar:after {
+    clear: both;
+    content: " ";
+    display: table; }
+  .logo-bar h2, .logo-bar > section {
+    display: table-cell; }
+  .logo-bar h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 40px;
+    color: #00567c;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .logo-bar > section {
+    font-size: 0;
+    text-align: right; }
+  .logo-bar figure, .logo-bar a {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px; }
+    .logo-bar figure::before, .logo-bar a::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      opacity: 0.6;
+      -webkit-transition: all ease-in-out 500ms;
+      transition: all ease-in-out 500ms; }
+    .logo-bar figure:hover::before, .logo-bar a:hover::before {
+      opacity: 0;
+      pointer-events: none; }
+    .logo-bar figure img, .logo-bar a img {
+      width: auto;
+      height: auto;
+      max-width: 200px; }
+  @media (max-width: 1024px) {
+    .logo-bar {
+      display: block; }
+      .logo-bar h2, .logo-bar > section {
+        display: block; }
+      .logo-bar h2 {
+        text-align: center; }
+      .logo-bar > section {
+        text-align: center; } }
+  @media (max-width: 860px) {
+    .logo-bar figure img, .logo-bar a img {
+      max-width: 150px; } }
 
 /*# sourceMappingURL=style.css.map */

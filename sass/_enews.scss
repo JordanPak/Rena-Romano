@@ -72,7 +72,7 @@
 .home-intro .enews {
     position: relative;
     background: $primary-darker;
-    margin: 0 0 $space-default 0;
+    margin: 0; // 0 $space-default 0;
     padding: $space-default-half + 10px;
 
     @include clearfix();

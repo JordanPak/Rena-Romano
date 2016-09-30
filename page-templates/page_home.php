@@ -18,6 +18,9 @@ function rena_home_intro() {
     // Home Intro
     genesis_widget_area( 'home-intro' );
 
+	// Logo Bar
+	get_template_part( 'parts/logo-bar' );
+
     // Home Services
     echo '<div id="home-services"';
         genesis_widget_area( 'home-services' );

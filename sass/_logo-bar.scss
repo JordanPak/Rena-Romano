@@ -1,0 +1,86 @@
+//=========================//
+//  RenaRomano | Logo Bar  //
+//=========================//
+
+.logo-bar {
+	display: table;
+	width: 100%;
+	margin-bottom: 60px;
+	background: $white;
+
+	@include clearfix();
+
+	h2, > section {
+		display: table-cell;
+	}
+
+	h2 {
+		vertical-align: middle;
+		margin: 0;
+		padding: 40px;
+		color: $primary;
+		font-size: 30px;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	> section {
+		font-size: 0;
+		text-align: right;
+	}
+
+	figure, a {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 20px;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $white;
+			opacity: 0.6;
+
+			@include transition-ease-in-out( 500ms );
+		}
+
+		&:hover::before {
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		img {
+			width: auto;
+			height: auto;
+			max-width: 200px;
+		}
+	}
+
+	@include breakpoint( med ) {
+		display: block;
+
+		h2, > section {
+			display: block;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		> section {
+			text-align: center;
+		}
+	}
+
+	@include breakpoint( sm ) {
+
+		figure img, a img {
+			max-width: 150px;
+		}
+	}
+} // .logo-bar
