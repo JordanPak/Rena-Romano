@@ -2615,12 +2615,12 @@ time {
   .logo-bar > section {
     font-size: 0;
     text-align: right; }
-  .logo-bar figure {
+  .logo-bar figure, .logo-bar a {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     margin: 20px; }
-    .logo-bar figure::before {
+    .logo-bar figure::before, .logo-bar a::before {
       content: '';
       display: block;
       position: absolute;
@@ -2632,10 +2632,10 @@ time {
       opacity: 0.6;
       -webkit-transition: all ease-in-out 500ms;
       transition: all ease-in-out 500ms; }
-    .logo-bar figure:hover::before {
+    .logo-bar figure:hover::before, .logo-bar a:hover::before {
       opacity: 0;
       pointer-events: none; }
-    .logo-bar figure img {
+    .logo-bar figure img, .logo-bar a img {
       width: auto;
       height: auto;
       max-width: 200px; }
@@ -2649,7 +2649,7 @@ time {
       .logo-bar > section {
         text-align: center; } }
   @media (max-width: 860px) {
-    .logo-bar figure img {
+    .logo-bar figure img, .logo-bar a img {
       max-width: 150px; } }
 
 /*# sourceMappingURL=style.css.map */
