@@ -115,9 +115,11 @@
         a {
 			margin-left: 6px;
 			padding: 6px;
-            background: $gray-light !important;
+            background: $accent !important;
+            // background: $gray-light !important;
 			border-radius: 4px;
-            color: $gray !important;
+            // color: $gray !important;
+            color: $white;
 			font-size: 14px;
 
             &:hover {
