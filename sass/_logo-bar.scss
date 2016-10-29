@@ -87,6 +87,7 @@
 
 	@include breakpoint( med ) {
 		display: block;
+		background: linear-gradient( to bottom, #c3cbd6, $white 120px ); 
 
 		h2, > section {
 			display: block;

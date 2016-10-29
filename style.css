@@ -2668,7 +2668,8 @@ time {
       transition: all ease-in-out 400ms; }
   @media (max-width: 1024px) {
     .logo-bar {
-      display: block; }
+      display: block;
+      background: linear-gradient(to bottom, #c3cbd6, #FFFFFF 120px); }
       .logo-bar h2, .logo-bar > section {
         display: block; }
       .logo-bar h2 {
