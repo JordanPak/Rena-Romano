@@ -1491,8 +1491,9 @@ body {
         right: 0; } }
 
 .post-type-archive-product .page-title {
-  background: #00405F;
-  padding: 35px; }
+  background: none;
+  background: radial-gradient(at bottom, rgba(171, 101, 157, 0.85), transparent 66%);
+  padding: 50px; }
   @media (max-width: 860px) {
     .post-type-archive-product .page-title {
       padding: 40px; } }
@@ -1622,8 +1623,7 @@ body {
 
 .post-type-archive-product main.content {
   margin-bottom: 40px;
-  padding: 0;
-  background: #FFFFFF; }
+  padding: 0; }
 
 .site-header {
   margin-bottom: 40px;
@@ -2464,6 +2464,7 @@ time {
     .woocommerce .price {
       margin-bottom: 0 !important; } }
 .woocommerce ul.products {
+  background: #FFFFFF;
   padding: 50px 60px !important; }
   .woocommerce ul.products li.product {
     border: none;

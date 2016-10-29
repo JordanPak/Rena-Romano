@@ -115,8 +115,11 @@ body {
  .post-type-archive-product {
 
 	.page-title {
-		background: $primary-darker;
-		padding: 35px;
+		// background: $primary-darker;
+		background: none;
+		background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% ); 
+		padding: 50px;
+
 
 		@include breakpoint( sm ) {
 			padding: $space-default;
