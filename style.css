@@ -2293,7 +2293,8 @@ body {
   background: #00405F;
   color: #FFFFFF; }
 .page-template-page_blog .entry-content, .archive.category .entry-content {
-  padding: 40px; }
+  padding: 40px;
+  background: #FFFFFF; }
 .page-template-page_blog .entry-title, .archive.category .entry-title {
   margin-bottom: 10px;
   font-size: 32px; }
