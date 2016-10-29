@@ -97,15 +97,13 @@
         font-weight: 700;
 		line-height: 14px;
 		border-radius: 4px;
-		background: $primary;
+		background: $accent;
 
         @include transition-ease-in-out;
 
 		&:hover {
 			background: $secondary;
-		} // &:hover
-
-
+		}
     } // .header-contact-phone
 
 
