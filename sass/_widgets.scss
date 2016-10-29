@@ -19,11 +19,19 @@
 
 } // .widget
 
-.sidebar .widget-title {
-	color: $gray;
-	padding-bottom: 4px;
-	border-bottom: 2px solid $gray-light;
+.sidebar {
+
+	.widget {
+		box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+	}
+
+	.widget-title {
+		color: $gray;
+		padding-bottom: 4px;
+		border-bottom: 2px solid $gray-light;
+	}
 }
+
 
 
 // GENESIS CALL TO ACTION //

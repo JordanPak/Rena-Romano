@@ -1921,6 +1921,8 @@ body {
   color: #014b6e;
   cursor: default; }
 
+.sidebar .widget {
+  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
 .sidebar .widget-title {
   color: #a7a9ae;
   padding-bottom: 4px;
@@ -2126,7 +2128,7 @@ body {
     margin-bottom: 10px; }
 
 .enews-widget, .sidebar .widget.enews-widget {
-  background: #00405F;
+  background: #944e86;
   text-align: center; }
   .enews-widget .widget-title, .sidebar .widget.enews-widget .widget-title {
     font-size: 32px;
@@ -2161,10 +2163,10 @@ body {
   .enews-widget form input[type="submit"], .sidebar .widget.enews-widget form input[type="submit"] {
     display: block;
     padding: 15px 20px;
-    background: #00567c;
+    background: #d0ae7c;
     font-weight: 700; }
     .enews-widget form input[type="submit"]:hover, .enews-widget form input[type="submit"]:focus, .sidebar .widget.enews-widget form input[type="submit"]:hover, .sidebar .widget.enews-widget form input[type="submit"]:focus {
-      background: #d0ae7c;
+      background: #461f3e;
       color: #FFFFFF; }
 
 .home-intro .enews {

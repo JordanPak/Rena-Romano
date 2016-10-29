@@ -3,7 +3,7 @@
 //==============================//
 
 .enews-widget, .sidebar .widget.enews-widget {
-	background: $primary-darker;
+	background: $accent-mid-dark;
 	text-align: center;
 
     .widget-title {
@@ -54,11 +54,11 @@
         input[type="submit"] {
             display: block;
             padding: 15px 20px;
-            background: $primary;
+            background: $secondary;
             font-weight: 700;
 
             &:hover, &:focus {
-                background: $secondary;
+                background: $accent-darker;
                 color: $white;
             }
 
