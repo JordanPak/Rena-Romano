@@ -2162,9 +2162,10 @@ body {
 
 .home-intro .enews {
   position: relative;
-  background: #00405F;
   margin: 0;
-  padding: 30px; }
+  padding: 30px;
+  background: #944e86;
+  border-top: 3px solid #a56598; }
   .home-intro .enews:before {
     content: " ";
     display: table; }
@@ -2205,17 +2206,24 @@ body {
       width: 36%;
       font-size: 16px;
       font-weight: 400;
-      border-radius: 0; }
+      border: none;
+      border-radius: 0;
+      background: #461f3e;
+      color: #FFFFFF; }
       .home-intro .enews form input::-webkit-input-placeholder {
-        font-weight: 400; }
+        font-weight: 400;
+        color: #FFFFFF; }
       .home-intro .enews form input:-moz-placeholder {
         /* Firefox 18- */
-        font-weight: 400; }
+        font-weight: 400;
+        color: #FFFFFF; }
       .home-intro .enews form input::-moz-placeholder {
         /* Firefox 19+ */
-        font-weight: 400; }
+        font-weight: 400;
+        color: #FFFFFF; }
       .home-intro .enews form input:-ms-input-placeholder {
-        font-weight: 400; }
+        font-weight: 400;
+        color: #FFFFFF; }
       .home-intro .enews form input#subbox1 {
         margin-left: 0; }
     .home-intro .enews form input[type="submit"] {
@@ -2225,11 +2233,11 @@ body {
       margin-left: 1.75%;
       padding: 15px 20px;
       width: 24%;
-      background: #00567c;
+      background: #d0ae7c;
       font-weight: 700; }
       .home-intro .enews form input[type="submit"]:hover, .home-intro .enews form input[type="submit"]:focus {
-        background: #d0ae7c;
-        color: #FFFFFF; }
+        background: #FFFFFF;
+        color: #ab659d; }
   @media (max-width: 860px) {
     .home-intro .enews .widget-title, .home-intro .enews p {
       display: block;

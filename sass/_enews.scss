@@ -71,9 +71,10 @@
 // eNews Widget on Home
 .home-intro .enews {
     position: relative;
-    background: $primary-darker;
-    margin: 0; // 0 $space-default 0;
+    margin: 0;
     padding: $space-default-half + 10px;
+    background: $accent-mid-dark;
+    border-top: 3px solid $accent-light;
 
     @include clearfix();
 
@@ -115,22 +116,29 @@
             width: 36%;
             font-size: 16px;
             font-weight: 400;
+            border: none;
             border-radius: 0;
+            background: $accent-darker;
+            color: $white;
 
             &::-webkit-input-placeholder {
                font-weight: 400;
+               color: $white;
             }
 
             &:-moz-placeholder { /* Firefox 18- */
                font-weight: 400;
+               color: $white;
             }
 
             &::-moz-placeholder,  {  /* Firefox 19+ */
                font-weight: 400;
+               color: $white;
             }
 
             &:-ms-input-placeholder {
                font-weight: 400;
+               color: $white;
             }
 
             &#subbox1 {
@@ -146,12 +154,12 @@
             margin-left: 1.75%;
             padding: 15px 20px;
             width: 24%;
-            background: $primary;
+            background: $secondary;
             font-weight: 700;
 
             &:hover, &:focus {
-                background: $secondary;
-                color: $white;
+                background: $white;
+                color: $accent;
             }
 
         } // input[submit]
