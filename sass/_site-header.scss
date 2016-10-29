@@ -6,7 +6,7 @@
 	margin-bottom: 40px;
     min-height: 0;
     background: $white;
-	border-bottom: 3px solid $primary-light;
+    box-shadow: 0 1px 20px rgba( $accent-pri, 0.4 );
 
 	@include breakpoint( xs ) {
 		margin-bottom: 30px;
