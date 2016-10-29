@@ -2604,7 +2604,8 @@ time {
   display: table;
   width: 100%;
   margin-bottom: 60px;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  background: linear-gradient(to right, #c3cbd6, #FFFFFF 300px); }
   .logo-bar:before {
     content: " ";
     display: table; }
@@ -2618,7 +2619,8 @@ time {
     vertical-align: middle;
     margin: 0;
     padding: 40px;
-    color: #00567c;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 4px #c2ccd8;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase; }
@@ -2645,10 +2647,25 @@ time {
     .logo-bar figure:hover::before, .logo-bar a:hover::before {
       opacity: 0;
       pointer-events: none; }
+    .logo-bar figure:hover img, .logo-bar a:hover img {
+      -moz-filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -ms-filter: grayscale(0%);
+      filter: grayscale(0%);
+      opacity: 1; }
     .logo-bar figure img, .logo-bar a img {
       width: auto;
       height: auto;
-      max-width: 200px; }
+      max-width: 170px;
+      -moz-filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: 0.50;
+      -webkit-transition: all ease-in-out 400ms;
+      transition: all ease-in-out 400ms; }
   @media (max-width: 1024px) {
     .logo-bar {
       display: block; }

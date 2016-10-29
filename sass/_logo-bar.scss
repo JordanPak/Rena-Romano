@@ -12,6 +12,7 @@
 	width: 100%;
 	margin-bottom: 60px;
 	background: $white;
+	background: linear-gradient( to right, #c3cbd6, $white 300px ); 
 
 	@include clearfix();
 
@@ -23,7 +24,8 @@
 		vertical-align: middle;
 		margin: 0;
 		padding: 40px;
-		color: $primary;
+		color: $white;
+		text-shadow: 1px 1px 4px #c2ccd8;
 		font-size: 30px;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -59,10 +61,27 @@
 			pointer-events: none;
 		}
 
+		&:hover img {
+			-moz-filter:grayscale(0%);
+			-webkit-filter:grayscale(0%);
+			-o-filter:grayscale(0%);
+			-ms-filter:grayscale(0%);
+			filter:grayscale(0%);
+			opacity: 1;		
+		}
+
 		img {
 			width: auto;
 			height: auto;
-			max-width: 200px;
+			max-width: 170px;
+			-moz-filter:grayscale(100%);
+			-webkit-filter:grayscale(100%);
+			-o-filter:grayscale(100%);
+			-ms-filter:grayscale(100%);
+			filter:grayscale(100%);
+			opacity: 0.50;
+
+			@include transition-ease-in-out( 400ms );
 		}
 	}
 
