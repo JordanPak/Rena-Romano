@@ -82,7 +82,8 @@ body {
 
 
 .content .entry {
-} // .content .entry
+	background: none;
+}
 
 .page-template-default, .full-width-content, .single {
 
@@ -93,12 +94,17 @@ body {
 		}
 
 		.entry-header {
-			padding: 35px;
-			background: $primary-darker;
+			// padding: 35px;
+			// background: $primary-darker;
+			padding: 50px;
+			background: none;
+			background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% );
 		}
 
 		.entry-content {
 			padding: 50px 60px;
+			background: $white;
+			box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
 		}
 
 		.entry-header, .entry-content {
@@ -110,7 +116,6 @@ body {
 			@include breakpoint( xs ) {
 				padding: $space-default-middle;
 			}
-
 		}
 
 		.entry-footer {

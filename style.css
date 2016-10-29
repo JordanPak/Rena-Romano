@@ -1459,13 +1459,14 @@ body {
   position: relative;
   margin-bottom: 0;
   text-align: center;
-  font-size: 46px;
+  font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
-  word-spacing: 0.15em;
-  letter-spacing: -.03em;
+  word-spacing: 0.25em;
+  letter-spacing: 1.5px;
   color: #FFFFFF;
-  cursor: default; }
+  cursor: default;
+  text-shadow: 0 1px 17px #2e475e; }
   @media (max-width: 860px) {
     .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
       font-size: 48px; } }
@@ -1597,13 +1598,19 @@ body {
   .sidebar-primary {
     width: 100%; } }
 
+.content .entry {
+  background: none; }
+
 .page-template-default main article, .full-width-content main article, .single main article {
   padding: 0; }
 .page-template-default main .entry-header, .full-width-content main .entry-header, .single main .entry-header {
-  padding: 35px;
-  background: #00405F; }
+  padding: 50px;
+  background: none;
+  background: radial-gradient(at bottom, rgba(171, 101, 157, 0.85), transparent 66%); }
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
-  padding: 50px 60px; }
+  padding: 50px 60px;
+  background: #FFFFFF;
+  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
 @media (max-width: 860px) {
   .page-template-default main .entry-header, .page-template-default main .entry-content, .full-width-content main .entry-header, .full-width-content main .entry-content, .single main .entry-header, .single main .entry-content {
     padding: 40px; } }
