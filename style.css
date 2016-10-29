@@ -1921,8 +1921,7 @@ body {
 
 .gcta-wrap {
   margin-bottom: 0 !important;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33), 0 1px 4px rgba(0, 0, 0, 0.66);
-  box-shadow: inset 0 -4px #FFFFFF; }
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.33), 0 1px 4px rgba(0, 0, 0, 0.66); }
   @media (max-width: 860px) {
     .gcta-wrap {
       text-align: center !important;
@@ -2589,6 +2588,9 @@ time {
 
 .myaccount_user a {
   border-bottom: 1px solid #014b6e; }
+
+#home-top {
+  box-shadow: 0 0 35px rgba(46, 71, 94, 0.7); }
 
 .logo-bar {
   display: table;
