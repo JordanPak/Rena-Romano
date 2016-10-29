@@ -2287,7 +2287,10 @@ body {
     font-weight: 300; }
 
 .page-template-page_blog article, .archive.category article {
-  padding: 0; }
+  padding: 0;
+  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
+  .page-template-page_blog article:first-child .entry-header, .archive.category article:first-child .entry-header {
+    background: #1c2238; }
 .page-template-page_blog .entry-header, .archive.category .entry-header {
   padding: 25px 40px;
   background: #00405F;

@@ -35,6 +35,11 @@
 
 	article {
 		padding: 0;
+		box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+
+		&:first-child .entry-header {
+			background: $accent-pri-darker;
+		}
 	}
 
 	.entry-header {
