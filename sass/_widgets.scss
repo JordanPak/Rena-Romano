@@ -33,8 +33,24 @@
 
 // GENESIS CALL TO ACTION //
 .gcta-wrap {
+	position: relative;
     margin-bottom: 0 !important;
 	text-shadow: 0 0 10px rgba(0,0,0,0.33), 0 1px 4px rgba(0,0,0,0.66);
+
+	@include breakpoint( med ) {
+		&::before {
+			content: '';
+			display: block;
+			z-index: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $accent-pri-dark;
+			background: radial-gradient( at top left, rgba( $accent-pri-dark, 0.55 ), rgba( $accent-pri-dark, 0.8 ) );
+		}
+	}
 
     @include breakpoint( sm ) {
         text-align: center !important;
@@ -52,6 +68,10 @@
 		}
 
 	} // .widget-title
+
+	.widget-title, .gcta-body, button {
+		position: relative;
+	}
 
 	.gcta-body {
 		cursor: default;
