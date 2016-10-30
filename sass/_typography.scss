@@ -63,34 +63,39 @@ body {
  .page-template-default, .full-width-content {
 
      .entry-title, .page-title {
-		 position: relative;
-         margin-bottom: 0;
-         text-align: center;
-         font-size: 46px;
-         font-weight: 700;
-		 text-transform: uppercase;
-		 word-spacing: 0.15em;
-		 letter-spacing: -.03em;
-         color: $white;
-		 cursor: default;
+		position: relative;
+		margin-bottom: 0;
+		text-align: center;
+	//  font-size: 46px;
+		font-size: 50px;
+		font-weight: 700;
+		text-transform: uppercase;
+		// word-spacing: 0.15em;
+		word-spacing: 0.25em;
+		// letter-spacing: -.03em;
+		letter-spacing: 1.5px;
+		color: $white;
+		cursor: default;
+		text-shadow: 0 1px 17px $accent-pri;
 
-         @include breakpoint( sm ) {
-             font-size: 48px;
-         }
+		@include breakpoint( sm ) {
+			font-size: 48px;
+		}
 
-         @include breakpoint( xs ) {
-             font-size: 42px;
-         }
+		@include breakpoint( xs ) {
+			font-size: 42px;
+		}
 
-		 .button, .woocommerce a.button {
+		.button, .woocommerce a.button {
 			position: absolute !important;
-			bottom: 20px;
-			right: 20px;
-			padding: 0 14px !important;
+			bottom: 0;// 20px;
+			right: 0; //20px;
+			padding: 0 16px !important;
 			font-size: 14px !important;
 			line-height: 35px !important;
 			letter-spacing: 0.5px !important;
 			word-spacing: 3px !important;
+			background: $accent !important;;
 
 			&:hover {
 				background: $white !important;
@@ -111,8 +116,11 @@ body {
  .post-type-archive-product {
 
 	.page-title {
-		background: $primary-darker;
-		padding: 35px;
+		// background: $primary-darker;
+		background: none;
+		background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% ); 
+		padding: 50px;
+
 
 		@include breakpoint( sm ) {
 			padding: $space-default;
@@ -134,16 +142,19 @@ body {
 		color: $white;
 	}
 
-	.entry-header .entry-meta {
-		margin-bottom: 0;
-		color: $gray-light;
+	.entry-header {
+		background: $accent-pri-darker !important;
 
-		a {
-			color: $secondary;
-		}
+		.entry-meta {
+			margin-bottom: 0;
+			color: $gray-light;
 
-	} // .entry-meta
+			a {
+				color: $secondary;
+			}
 
+		} // .entry-meta
+	}
 } // .single
 
 

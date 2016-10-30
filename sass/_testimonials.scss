@@ -30,21 +30,21 @@
         padding: 0 60px !important;
 
         &::before {
-            position: absolute;
-            display: block;
-            top: -$space-default;
-            left: 0;
-            font-weight: 700;
-            text-align: left;
-            font-size: 120px;
-            color: $primary;
+            display: none;
+        //     position: absolute;
+        //     display: block;
+        //     top: -$space-default;
+        //     left: 0;
+        //     font-weight: 700;
+        //     text-align: left;
+        //     font-size: 120px;
+        //     color: $primary;
 
-            @include breakpoint( xs ) {
-                top: -$space-default;
-                left: 45%;
-                text-align: center;
-            }
-
+        //     @include breakpoint( xs ) {
+        //         top: -$space-default;
+        //         left: 45%;
+        //         text-align: center;
+        //     }
         } // &::before
 
         @include breakpoint( sm ) {
@@ -126,17 +126,18 @@
     blockquote {
 
         &::before {
-			left: 120px;
-            color: $secondary;
-            text-shadow: none;
+            display: none;
+			// left: 120px;
+            // color: $secondary;
+            // text-shadow: none;
 
-			@include breakpoint( lg ) {
-				left: 80px;
-			}
+			// @include breakpoint( lg ) {
+			// 	left: 80px;
+			// }
 
-			@include breakpoint( med ) {
-				left: 0;
-			}
+			// @include breakpoint( med ) {
+			// 	left: 0;
+			// }
 
         } // &::before
 

@@ -15,11 +15,16 @@ remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_before_content', 'rena_home_intro' );
 function rena_home_intro() {
 
-    // Home Intro
-    genesis_widget_area( 'home-intro' );
+    echo '<section id="home-top">';
 
-	// Logo Bar
-	get_template_part( 'parts/logo-bar' );
+        // Home Intro
+        genesis_widget_area( 'home-intro' );
+
+        // Logo Bar
+        get_template_part( 'parts/logo-bar' );
+
+    echo '</section>';
+    
 
     // Home Services
     echo '<div id="home-services"';
