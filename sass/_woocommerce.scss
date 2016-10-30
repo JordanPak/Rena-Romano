@@ -8,6 +8,11 @@
 	// PRODUCT SINGLE //
 	div.product {
 		margin-bottom: 40px !important;
+        background: $white;
+
+        .product_title {
+            text-shadow: none;
+        }
 
 		p.price {
 
@@ -43,6 +48,13 @@
 
 		} // form.cart .variations
 
+        form.cart .button {
+            background-color: $accent !important;
+        }
+
+        ul.products {
+            box-shadow: none;
+        }
 	} // div.product
 
     .product_title {
@@ -90,6 +102,7 @@
     ul.products {
         background: $white;
 		padding: 50px 60px !important;
+        box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
 
         li.product {
             border: none;
@@ -180,6 +193,10 @@
 		&:hover {
 			background-color: $primary-darker !important;
 		}
+
+        &.checkout-button, &#place_order {
+            background-color: $accent !important;
+        }
 
     } // buttons
 
