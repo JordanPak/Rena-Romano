@@ -2350,19 +2350,7 @@ time {
   .cycle-slideshow blockquote {
     padding: 0 60px !important; }
     .cycle-slideshow blockquote::before {
-      position: absolute;
-      display: block;
-      top: -40px;
-      left: 0;
-      font-weight: 700;
-      text-align: left;
-      font-size: 120px;
-      color: #00567c; }
-      @media (max-width: 600px) {
-        .cycle-slideshow blockquote::before {
-          top: -40px;
-          left: 45%;
-          text-align: center; } }
+      display: none; }
     @media (max-width: 860px) {
       .cycle-slideshow blockquote {
         padding: 0 60px !important; } }
@@ -2411,15 +2399,7 @@ time {
     font-size: 38px;
     text-shadow: none; }
   .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
-    left: 120px;
-    color: #d0ae7c;
-    text-shadow: none; }
-    @media (max-width: 1260px) {
-      .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
-        left: 80px; } }
-    @media (max-width: 1024px) {
-      .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
-        left: 0; } }
+    display: none; }
   .page-template-page_home .easy-t-slideshow-wrap .cycle-pager span {
     color: #FFFFFF; }
   .page-template-page_home .easy-t-slideshow-wrap .easy-t-cycle-pager span.cycle-pager-active {
