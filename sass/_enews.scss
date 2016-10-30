@@ -4,6 +4,7 @@
 
 .enews-widget, .sidebar .widget.enews-widget {
 	background: $accent-mid-dark;
+    background: radial-gradient( at top left, $accent, $accent-mid-dark );
 	text-align: center;
 
     .widget-title {

@@ -1503,11 +1503,13 @@ body {
 
 .single .entry-title {
   color: #FFFFFF; }
-.single .entry-header .entry-meta {
-  margin-bottom: 0;
-  color: #f5f5f5; }
-  .single .entry-header .entry-meta a {
-    color: #d0ae7c; }
+.single .entry-header {
+  background: #1c2238 !important; }
+  .single .entry-header .entry-meta {
+    margin-bottom: 0;
+    color: #f5f5f5; }
+    .single .entry-header .entry-meta a {
+      color: #d0ae7c; }
 
 .woocommerce div.product .product_title {
   color: #00567c;
@@ -2129,6 +2131,7 @@ body {
 
 .enews-widget, .sidebar .widget.enews-widget {
   background: #944e86;
+  background: radial-gradient(at top left, #ab659d, #944e86);
   text-align: center; }
   .enews-widget .widget-title, .sidebar .widget.enews-widget .widget-title {
     font-size: 32px;

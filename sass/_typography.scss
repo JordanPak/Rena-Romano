@@ -141,16 +141,19 @@ body {
 		color: $white;
 	}
 
-	.entry-header .entry-meta {
-		margin-bottom: 0;
-		color: $gray-light;
+	.entry-header {
+		background: $accent-pri-darker !important;
 
-		a {
-			color: $secondary;
-		}
+		.entry-meta {
+			margin-bottom: 0;
+			color: $gray-light;
 
-	} // .entry-meta
+			a {
+				color: $secondary;
+			}
 
+		} // .entry-meta
+	}
 } // .single
 
 
