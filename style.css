@@ -1459,7 +1459,7 @@ body {
   position: relative;
   margin-bottom: 0;
   text-align: center;
-  font-size: 50px;
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   word-spacing: 0.25em;
@@ -1467,12 +1467,6 @@ body {
   color: #FFFFFF;
   cursor: default;
   text-shadow: 0 1px 17px #2e475e; }
-  @media (max-width: 860px) {
-    .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
-      font-size: 48px; } }
-  @media (max-width: 600px) {
-    .page-template-default .entry-title, .page-template-default .page-title, .full-width-content .entry-title, .full-width-content .page-title {
-      font-size: 42px; } }
   .page-template-default .entry-title .button, .page-template-default .entry-title .woocommerce a.button, .page-template-default .page-title .button, .page-template-default .page-title .woocommerce a.button, .full-width-content .entry-title .button, .full-width-content .entry-title .woocommerce a.button, .full-width-content .page-title .button, .full-width-content .page-title .woocommerce a.button {
     position: absolute !important;
     bottom: 0;
