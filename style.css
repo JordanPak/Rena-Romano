@@ -2,7 +2,7 @@
 Theme Name: Rena Romano
 Theme URI: http://RenaRomano.com/
 Description: Custom Genesis Framework theme for Rena Romano
-Version: 2.0
+Version: 2.2
 Author: Jordan Pakrosnis
 Author URI: http://JordanPak.com/
 Template: genesis
@@ -1651,6 +1651,11 @@ body {
     font-weight: 700; }
   .ui-datepicker th, .ui-datepicker td {
     line-height: 1.5; }
+
+nav.page-top-buttons {
+  margin-bottom: 32px; }
+  nav.page-top-buttons .button {
+    margin: 0 8px 8px 0; }
 
 .site-header {
   margin-bottom: 40px;
