@@ -1655,7 +1655,10 @@ body {
 nav.page-top-buttons {
   margin-bottom: 32px; }
   nav.page-top-buttons .button {
-    margin: 0 8px 8px 0; }
+    margin: 0 8px 8px 0;
+    font-size: 14px;
+    width: 200px;
+    vertical-align: text-top; }
 
 .site-header {
   margin-bottom: 40px;
