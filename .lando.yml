@@ -4,3 +4,15 @@ config:
   framework: wordpress
   site: rena-romano
   id: f74c249a-d9f9-4232-b9d7-0ea25deebe3a
+services:
+  node:
+    type: node:6.11
+    globals:
+      grunt-cli: "latest"
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  grunt:
+    service: node
