@@ -1,0 +1,78 @@
+//===========================//
+//  Rena Romano | Variables  //
+//===========================//
+
+
+//==========//
+//  COLORS  //
+//==========//
+
+//-- BASIC --//
+$white:         #FFFFFF;
+$black:         #000000;
+
+
+//-- PRIMARY --//
+$primary:           #00567c;
+$primary-light:		#4A90AB;
+$primary-med-light:	#257090;
+$primary-dark:		#014b6e;
+$primary-darker:	#00405F;
+$primary-darkest:	#003149;
+
+
+//-- SECONDARY --//
+$secondary-light:	#edcb99;
+$secondary:    		#d0ae7c;
+$secondary-dark:	#a78455;
+
+
+//-- ACCENT --//
+$accent:			#ab659d;
+$accent-light:		#a56598;
+$accent-mid-dark:	#944e86;
+$accent-darker:		#461f3e;
+$accent-pri:		#2e475e;
+$accent-pri-dark:	#30364e;
+$accent-pri-darker:	#1c2238;
+
+
+//-- SUPPORT --//
+$gray:          	#a7a9ae;
+$gray-mid:			#c1c1c1;
+$gray-light:    	#f5f5f5;
+$gray-dark:     	#292929;
+
+// WooCommerce Colors
+$wc-green:      #77a464;
+$wc-red:		#b81c23;
+
+
+//-- TRANSPARENCIES --//
+$trans-full:        rgba(0,0,0,0);
+$trans-shadow:      rgba(0,0,0,0.175);
+
+
+//-- DEFAULTS --//
+$body-text:         #333333;
+
+
+
+//===========//
+//  SPACING  //
+//===========//
+
+$space-default:         40px;
+$space-default-half:    $space-default / 2;
+$space-default-middle:  $space-default-half + ($space-default-half / 2);
+
+
+
+//====================//
+//  WIDTHS / HEIGHTS  //
+//====================//
+
+
+// Header (.site-header)
+$site-header-width-mobile:  260px;
+// $site-header-mobile-height: 70px;

@@ -1,0 +1,42 @@
+//========================//
+//  Rena Romano | Mixins  //
+//========================//
+
+
+//===============//
+//  TRANSITIONS  //
+//===============//
+
+@mixin transition-ease-in-out($speed: 200ms) {
+    -webkit-transition: all ease-in-out $speed;
+            transition: all ease-in-out $speed;
+}
+
+
+//===============//
+//  POST BORDER  //
+//===============//
+
+@mixin post-border() {
+    border: 8px solid $gray-light;
+} // post-border()
+
+
+//============//
+//  CLEARFIX  //
+//============//
+
+@mixin clearfix() {
+
+    &:before {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+    
+} // clearfix()

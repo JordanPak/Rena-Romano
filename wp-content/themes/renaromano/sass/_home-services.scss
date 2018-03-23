@@ -1,0 +1,107 @@
+//===============================//
+//  Rena Romano | Home Services  //
+//===============================//
+
+#home-services {
+    margin-bottom: 100px;
+
+    @include clearfix();
+
+	@include breakpoint( sm ) {
+		margin-bottom: 60px;
+	}
+
+	@include breakpoint( xs ) {
+		margin-bottom: 40px;
+	}
+
+    .textwidget {
+        display: block;
+        float: left;
+        width: 33.333333333%;
+        text-align: center;
+		background: -webkit-linear-gradient( $white 30%, #E8E8E8 ) $white;
+		background: -o-linear-gradient( $white 30%, #E8E8E8 ) $white;
+		background: -moz-linear-gradient( $white 30%, #E8E8E8 ) $white;
+		background: linear-gradient( $white 30%, #E8E8E8 ) $white;
+		-moz-box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
+        box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
+        cursor: default;
+		border-left: 1px solid $gray-light;
+		border-right: 1px solid $gray-light;
+
+		@include transition-ease-in-out();
+
+        &:hover {
+			background: -webkit-linear-gradient($white 30%, $white ) $white;
+			background: -o-linear-gradient($white 30%, $white ) $white;
+			background: linear-gradient($white 30%, $white ) $white;
+
+			.button {
+				background: $primary;
+				color: $white;
+			}
+
+        } // &:hover
+
+		@include breakpoint( sm ) {
+			margin: 0;
+			width: 100%;
+			background: $white;
+			box-shadow: none;
+			border: 0;
+			border-top: 8px solid $gray-light;
+		} // BP: sm
+
+		a {
+			display: block;
+			padding: 50px 40px;
+
+			@include breakpoint( sm ) {
+				padding: 40px 40px 50px 40px;
+			}
+
+			@include breakpoint( xs ) {
+				padding: 30px 30px 50px 30px;
+			}
+
+		} // a (wrapper)
+
+        p {
+            margin-bottom: $space-default;
+			color: $gray;
+            font-style: italic;
+        }
+
+		.button {
+			display: inline-block;
+			padding: 0 16px 1px 16px;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 40px;
+			text-decoration: none;
+			letter-spacing: 1px;
+			background: none;
+			border: 2px solid $primary;
+			border-radius: 4px;
+			color: $primary;
+		} // .button
+
+    } // .textwidget
+
+    h2 {
+        display: block;
+        margin-bottom: 40px;
+        color: $primary;
+        font-weight: 700;
+        font-size: 26px;
+		text-transform: uppercase;
+    }
+
+    .fa {
+        color: $primary;
+        font-size: 62px;
+        margin-bottom: 10px;
+    } // .fa
+
+} // #home-services

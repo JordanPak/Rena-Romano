@@ -1,0 +1,39 @@
+/*
+Theme Name: Rena Romano
+Theme URI: http://RenaRomano.com/
+Description: Custom Genesis Framework theme for Rena Romano
+Version: 2.2
+Author: Jordan Pakrosnis
+Author URI: http://JordanPak.com/
+Template: genesis
+Template Version: 2.1.2
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+// Default Genesis Sample Styling
+@import 'default';
+
+// Variables & Mixins
+@import 'variables';
+@import 'mixins';
+@import 'breakpoints';
+
+// Plugins
+@import 'pushy';
+
+// RenaRomano Custom
+@import 'typography';
+@import 'structure';
+@import 'form';
+@import 'page-top-buttons';
+@import 'site-header';
+@import 'navigation';
+@import 'footer';
+@import 'widgets';
+@import 'home-services';
+@import 'enews';
+@import 'blog';
+@import 'testimonials';
+@import 'woocommerce';
+@import "logo-bar";

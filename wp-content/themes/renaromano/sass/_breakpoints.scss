@@ -1,0 +1,104 @@
+//=======================================//
+//  RenaRomano | Responsive Breakpoints  //
+//=======================================//
+
+
+//=============//
+//  VARIABLES  //
+//=============//
+
+//  BREAKPOINT 			Width 		DESCRIPTION
+//  ----------------------------------------------------------------------------
+	$bp-hd-plus:		1920px;
+    $bp-xl:				1500px;
+    $bp-lg:				1260px;
+    $bp-med-lg:			1080px;
+    $bp-med:			1024px;
+    $bp-sm:				860px;
+    $bp-xs:				600px;
+    $bp-xxs:			460px;
+
+
+//  WRAPPER 			WIDTH 		DESCRIPTION
+//  ----------------------------------------------------------------------------
+    $bp-xl-wrap:        1200px;		// At 1500px, wrapper will drop to 1200px
+	$bp-lg-wrap:        1024px;
+    $bp-med-lg-wrap:    960px;
+    $bp-med-wrap:       800px;
+    $bp-sm-wrap:        90%;
+	$bp-xs-wrap:		90%;
+	$bp-xxs-wrap:		95%;		// At 460px, wrapper will be 90% forever
+
+
+
+//=========//
+//  MIXIN  //
+//=========//
+
+@mixin breakpoint( $class ) {
+
+    @if $class == xxs {
+        @media (max-width: $bp-xxs) { @content; }
+    }
+    @if $class == xs {
+        @media (max-width: $bp-xs) { @content; }
+    }
+    @if $class == sm {
+        @media ( max-width: $bp-sm) { @content; }
+    }
+    @if $class == med {
+        @media ( max-width: $bp-med) { @content; }
+    }
+    @if $class == med-lg {
+        @media ( max-width: $bp-med-lg) { @content; }
+    }
+    @if $class == lg {
+        @media ( max-width: $bp-lg) { @content; }
+    }
+    @if $class == xl {
+        @media (max-width: $bp-xl) { @content; }
+    }
+	@if $class == hd-plus {
+		@media (min-width: $bp-hd-plus) { @content; }
+	}
+
+} // breakpoint()
+
+
+
+//===========//
+//  TESTING  //
+//===========//
+
+@mixin bp-testing {
+
+	@include breakpoint( hd-plus ) {
+		background-color: rgba(yellow, .5);
+	}
+    @include breakpoint( xl ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( lg ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( med-lg ) {
+        background-color: rgba(green, .4);
+    }
+    @include breakpoint( med ) {
+        background-color: rgba(purple, .4);
+    }
+    @include breakpoint( sm ) {
+        background-color: rgba(red, .4);
+    }
+    @include breakpoint( xs ) {
+        background-color: rgba(blue, .4);
+    }
+    @include breakpoint( xxs ) {
+        background-color: rgba(green, .4);
+    }
+
+} // Breakpoint Testing
+
+.wrap, .site-inner {
+	// @include bp-testing();
+}

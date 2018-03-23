@@ -1,0 +1,103 @@
+//======================//
+//  Rena Romano | Blog  //
+//======================//
+
+.archive-description {
+	background: $primary-darker;
+	color: $white;
+	text-align: center;
+	cursor: default;
+
+	p {
+		font-style: italic;
+		font-size: 18px;
+		color: $secondary;
+	}
+
+} // .archive-description
+
+.archive-title {
+	margin-bottom: 20px;
+	color: $white;
+	font-size: 42px;
+	font-weight: 400;
+	letter-spacing: -1px;
+
+	&::before {
+		content: 'Topic: ';
+		margin-right: 5px;
+		font-weight: 300;
+	}
+
+} // .archive-title
+
+.page-template-page_blog, .archive.category {
+
+	article {
+		padding: 0;
+		box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+
+		&:first-child .entry-header {
+			background: $accent-pri-darker;
+		}
+	}
+
+	.entry-header {
+		padding: 25px 40px;
+		background: $primary-darker;
+		color: $white;
+	}
+
+	.entry-content {
+		padding: 40px;
+		background: $white;
+	}
+
+	.entry-title {
+		margin-bottom: 10px;
+		font-size: 32px;
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $secondary;
+			}
+
+		} // a
+
+	} // .entry-title
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+
+} // .page-template-page_blog
+
+
+.entry-meta {
+	font-weight: 700;
+}
+
+time {
+	text-transform: uppercase;
+}
+
+.post-info-separator {
+	color: $gray;
+	margin: 0 8px;
+}
+
+.entry-categories {
+	display: inline-block;
+
+	a {
+		color: $secondary;
+
+		&:hover {
+			color: $secondary-dark;
+		}
+
+	} // a
+
+} // .entry-categories

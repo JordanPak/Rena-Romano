@@ -1,0 +1,218 @@
+/*
+    GENESIS CTA WIDGET STYLES
+    Plugin: genesis-cta-widget
+    Author: Jordan Pakrosnis
+*/
+
+
+/*-- CUSTOM BOOTSTRAP MODAL --*/
+.modal-open{overflow:hidden}.modal{display:none;overflow:hidden;position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;-webkit-overflow-scrolling:touch;outline:0}.modal.fade .modal-dialog{-webkit-transform:translate(0, -25%);-ms-transform:translate(0, -25%);-o-transform:translate(0, -25%);transform:translate(0, -25%);-webkit-transition:-webkit-transform 0.3s ease-out;-o-transition:-o-transform 0.3s ease-out;transition:transform 0.3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate(0, 0);-ms-transform:translate(0, 0);-o-transform:translate(0, 0);transform:translate(0, 0)}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal-dialog{position:relative;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;border:1px solid #999;border:1px solid rgba(0,0,0,0.2);border-radius:0px;-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5);-webkit-background-clip:padding-box;background-clip:padding-box;outline:0}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}.modal-backdrop.fade{opacity:0;filter:alpha(opacity=0)}.modal-backdrop.in{opacity:.66;filter:alpha(opacity=66)}.modal-header{padding:15px;border-bottom:1px solid #e5e5e5}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.42857143}.modal-body{position:relative;padding:15px}.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer .btn+.btn{margin-left:5px;margin-bottom:0}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media (min-width:768px){.modal-dialog{width:600px;margin:30px auto}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);box-shadow:0 5px 15px rgba(0,0,0,0.5)}.modal-sm{width:300px}}@media (min-width:992px){.modal-lg{width:900px}}.clearfix:before,.clearfix:after,.modal-header:before,.modal-header:after,.modal-footer:before,.modal-footer:after{content:" ";display:table}.clearfix:after,.modal-header:after,.modal-footer:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
+
+.modal-open .modal{
+    display: flex !important;
+    height: 100%;
+}
+.modal .modal-dialog{
+    margin: auto;
+}
+
+/*-- MODAL CUSTOMIZATIONS --*/
+.modal-dialog {
+	width: auto;
+	max-width: 80%;
+}
+
+.modal-body {
+	padding: 0;
+	font-size: 0;
+}
+
+.modal-video {
+	position: relative;
+	padding-bottom: 56.25%;
+	/*padding-top: 30px;*/
+	height: 0;
+	overflow: hidden;
+}
+
+.modal-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+button.close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	z-index: 500;
+	padding: 7px 16px;
+	color: #333333;
+	font-weight: 700;
+	background: #FFFFFF;
+	border-radius: 9999px;
+	-moz-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.modal-footer {
+	display: block;
+	width: 100%;
+	position: absolute;
+	border: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.modal-footer .button {
+	position: relative;
+	top: -36px;
+	margin-bottom: 14px;
+	padding: 16px 30px;
+	font-size: 22px;
+	font-weight: 700;
+	word-spacing: 4px;
+	color: #333333;
+	-moz-box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+	box-shadow: 0 3px 9px rgba(0,0,0,0.5);
+	background: #FFFFFF;
+	border-bottom: 2px solid #D4D4D4;
+}
+
+.modal-footer .button:hover {
+	background: #C3251D;
+	color: #FFFFFF;
+	border-bottom-color: #7D1F1A;
+}
+
+
+/*-- WRAPPER --*/
+.gcta-wrap {
+    padding: 100px;
+    margin-bottom: 40px;
+}
+
+
+/*-- TITLE --*/
+.gcta-wrap .widget-title {
+    font-size: 48px;
+    font-weight: normal;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.gcta-wrap .widget-title strong {
+    font-weight: bold;
+    border-bottom: 2px solid #e5554e;
+}
+
+.gcta-wrap.gcta-no-body .widget-title {
+	margin-bottom: 40px;
+}
+
+
+/*-- BODY --*/
+.gcta-wrap .gcta-body {
+    font-weight: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.gcta-wrap .gcta-body strong {
+    font-weight: bold;
+    font-weight: 700;
+    font-size: .8em;
+}
+
+
+/*-- BUTTON --*/
+.gcta-wrap .gcta-button {
+    display: inline-block;
+    padding: 7px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: none;
+    border: 2px solid;
+}
+
+.gcta-wrap .gcta-button:hover {
+    background: #e5554e;
+    color: #FFFFFF;
+}
+
+
+/*-- VIDEO --*/
+.gcta-video-left {
+	float: left;
+}
+
+.gcta-video-right {
+	float: right;
+}
+
+
+/*-- THEME: DARK --*/
+.gcta-wrap.gcta-theme-dark,
+.gcta-wrap.gcta-theme-dark .widget-title,
+.gcta-wrap.gcta-theme-dark .gcta-body,
+.gcta-wrap.gcta-theme-dark .gcta-button {
+    color: #FFFFFF;
+}
+
+.gcta-wrap.gcta-theme-dark .gcta-button:hover {
+    border-color: #FFFFFF;
+    color: #000000;
+    background: #FFFFFF;
+}
+
+
+/*-- MEDIA QUERIES --*/
+@media only screen and (max-width: 960px) {
+
+    .gcta-wrap {
+        padding: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+
+	button.close {
+		padding: 3px 12px;
+	}
+
+	.modal-footer .button {
+		top: 10px;
+		padding: 10px 22px;
+		font-size: 18px;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .gcta-wrap {
+        padding: 40px;
+    }
+
+    .gcta-wrap .widget-title {
+        font-size: 42px;
+    }
+
+    .gcta-wrap .gcta-body {
+        font-size: 24px;
+    }
+
+    .gcta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+} /* max-width 500px */

@@ -1,0 +1,136 @@
+//===========================//
+//  Rena Romano | Structure  //
+//===========================//
+
+body {
+	background: url('images/page-bg.jpg') no-repeat top center $primary-dark;
+}
+
+
+// General Element Responsiveness Fixes
+.archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget {
+	padding: 40px;
+
+	@include breakpoint( sm ) {
+		padding: $space-default;
+	}
+
+	@include breakpoint( xs ) {
+		padding: $space-default-middle;
+	}
+
+} // General Element Responsiveness Fixes
+
+
+//-- SITE-INNER & WRAP --//
+.site-inner, .wrap {
+    padding: 0;
+
+    @include breakpoint( xl ) {
+        max-width: $bp-xl-wrap;
+    }
+    @include breakpoint( lg ) {
+        max-width: $bp-lg-wrap;
+    }
+    @include breakpoint( med-lg ) {
+        max-width: $bp-med-lg-wrap;
+    }
+    @include breakpoint( med ) {
+        max-width: $bp-med-wrap;
+    }
+    @include breakpoint( sm ) {
+        width: $bp-sm-wrap;
+    }
+	@include breakpoint( xs ) {
+		width: $bp-xs-wrap;
+	}
+	@include breakpoint( xxs ) {
+		width: $bp-xxs-wrap;
+	}
+
+} // .site-inner, .wrap
+
+
+//-- CONTENT & SIDEBAR FIXES --//
+.content {
+
+    @include breakpoint( lg ) {
+        width: 660px;
+    }
+
+	@include breakpoint( med-lg ) {
+		width: 600px;
+	}
+
+    @include breakpoint( med ) {
+        width: 100%;
+    }
+
+} // .content
+
+.sidebar-primary {
+
+	@include breakpoint( lg ) {
+		width: 320px;
+	}
+
+	@include breakpoint( med ) {
+		width: 100%;
+	}
+
+} // .sidebar-primary
+
+
+.content .entry {
+	background: none;
+}
+
+.page-template-default, .full-width-content, .single {
+
+	main {
+
+		article {
+			padding: 0;
+		}
+
+		.entry-header {
+			// padding: 35px;
+			// background: $primary-darker;
+			padding: 50px;
+			background: none;
+			background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% );
+		}
+
+		.entry-content {
+			padding: 50px 60px;
+			background: $white;
+			box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+		}
+
+		.entry-header, .entry-content {
+
+			@include breakpoint( sm ) {
+				padding: $space-default;
+			}
+
+			@include breakpoint( xs ) {
+				padding: $space-default-middle;
+			}
+		}
+
+		.entry-footer {
+			padding: 0 60px 50px 60px;
+		}
+
+	} // main
+
+} // .page-template-default, .full-width-content
+
+.post-type-archive-product { // Body class
+
+    main.content {
+		margin-bottom: 40px;
+		padding: 0;
+    } // main.content
+
+} // .full-width-content
