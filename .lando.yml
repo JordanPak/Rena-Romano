@@ -1,0 +1,6 @@
+name: rena-romano
+recipe: pantheon
+config:
+  framework: wordpress
+  site: rena-romano
+  id: f74c249a-d9f9-4232-b9d7-0ea25deebe3a
