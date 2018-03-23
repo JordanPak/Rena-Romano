@@ -1,9 +1,9 @@
 module.exports = function (grunt) {
 	grunt.initConfig({
-		
+
 		pkg: grunt.file.readJSON('package.json'),
-		
-        
+
+
 		// SASS TASK
 		sass: {
 			dist: {
@@ -12,8 +12,8 @@ module.exports = function (grunt) {
 				}
 			}
 		},
-		
-        
+
+
 		// WATCH TASK
 		watch: {
 			css: {
@@ -25,20 +25,20 @@ module.exports = function (grunt) {
                 }
 			}
 		}
-        
-        
+
+
 	});
 
-    
+
     //-- REGISTER & LOAD TASKS --//
-    
+
 	// NPM Stuff
-    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-    
+
     // Grunt Registrations
     grunt.registerTask('dist', ['sass:dist']);
-    
+
     // Default
     grunt.registerTask('default', ['dist']);
 };
