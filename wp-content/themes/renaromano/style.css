@@ -1991,7 +1991,7 @@ nav.page-top-buttons {
   .gcta-wrap .gcta-body {
     cursor: default;
     font-weight: 400 !important;
-    font-size: 22px !important;
+    font-size: 21px !important;
     line-height: 30px !important; }
   .gcta-wrap .gcta-button {
     padding: 10px 26px !important;
@@ -2013,7 +2013,7 @@ nav.page-top-buttons {
 .gcta-content {
   position: relative;
   margin-left: auto;
-  padding: 50px 40px;
+  padding: 50px 25px;
   max-width: 400px; }
   .gcta-content:before, .gcta-content:after {
     content: '';
