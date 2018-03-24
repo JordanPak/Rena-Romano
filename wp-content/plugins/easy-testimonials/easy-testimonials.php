@@ -4,7 +4,7 @@ Plugin Name: Easy Testimonials
 Plugin URI: https://goldplugins.com/our-plugins/easy-testimonials-details/
 Description: Easy Testimonials - Provides custom post type, shortcode, sidebar widget, and other functionality for testimonials.
 Author: Gold Plugins
-Version: 3.1
+Version: 3.1.1
 Author URI: https://goldplugins.com
 Text Domain: easy-testimonials
 
@@ -1344,7 +1344,9 @@ class easyTestimonials
 		flush_rewrite_rules();
 				
 		// make sure the welcome screen gets seen again
-		$this->Aloha->reset_welcome_screen();	
+		if ( !empty($this->Aloha) ) {
+			$this->Aloha->reset_welcome_screen();
+		}
 	}
 
 	//register any widgets here

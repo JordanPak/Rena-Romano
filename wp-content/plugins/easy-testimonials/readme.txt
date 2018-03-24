@@ -4,8 +4,8 @@ Plugin URI: https://goldplugins.com/downloads/easy-testimonials-pro/
 Contributors: richardgabriel, ghuger
 Tags: testimonials, testimonial widget, testimonial feed, random testimonials
 Requires at least: 4.5.0
-Tested up to: 4.8.1
-Stable tag: 3.1
+Tested up to: 4.9.4
+Stable tag: 3.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -113,6 +113,10 @@ Visit [here](https://goldplugins.com/documentation/easy-testimonials-documentati
 12. This is the Testimonial Grid Widget.
 
 == Changelog ==
+
+= 3.1.1 =
+* Compatibility update for WP-CLI
+* Compatibility update for WP 4.9.4
 
 = 3.1 =
 * Fix issue with View More Testimonials link in various displays.
