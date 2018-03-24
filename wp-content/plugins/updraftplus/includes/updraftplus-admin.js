@@ -154,7 +154,7 @@ function updraft_remote_storage_tabs_setup() {
 	
 	// To allow labelauty remote storage buttons to be used with keyboard
 	jQuery(document).keyup(function(event) {
-		if (event.keyCode === 32 || event.keyCode === 13) {
+		if (32 === event.keyCode || 13 === event.keyCode) {
 			if (jQuery(document.activeElement).is("input.labelauty + label")) {
 				var for_box = jQuery(document.activeElement).attr("for");
 				if (for_box) {
@@ -1454,27 +1454,6 @@ jQuery(document).ready(function($) {
 			
 			$('#updraft_webdav_url_' + instance_id).val(updraft_webdav_url);
 		}
-		if (updraft_webdav_settings['host'].indexOf("/") >= 0) {
-			$('#updraft_webdav_host_error').show();
-		} else {
-			$('#updraft_webdav_host_error').hide();
-		}
-		
-		if (0 == updraft_webdav_settings['path'].indexOf("/") || "" === updraft_webdav_settings['path']) {
-			slash = "";
-		}
-		
-		if ("" === updraft_webdav_settings['user'] || "" === updraft_webdav_settings['pass']) {
-			colon = "";
-		}
-		
-		if ("" === updraft_webdav_settings['host'] || "" === updraft_webdav_settings['port']) {
-			colon_port = "";
-		}
-		
-		updraft_webdav_url = updraft_webdav_settings['webdav'] + updraft_webdav_settings['user'] + colon + encodeURIComponent(updraft_webdav_settings['pass']) + host +encodeURIComponent(updraft_webdav_settings['host']) + colon_port + updraft_webdav_settings['port'] + slash + updraft_webdav_settings['path'];
-		
-		$('#updraft_webdav_url_' + instance_id).val(updraft_webdav_url);
 	});
 	
 	$('#updraft-navtab-backups-content').on('click', '.updraft_existing_backups .updraft_existing_backups_row', function(e) {
@@ -1487,30 +1466,56 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	jQuery('#updraft-navtab-settings-content #remote-storage-holder').on('click', '.updraftplusmethod a.updraft_add_instance', function(e) {
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('click', '.updraftplusmethod a.updraft_add_instance', function(e) {
 		e.preventDefault();
 
 		updraft_settings_form_changed = true;
 		
-		var method = jQuery(this).data('method');
+		var method = $(this).data('method');
 		add_new_instance(method);
 	});
 
-	jQuery('#updraft-navtab-settings-content #remote-storage-holder').on('click', '.updraftplusmethod a.updraft_delete_instance', function(e) {
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('click', '.updraftplusmethod a.updraft_delete_instance', function(e) {
 		e.preventDefault();
 
 		updraft_settings_form_changed = true;
 
-		var method = jQuery(this).data('method');
-		var instance_id = jQuery(this).data('instance_id');
+		var method = $(this).data('method');
+		var instance_id = $(this).data('instance_id');
 
-		if (1 === jQuery('.' + method + '_updraft_remote_storage_border').length) {
+		if (1 === $('.' + method + '_updraft_remote_storage_border').length) {
 			add_new_instance(method);
 		}
 
-		jQuery('.' + method + '-' + instance_id).hide('slow', function() {
-			jQuery(this).remove();
+		$('.' + method + '-' + instance_id).hide('slow', function() {
+			$(this).remove();
 		});
+	});
+
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('click', '.updraftplusmethod .updraft_edit_label_instance', function(e) {
+		$(this).find('span').hide();
+		$(this).attr('contentEditable', true).focus();
+	});
+	
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('keyup', '.updraftplusmethod .updraft_edit_label_instance', function(e) {
+		var method = jQuery(this).data('method');
+		var instance_id = jQuery(this).data('instance_id');
+		var content = jQuery(this).text();
+
+		$('#updraft_' + method + '_instance_label_' + instance_id).val(content);
+	});
+
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('blur', '.updraftplusmethod .updraft_edit_label_instance', function(e) {
+		$(this).attr('contentEditable', false);
+		$(this).find('span').show();
+	});
+
+	$('#updraft-navtab-settings-content #remote-storage-holder').on('keypress', '.updraftplusmethod .updraft_edit_label_instance', function(e) {
+		if (13 === e.which) {
+			$(this).attr('contentEditable', false);
+			$(this).find('span').show();
+			$(this).blur();
+		}
 	});
 
 	/**
@@ -2541,8 +2546,8 @@ jQuery(document).ready(function($) {
 	});
 	
 	// Prevent default event when pressing return in the form
-	$(settings_css_prefix+'#updraftvault_settings_connect input').keypress(function(e) {
-		if (e.which == 13) {
+	$(settings_css_prefix).on('keypress','#updraftvault_settings_connect input', function(e) {
+		if (13 == e.which) {
 			$(settings_css_prefix+'#updraftvault_connect_go').click();
 			return false;
 		}
