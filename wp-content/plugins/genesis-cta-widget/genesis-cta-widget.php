@@ -253,7 +253,7 @@ class Genesis_CTA_Widget extends WP_Widget {
 
 		echo $args['before_widget'];
 
-        echo '<section class="' . $wrapper_classes . '" style="' . $text_align_style . $bg_style . $bg_size_style . ';">';
+        echo '<section class="' . $wrapper_classes . '" style="' . $text_align_style . $bg_style . $bg_size_style . ';"><div class="gcta-content">';
 
 			if ( $video ) {
 				echo $video;
@@ -273,7 +273,7 @@ class Genesis_CTA_Widget extends WP_Widget {
 			}
 
         // Close Wrap
-        echo '</section>';
+        echo '</div></section>';
 
 		echo $args['after_widget'];
 

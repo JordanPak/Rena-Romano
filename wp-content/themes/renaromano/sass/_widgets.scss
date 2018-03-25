@@ -34,10 +34,16 @@
 // GENESIS CALL TO ACTION //
 .gcta-wrap {
 	position: relative;
-    margin-bottom: 0 !important;
-	text-shadow: 0 0 10px rgba(0,0,0,0.33), 0 1px 4px rgba(0,0,0,0.66);
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	// padding-right: 40px !important;
+	padding: 0 40px 0 0 !important;
+
+	// text-shadow: 0 0 10px rgba(0,0,0,0.33), 0 1px 4px rgba(0,0,0,0.66);
 
 	@include breakpoint( med ) {
+		padding-right: 0 !important;
+
 		&::before {
 			content: '';
 			display: block;
@@ -55,7 +61,7 @@
     @include breakpoint( sm ) {
         text-align: center !important;
 		background-size: cover !important;
-		text-shadow: 0 0 10px $black, 0 1px 4px $black, 0 0 10px $black;
+		// text-shadow: 0 0 10px $black, 0 1px 4px $black, 0 0 10px $black;
     }
 
 	.widget-title {
@@ -75,12 +81,21 @@
 
 	.gcta-body {
 		cursor: default;
+		font-weight: 400 !important;
+		font-size: 21px !important;
+		line-height: 30px !important;
 	}
 
     .gcta-button {
 		padding: 10px 26px !important;
 		border-radius: 0 !important;
-		font-size: 18px !important;
+		font-size: 16px !important; //18px !important;
+		border: none !important;
+		background: $primary !important;
+
+		&:hover {
+			background: $accent-mid-dark !important;
+		}
     } // .gcta-button
 
 	.modal {
@@ -99,6 +114,51 @@
 	} // modal footer .button
 
 } // gcta-wrap
+
+.gcta-content {
+	position: relative;
+	// z-index: 0;
+	margin-left: auto;
+	padding: 50px 25px;
+	max-width: 400px;
+
+	&:before, &:after {
+		content: '';
+		position: absolute;
+		top: -500px;
+		bottom: -500px;
+	}
+	&:before {
+		// z-index: -1;
+		right: 0;
+		left: 0;
+		background: $white;
+	}
+	&:after {
+		// z-index: -1;
+		left: 10px;
+		right: 10px;
+		border-left: 3px solid #e2e5ec;
+		border-right: 3px solid #e2e5ec;
+	}
+
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto 30px;
+		width: 260px;
+	}
+
+	@include breakpoint( sm ) {
+		margin: 0 auto;
+		max-width: 90%;
+	}
+}
+
 
 
 // HOME - MORE WIDGET AREA //
