@@ -2737,12 +2737,13 @@ time {
     text-transform: uppercase; }
   .logo-bar > section {
     font-size: 0;
-    text-align: right; }
+    text-align: right;
+    padding-right: 20px; }
   .logo-bar figure, .logo-bar a {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin: 20px; }
+    margin: 20px 10px; }
     .logo-bar figure::before, .logo-bar a::before {
       content: '';
       display: block;
@@ -2768,7 +2769,7 @@ time {
     .logo-bar figure img, .logo-bar a img {
       width: auto;
       height: auto;
-      max-width: 170px;
+      max-width: 155px;
       -moz-filter: grayscale(100%);
       -webkit-filter: grayscale(100%);
       -o-filter: grayscale(100%);
@@ -2777,6 +2778,9 @@ time {
       opacity: 0.50;
       -webkit-transition: all ease-in-out 400ms;
       transition: all ease-in-out 400ms; }
+  @media (max-width: 1260px) {
+    .logo-bar figure img, .logo-bar a img {
+      max-width: 125px; } }
   @media (max-width: 1024px) {
     .logo-bar {
       display: block;
@@ -2786,7 +2790,10 @@ time {
       .logo-bar h2 {
         text-align: center; }
       .logo-bar > section {
-        text-align: center; } }
+        padding-right: 0;
+        text-align: center; }
+      .logo-bar figure img, .logo-bar a img {
+        max-width: 170px; } }
   @media (max-width: 860px) {
     .logo-bar figure img, .logo-bar a img {
       max-width: 150px; } }
