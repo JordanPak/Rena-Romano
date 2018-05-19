@@ -18,7 +18,7 @@
 
 if ( $_SERVER['HTTP_HOST'] == 'renaromano.com' ) {
     define('WP_CACHE', true);
-    define( 'WPCACHEHOME', '/app/wp-content/plugins/wp-super-cache/' );
+    define( 'WPCACHEHOME', '/home/jpakme5/public_html/clients/renaromano/wp-content/plugins/wp-super-cache/' );
 }
 
 if (file_exists(dirname(__FILE__) . '/wp-config-local.php') && !isset($_ENV['PANTHEON_ENVIRONMENT'])):
