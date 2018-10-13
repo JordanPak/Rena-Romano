@@ -16,7 +16,7 @@
  * which you should also make sure you .gitignore.
  */
 
-if ( $_SERVER['HTTP_HOST'] == 'renaromano.com' ) {
+if ( ! empty( $_SERVER['HTTP_HOST'] ) && $_SERVER['HTTP_HOST'] == 'renaromano.com' ) {
     define('WP_CACHE', true);
     define( 'WPCACHEHOME', '/home/jpakme5/public_html/clients/renaromano/wp-content/plugins/wp-super-cache/' );
 }
