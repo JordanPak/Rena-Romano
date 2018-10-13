@@ -21,7 +21,7 @@ class Genesis_CTA_Widget extends WP_Widget {
 
 
 	//-- CONSTRUCTOR --//
-    function Genesis_CTA_Widget() {
+	function __construct() {
 
 		// Instantiate the parent object
 		parent::__construct(
