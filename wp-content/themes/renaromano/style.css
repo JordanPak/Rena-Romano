@@ -1484,7 +1484,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
     padding: 6px 16px; }
 
 body {
-  background: url("images/page-bg.jpg") no-repeat top center #014b6e; }
+  background: #eceef2; }
 
 .archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings, .sidebar .widget {
   padding: 40px; }
@@ -1606,7 +1606,7 @@ nav.page-top-buttons {
   margin-bottom: 40px;
   min-height: 0;
   background: #FFFFFF;
-  box-shadow: 0 1px 20px rgba(46, 71, 94, 0.4); }
+  box-shadow: 0 1px 30px rgba(46, 71, 94, 0.045); }
   @media (max-width: 600px) {
     .site-header {
       margin-bottom: 30px; } }
@@ -2638,7 +2638,7 @@ time {
   border-bottom: 1px solid #014b6e; }
 
 #home-top {
-  box-shadow: 0 0 35px rgba(46, 71, 94, 0.7); }
+  box-shadow: 0 0 37px rgba(46, 71, 94, 0.08); }
 
 .logo-bar {
   display: table;
