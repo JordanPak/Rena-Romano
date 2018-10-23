@@ -2001,24 +2001,17 @@ nav.page-top-buttons {
       #home-more .entry-meta {
         margin-bottom: 14px; } }
   #home-more .widget-title {
-    margin-bottom: 40px;
     padding: 4px 15px;
-    color: #FFFFFF;
+    color: #003149;
     font-size: 32px;
-    letter-spacing: -1px;
-    word-spacing: 5px; }
+    text-shadow: 0 3px 37px rgba(46, 71, 94, 0.18);
+    text-transform: none; }
     @media (max-width: 860px) {
       #home-more .widget-title {
         font-size: 36px; } }
     @media (max-width: 600px) {
       #home-more .widget-title {
         font-size: 30px; } }
-    #home-more .widget-title::after {
-      content: ' ';
-      display: block;
-      margin: 10px auto 0 auto;
-      width: 250px;
-      border-bottom: 2px solid #00405F; }
     #home-more .widget-title strong {
       color: #d0ae7c; }
   #home-more article.type-post {
@@ -2392,7 +2385,7 @@ time {
   .cycle-slideshow .testimonial-client {
     font-size: 20px;
     font-weight: 700;
-    color: #c1c1c1; }
+    color: #a7a9ae; }
     .cycle-slideshow .testimonial-client::before {
       content: '';
       display: block;
@@ -2401,20 +2394,30 @@ time {
   .cycle-slideshow .testimonial-position {
     text-transform: uppercase;
     font-size: 18px;
-    color: #d0ae7c; }
+    color: #a7a9ae; }
   .cycle-slideshow .cycle-pager span {
     color: #a7a9ae; }
   .cycle-slideshow .cycle-pager span.cycle-pager-active {
     color: #00567c; }
 
 .page-template-page_home .easy-t-slideshow-wrap {
-  margin-bottom: 80px; }
+  max-width: 725px;
+  margin: 0 auto 80px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-top: 8px solid #00405F; }
+  @media (max-width: 860px) {
+    .page-template-page_home .easy-t-slideshow-wrap {
+      padding: 15px; } }
   .page-template-page_home .easy-t-slideshow-wrap .cycle-slideshow {
-    color: #FFFFFF;
     text-shadow: none; }
   .page-template-page_home .easy-t-slideshow-wrap .testimonial_body {
-    font-size: 38px;
+    font-size: 32px;
+    line-height: 1.4;
     text-shadow: none; }
+    @media (max-width: 860px) {
+      .page-template-page_home .easy-t-slideshow-wrap .testimonial_body {
+        font-size: 24px; } }
   .page-template-page_home .easy-t-slideshow-wrap blockquote::before {
     display: none; }
   .page-template-page_home .easy-t-slideshow-wrap .cycle-pager span {
