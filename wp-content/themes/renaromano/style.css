@@ -2087,7 +2087,7 @@ nav.page-top-buttons {
     float: left;
     width: 33.333333333%;
     text-align: center;
-    background: linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
+    background: #FFFFFF;
     box-shadow: 0 -8px #00405F, 0 8px #00405F;
     cursor: default;
     border-left: 1px solid #f5f5f5;

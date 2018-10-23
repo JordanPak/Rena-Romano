@@ -20,11 +20,7 @@
         float: left;
         width: 33.333333333%;
         text-align: center;
-		background: -webkit-linear-gradient( $white 30%, #E8E8E8 ) $white;
-		background: -o-linear-gradient( $white 30%, #E8E8E8 ) $white;
-		background: -moz-linear-gradient( $white 30%, #E8E8E8 ) $white;
-		background: linear-gradient( $white 30%, #E8E8E8 ) $white;
-		-moz-box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
+		background: $white;
         box-shadow: 0 -8px $primary-darker, 0 8px $primary-darker;
         cursor: default;
 		border-left: 1px solid $gray-light;
@@ -33,8 +29,6 @@
 		@include transition-ease-in-out();
 
         &:hover {
-			background: -webkit-linear-gradient($white 30%, $white ) $white;
-			background: -o-linear-gradient($white 30%, $white ) $white;
 			background: linear-gradient($white 30%, $white ) $white;
 
 			.button {
@@ -42,7 +36,7 @@
 				color: $white;
 			}
 
-        } // &:hover
+        }
 
 		@include breakpoint( sm ) {
 			margin: 0;
@@ -51,7 +45,7 @@
 			box-shadow: none;
 			border: 0;
 			border-top: 8px solid $gray-light;
-		} // BP: sm
+		}
 
 		a {
 			display: block;
