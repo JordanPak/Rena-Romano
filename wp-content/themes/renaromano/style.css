@@ -133,7 +133,6 @@ figure {
   margin: 1em 40px; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -178,8 +177,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
 input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
@@ -211,8 +208,6 @@ td, th {
 --------------------------------------------- */
 *,
 input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 /* ## Float Clearing
@@ -272,10 +267,6 @@ input[type="submit"],
 textarea:focus,
 .button,
 .gallery img {
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out; }
 
 ::-moz-selection {
@@ -920,10 +911,6 @@ img.alignright,
   left: -9999px;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity .4s ease-in-out;
-  -moz-transition: opacity .4s ease-in-out;
-  -ms-transition: opacity .4s ease-in-out;
-  -o-transition: opacity .4s ease-in-out;
   transition: opacity .4s ease-in-out;
   width: 200px;
   z-index: 99; }
@@ -1323,8 +1310,6 @@ li.comment {
   background: #333332;
   font-size: 0.9em;
   font-weight: bold;
-  -webkit-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
   box-shadow: inset -10px 0 6px -9px rgba(0, 0, 0, 0.7);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -1345,32 +1330,20 @@ li.comment {
 
 /* Menu Movement */
 .pushy-right {
-  -webkit-transform: translate3d(260px, 0, 0);
-  -moz-transform: translate3d(260px, 0, 0);
   -ms-transform: translate3d(260px, 0, 0);
-  -o-transform: translate3d(260px, 0, 0);
   transform: translate3d(260px, 0, 0); }
 
 .pushy-open {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   box-shadow: 0 0 15px #000000; }
 
 .container-push, .push-push {
-  -webkit-transform: translate3d(-260px, 0, 0);
-  -moz-transform: translate3d(-260px, 0, 0);
   -ms-transform: translate3d(-260px, 0, 0);
-  -o-transform: translate3d(-260px, 0, 0);
   transform: translate3d(-260px, 0, 0); }
 
 /* Menu Transitions */
 .pushy, #container, .push {
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
-  -o-transition: -o-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
   transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99); }
 
 /* Site Overlay */
@@ -1386,30 +1359,9 @@ li.comment {
   left: 0;
   z-index: 9998;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-animation: fade 500ms;
-  -moz-animation: fade 500ms;
-  -o-animation: fade 500ms;
   animation: fade 500ms; }
 
 @keyframes fade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-moz-keyframes fade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@-o-keyframes fade {
   0% {
     opacity: 0; }
   100% {
@@ -1431,7 +1383,6 @@ body {
   .entry h1 a, .entry h2 a, .entry h3 a, .entry h4 a, .entry h5 a, .entry h6 a {
     color: inherit;
     border-bottom: 2px solid #00567c;
-    -webkit-transition: all ease-in-out 150ms;
     transition: all ease-in-out 150ms; }
     .entry h1 a:hover, .entry h2 a:hover, .entry h3 a:hover, .entry h4 a:hover, .entry h5 a:hover, .entry h6 a:hover {
       color: #000000; }
@@ -1526,7 +1477,6 @@ button, input[type="button"], input[type="reset"], input[type="submit"], .button
   background: #00567c;
   border-radius: 5px;
   text-align: center;
-  -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover, .button:hover {
     background: #00405F; }
@@ -1722,7 +1672,6 @@ nav.page-top-buttons {
     line-height: 14px;
     border-radius: 4px;
     background: #ab659d;
-    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .header-contact .header-contact-phone:hover {
       background: #d0ae7c; }
@@ -1801,7 +1750,6 @@ nav.page-top-buttons {
     .genesis-nav-menu .current-menu-item > a:hover {
       color: #edcb99; }
   .genesis-nav-menu .sub-menu {
-    -moz-box-shadow: 0 3px 4px rgba(0, 86, 124, 0.2);
     box-shadow: 0 2px 6px rgba(0, 86, 124, 0.2);
     background: #00567c; }
     .genesis-nav-menu .sub-menu a {
@@ -1814,7 +1762,6 @@ nav.page-top-buttons {
       .genesis-nav-menu .sub-menu a:hover {
         background: #FFFFFF; }
     .genesis-nav-menu .sub-menu .current-menu-item > a {
-      -moz-box-shadow: none;
       box-shadow: none;
       background: #FFFFFF; }
       .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
@@ -1885,7 +1832,6 @@ nav.page-top-buttons {
 .pushy {
   background: #00567c;
   border-left: 4px solid #014b6e;
-  -moz-box-shadow: none;
   box-shadow: none; }
   .pushy .genesis-nav-menu {
     position: static; }
@@ -2141,20 +2087,13 @@ nav.page-top-buttons {
     float: left;
     width: 33.333333333%;
     text-align: center;
-    background: -webkit-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
-    background: -o-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
-    background: -moz-linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
     background: linear-gradient(#FFFFFF 30%, #E8E8E8) #FFFFFF;
-    -moz-box-shadow: 0 -8px #00405F, 0 8px #00405F;
     box-shadow: 0 -8px #00405F, 0 8px #00405F;
     cursor: default;
     border-left: 1px solid #f5f5f5;
     border-right: 1px solid #f5f5f5;
-    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     #home-services .textwidget:hover {
-      background: -webkit-linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF;
-      background: -o-linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF;
       background: linear-gradient(#FFFFFF 30%, #FFFFFF) #FFFFFF; }
       #home-services .textwidget:hover .button {
         background: #00567c;
@@ -2577,7 +2516,6 @@ time {
     text-transform: uppercase !important;
     font-size: 16px !important;
     color: #77a464 !important;
-    -webkit-transition: all ease-in-out 200ms;
     transition: all ease-in-out 200ms; }
     .woocommerce ul.products .added_to_cart.wc-forward:hover {
       background: #77a464;
@@ -2595,7 +2533,6 @@ time {
   padding: 3px 18px !important;
   line-height: 40px !important;
   letter-spacing: 1px !important;
-  -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms; }
   .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
     background-color: #00405F !important; }
@@ -2688,7 +2625,6 @@ time {
   letter-spacing: .5px;
   font-weight: 700;
   padding: 2px 10px;
-  -moz-border-radius: 4px;
   border-radius: 4px; }
 
 .myaccount_user,
@@ -2747,14 +2683,12 @@ time {
       height: 100%;
       background: #FFFFFF;
       opacity: 0.6;
-      -webkit-transition: all ease-in-out 500ms;
       transition: all ease-in-out 500ms; }
     .logo-bar figure:hover::before, .logo-bar a:hover::before {
       opacity: 0;
       pointer-events: none; }
     .logo-bar figure:hover img, .logo-bar a:hover img {
       -moz-filter: grayscale(0%);
-      -webkit-filter: grayscale(0%);
       -o-filter: grayscale(0%);
       -ms-filter: grayscale(0%);
       filter: grayscale(0%);
@@ -2764,12 +2698,10 @@ time {
       height: auto;
       max-width: 155px;
       -moz-filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
       -o-filter: grayscale(100%);
       -ms-filter: grayscale(100%);
       filter: grayscale(100%);
       opacity: 0.50;
-      -webkit-transition: all ease-in-out 400ms;
       transition: all ease-in-out 400ms; }
   @media (max-width: 1260px) {
     .logo-bar figure img, .logo-bar a img {
