@@ -1406,7 +1406,7 @@ body {
   letter-spacing: 1.5px;
   color: #FFFFFF;
   cursor: default;
-  text-shadow: 0 1px 17px #2e475e; }
+  text-shadow: 0 2px 27px rgba(46, 71, 94, 0.33); }
   .page-template-default .entry-title .button, .page-template-default .entry-title .woocommerce a.button, .page-template-default .page-title .button, .page-template-default .page-title .woocommerce a.button, .full-width-content .entry-title .button, .full-width-content .entry-title .woocommerce a.button, .full-width-content .page-title .button, .full-width-content .page-title .woocommerce a.button {
     position: absolute !important;
     bottom: 0;
@@ -1427,7 +1427,6 @@ body {
 
 .post-type-archive-product .page-title {
   background: none;
-  background: radial-gradient(at bottom, rgba(171, 101, 157, 0.85), transparent 66%);
   padding: 50px; }
   @media (max-width: 860px) {
     .post-type-archive-product .page-title {
@@ -1547,13 +1546,12 @@ body {
 
 .page-template-default main .entry-header, .full-width-content main .entry-header, .single main .entry-header {
   padding: 50px;
-  background: none;
-  background: radial-gradient(at bottom, rgba(171, 101, 157, 0.85), transparent 66%); }
+  background: none; }
 
 .page-template-default main .entry-content, .full-width-content main .entry-content, .single main .entry-content {
   padding: 50px 60px;
   background: #FFFFFF;
-  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
+  box-shadow: 0 0 37px rgba(46, 71, 94, 0.08); }
 
 @media (max-width: 860px) {
   .page-template-default main .entry-header, .page-template-default main .entry-content, .full-width-content main .entry-header, .full-width-content main .entry-content, .single main .entry-header, .single main .entry-content {
@@ -1896,7 +1894,7 @@ nav.page-top-buttons {
   cursor: default; }
 
 .sidebar .widget {
-  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
+  box-shadow: 0 0 37px rgba(46, 71, 94, 0.08); }
 
 .sidebar .widget-title {
   color: #a7a9ae;
@@ -2300,7 +2298,7 @@ nav.page-top-buttons {
 
 .page-template-page_blog article, .archive.category article {
   padding: 0;
-  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
+  box-shadow: 0 0 37px rgba(46, 71, 94, 0.08); }
   .page-template-page_blog article:first-child .entry-header, .archive.category article:first-child .entry-header {
     background: #1c2238; }
 
@@ -2480,7 +2478,7 @@ time {
 .woocommerce ul.products {
   background: #FFFFFF;
   padding: 50px 60px !important;
-  box-shadow: 0 0 40px rgba(46, 71, 94, 0.6); }
+  box-shadow: 0 0 37px rgba(46, 71, 94, 0.08); }
   .woocommerce ul.products li.product {
     border: none;
     text-align: center; }
