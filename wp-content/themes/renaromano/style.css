@@ -1947,7 +1947,7 @@ nav.page-top-buttons {
   position: relative;
   margin-left: auto;
   padding: 50px 25px;
-  max-width: 400px; }
+  max-width: 355px; }
   .gcta-content:before, .gcta-content:after {
     content: '';
     position: absolute;
@@ -1956,7 +1956,7 @@ nav.page-top-buttons {
   .gcta-content:before {
     right: 0;
     left: 0;
-    background: #FFFFFF; }
+    background: rgba(255, 255, 255, 0.9); }
   .gcta-content:after {
     left: 10px;
     right: 10px;

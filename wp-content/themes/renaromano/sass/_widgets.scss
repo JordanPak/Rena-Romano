@@ -124,7 +124,7 @@
 	// z-index: 0;
 	margin-left: auto;
 	padding: 50px 25px;
-	max-width: 400px;
+	max-width: 355px; // 400px;
 
 	&:before, &:after {
 		content: '';
@@ -136,7 +136,7 @@
 		// z-index: -1;
 		right: 0;
 		left: 0;
-		background: $white;
+		background: rgba( $white, 0.9 ); // $white;
 	}
 	&:after {
 		// z-index: -1;
