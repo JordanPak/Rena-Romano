@@ -35,7 +35,8 @@
 
 	article {
 		padding: 0;
-		box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+		// box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+		box-shadow: 0 0 37px rgba( $accent-pri, 0.08 );
 
 		&:first-child .entry-header {
 			background: $accent-pri-darker;

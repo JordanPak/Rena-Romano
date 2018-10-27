@@ -1,44 +1,57 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
+
+	require('load-grunt-tasks')(grunt);
+	const sass = require('node-sass');
+
 	grunt.initConfig({
 
-		pkg: grunt.file.readJSON('package.json'),
-
-
-		// SASS TASK
 		sass: {
+			options: {
+				implementation: sass,
+				sourceMap: true
+			},
 			dist: {
 				files: {
-					'style.css' : 'sass/style.scss'
+					'style.css': 'sass/style.scss'
 				}
 			}
 		},
 
+		autoprefixer: {
+			options: {
+				browsers: ['last 2 versions', 'ie 9' ],
+			},
+			dist: {
+				files: {
+					'style.css': 'style.css'
+				}
+			}
+		},
 
-		// WATCH TASK
 		watch: {
-			css: {
+			sass: {
 				files: ['sass/*.scss'],
-				tasks: ['sass'],
-                options: {
-                    livereload: true,
-                    spawn: false
-                }
+				tasks: ['sass', 'autoprefixer'],
+			}
+		},
+
+		browserSync: {
+			dist: {
+				bsFiles: {
+					src: [
+						'style.css',
+					]
+				},
+				options: {
+					watchTask: true,
+					proxy: "renaromano.local",
+					open: false,
+				}
 			}
 		}
 
-
 	});
 
-
-    //-- REGISTER & LOAD TASKS --//
-
-	// NPM Stuff
-    grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-
-    // Grunt Registrations
-    grunt.registerTask('dist', ['sass:dist']);
-
-    // Default
-    grunt.registerTask('default', ['dist']);
-};
+	// grunt.registerTask('default', ['sass']);
+	grunt.registerTask('default', ['browserSync', 'watch']);
+}

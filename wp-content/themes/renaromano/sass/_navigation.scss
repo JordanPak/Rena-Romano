@@ -80,8 +80,8 @@
     } // .current-menu-item > a
 
 	.sub-menu {
-		-moz-box-shadow: 0 3px 4px rgba( $primary, 0.2 );
-		box-shadow: 0 2px 6px rgba( $primary, 0.2 );
+		// box-shadow: 0 2px 6px rgba( $primary, 0.2 );
+		box-shadow: 0 2px 20px rgba( $accent-pri, 0.1 );
 		background: $primary;
 
 		a {
@@ -90,10 +90,10 @@
 			font-size: 16px;
 	        color: $gray-dark;
 	        letter-spacing: normal;
-			background: $gray-light;
+			background: $white; //$gray-light;
 
 	        &:hover {
-	            background: $white;
+	            background: #f3f3f3; // $white;
 	        }
 
 	    } // .sub-menu a

@@ -83,7 +83,7 @@
     .testimonial-client {
         font-size: 20px;
         font-weight: 700;
-		color: $gray-mid;
+		color: $gray; //$gray-mid;
 
         &::before {
             content: '';
@@ -97,7 +97,7 @@
     .testimonial-position {
         text-transform: uppercase;
         font-size: 18px;
-        color: $secondary;
+        color: $gray; //$secondary;
     }
 
     .cycle-pager span {
@@ -111,16 +111,30 @@
 } // .cycle-slidshow
 
 .page-template-page_home .easy-t-slideshow-wrap {
-	margin-bottom: 80px;
+    // margin-bottom: 80px;
+    max-width: 725px;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: $white;
+    border-top: 8px solid $primary-darker;
+
+    @include breakpoint( sm ) {
+        padding: 15px;
+    }
 
 	.cycle-slideshow {
-	    color: $white;
+	    // color: $white;
 	    text-shadow: none;
 	}
 
     .testimonial_body {
-        font-size: 38px;
-	    text-shadow: none;
+        font-size: 32px; //38px;
+        line-height: 1.4;
+        text-shadow: none;
+
+        @include breakpoint( sm ) {
+            font-size: 24px;
+        }
     }
 
     blockquote {

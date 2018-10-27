@@ -3,7 +3,7 @@
 //===========================//
 
 body {
-	background: url('images/page-bg.jpg') no-repeat top center $primary-dark;
+	background: $primary-lightest;
 }
 
 
@@ -98,13 +98,14 @@ body {
 			// background: $primary-darker;
 			padding: 50px;
 			background: none;
-			background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% );
+			// background: radial-gradient( at bottom, rgba(171, 101, 157, 0.85), transparent 66% );
 		}
 
 		.entry-content {
 			padding: 50px 60px;
 			background: $white;
-			box-shadow: 0 0 40px rgba( $accent-pri, 0.6 ); 
+			// box-shadow: 0 0 40px rgba( $accent-pri, 0.6 );
+			box-shadow: 0 0 37px rgba( $accent-pri, 0.08 );
 		}
 
 		.entry-header, .entry-content {
